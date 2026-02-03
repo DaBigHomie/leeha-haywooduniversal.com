@@ -1,51 +1,73 @@
-# Haywood Universal - React Web App Mockup
+# React + TypeScript + Vite
 
-## Overview
-This project is a React-based mockup/recreation of [haywooduniversal.com](https://haywooduniversal.com/), designed to be duplicated 20x with variations for different business use cases.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-leeha-haywooduniversal.com/
-├── features/          # Feature modules (FSD architecture)
-├── entities/          # Business entities
-├── shared/            # Shared utilities and components
-├── lib/               # External library integrations
-├── docs/              # Documentation
-│   └── SITE_ANALYSIS.md  # Comprehensive site analysis with 20 AI generation prompts
-└── screenshots/       # Full-page screenshots of all pages
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-
-## Tech Stack
-- **Framework**: React (to be implemented)
-- **Architecture**: Feature-Sliced Design (FSD)
-- **Design System**: 
-  - Primary Color: #f8b8a7 (coral pink)
-  - Fonts: Playfair Display, Noto Sans
-  
-## Pages Analyzed
-1. Home
-2. Project Management
-3. Contact Us
-4. Gallery
-5. Services
-6. Rooms for Rent
-
-## Documentation
-See [SITE_ANALYSIS.md](./docs/SITE_ANALYSIS.md) for:
-- Complete site structure breakdown
-- Component inventory
-- 20 AI generation prompts for creating variations
-- Design system tokens
-- Data models
-
-## Purpose
-This mockup serves as a foundation for creating 20x variations of the site design, each customized for different business verticals while maintaining the core structure and user experience patterns.
-
-## Next Steps
-1. Implement React components based on the analysis
-2. Create reusable component library
-3. Build configuration system for 20x variations
-4. Set up deployment pipeline
-
-## License
-Private - For internal use only
