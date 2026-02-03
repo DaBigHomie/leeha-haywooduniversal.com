@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, User, Calendar } from 'lucide-react';
-import type { NavigationConfig } from '../../types/config';
 
 interface HeaderProps {
   logo: string;

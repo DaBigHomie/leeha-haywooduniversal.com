@@ -15,7 +15,6 @@ export function HomePage({ config }: HomePageProps) {
         subtitle={config.content.hero.subtitle}
         ctaText={config.content.hero.ctaText}
         backgroundImage={config.content.hero.backgroundImage}
-        primaryColor={config.theme.primaryColor}
       />
       
       <section className="container mx-auto px-4 py-16">
@@ -37,8 +36,16 @@ export function HomePage({ config }: HomePageProps) {
         </div>
       </section>
 
-      <Gallery {...config.content.gallery} />
-      <EmailSignup {...config.content.emailSignup} primaryColor={config.theme.primaryColor} />
+      <Gallery 
+        title={config.content.gallery.title}
+        images={config.content.gallery.images}
+      />
+      <EmailSignup 
+        title={config.content.emailSignup.title}
+        subtitle={config.content.emailSignup.subtitle}
+        placeholder={config.content.emailSignup.placeholder}
+        buttonText={config.content.emailSignup.buttonText}
+      />
     </main>
   );
 }

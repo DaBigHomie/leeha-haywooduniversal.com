@@ -13,7 +13,10 @@ export function GalleryPage({ config }: GalleryPageProps) {
         Explore our recent work and success stories
       </p>
       
-      <Gallery {...config.content.gallery} />
+      <Gallery 
+        title={config.content.gallery.title}
+        images={config.content.gallery.images}
+      />
       
       {/* Extended gallery grid */}
       <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">

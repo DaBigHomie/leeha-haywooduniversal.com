@@ -56,7 +56,12 @@ function App() {
         <Route path="*" element={<HomePage config={config} />} />
       </Routes>
       
-      <Footer {...config.content.footer} />
+      <Footer 
+        businessName={config.content.footer.businessName}
+        tagline={config.content.footer.tagline}
+        socialLinks={config.content.footer.socialLinks}
+        legalLinks={config.content.footer.legalLinks}
+      />
     </div>
   );
 }

@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
-import type { HeroContent } from '../../types/config';
 
 interface HeroProps {
-  content: HeroContent;
-  variant?: number; // 1-20 for different design variations
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  backgroundImage: string;
 }
 
-export const Hero = ({ content, variant = 1 }: HeroProps) => {
+export const Hero = ({ title, subtitle, ctaText, backgroundImage }: HeroProps) => {
+  const variant = 1;
   // Different layout variations based on variant number
   const getVariantStyles = () => {
     switch (variant % 5) {
@@ -28,7 +30,7 @@ export const Hero = ({ content, variant = 1 }: HeroProps) => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${content.backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-black/40" />
       </div>
@@ -42,10 +44,10 @@ export const Hero = ({ content, variant = 1 }: HeroProps) => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
-            {content.title}
+            {title}
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-            {content.subtitle}
+            {subtitle}
           </p>
           <motion.a
             href="#contact"
@@ -53,7 +55,7 @@ export const Hero = ({ content, variant = 1 }: HeroProps) => {
             whileTap={{ scale: 0.95 }}
             className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-lg"
           >
-            {content.ctaText}
+            {ctaText}
           </motion.a>
         </motion.div>
       </div>

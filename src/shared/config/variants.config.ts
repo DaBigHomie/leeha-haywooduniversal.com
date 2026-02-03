@@ -243,30 +243,6 @@ export const restaurantConfig: SiteConfig = {
   },
 };
 
-// Export all variants (3 shown, 17 more to be created)
-export const siteVariants = {
-  lawFirm: lawFirmConfig,
-  fitness: fitnessConfig,
-  restaurant: restaurantConfig,
-  realEstate: realEstateConfig,
-  medSpa: medSpaConfig,
-  consulting: consultingConfig,
-  photography: photographyConfig,
-  accounting: accountingConfig,
-  dental: dentalConfig,
-  salon: salonConfig,
-  architecture: architectureConfig,
-  marketing: marketingConfig,
-  eventPlanning: eventPlanningConfig,
-  coaching: coachingConfig,
-  therapy: therapyConfig,
-  veterinary: veterinaryConfig,
-  tutoring: tutoringConfig,
-  musicSchool: musicSchoolConfig,
-  yoga: yogaConfig,
-  bakery: bakeryConfig,
-};
-
 // Variant 4: Real Estate Agency
 const realEstateConfig: SiteConfig = {
   id: 'variant-04-real-estate',
@@ -423,4 +399,28 @@ const tutoringConfig: SiteConfig = { id: 'variant-17-tutoring', name: 'Bright Mi
 const musicSchoolConfig: SiteConfig = { id: 'variant-18-music', name: 'Harmony Music School', businessType: 'Music School', theme: { primaryColor: '#c026d3', fonts: { display: 'Playfair Display', body: 'Noto Sans' } }, navigation: { logo: 'Harmony', items: [{ text: 'Home', href: '/' }, { text: 'Lessons', href: '/lessons' }, { text: 'Instructors', href: '/team' }, { text: 'Enroll', href: '/enroll' }], accountMenu: [{ text: 'Student Portal', href: '/portal' }] }, content: { hero: { title: 'Discover Your Musical Voice', subtitle: 'Professional music instruction for all ages', ctaText: 'Start Lessons', backgroundImage: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1920' }, services: [{ title: 'Piano', description: 'Classical and contemporary styles', image: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=800' }, { title: 'Guitar', description: 'Acoustic and electric lessons', image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800' }, { title: 'Voice', description: 'Vocal technique and performance', image: 'https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=800' }], gallery: { title: 'Recitals & Student Performances', images: [{ url: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600', alt: 'Music studio' }, { url: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600', alt: 'Piano' }, { url: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600', alt: 'Guitar' }] }, emailSignup: { title: 'Free Trial Lesson', subtitle: 'Try a lesson risk-free', placeholder: 'Enter your email', buttonText: 'Claim Trial' }, footer: { businessName: 'Harmony Music School', tagline: 'Discover Your Musical Voice', socialLinks: [{ platform: 'Facebook', url: '#' }, { platform: 'Instagram', url: '#' }], legalLinks: [{ text: 'Privacy', url: '/privacy' }] } } };
 const yogaConfig: SiteConfig = { id: 'variant-19-yoga', name: 'Zen Flow Yoga', businessType: 'Yoga Studio', theme: { primaryColor: '#0d9488', fonts: { display: 'Playfair Display', body: 'Noto Sans' } }, navigation: { logo: 'Zen Flow', items: [{ text: 'Home', href: '/' }, { text: 'Classes', href: '/classes' }, { text: 'Teachers', href: '/teachers' }, { text: 'Schedule', href: '/schedule' }], accountMenu: [{ text: 'Book Class', href: '/book' }] }, content: { hero: { title: 'Find Your Flow', subtitle: 'Yoga for body, mind, and spirit', ctaText: 'Try Free Class', backgroundImage: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920' }, services: [{ title: 'Vinyasa Flow', description: 'Dynamic movement and breath', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800' }, { title: 'Yin Yoga', description: 'Deep stretching and relaxation', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800' }, { title: 'Hot Yoga', description: 'Detoxify in heated studio', image: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800' }], gallery: { title: 'Our Studio & Community', images: [{ url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600', alt: 'Yoga class' }, { url: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600', alt: 'Meditation' }, { url: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600', alt: 'Studio' }] }, emailSignup: { title: 'Free Week Trial', subtitle: 'Unlimited classes for 7 days', placeholder: 'Enter your email', buttonText: 'Start Trial' }, footer: { businessName: 'Zen Flow Yoga', tagline: 'Find Your Flow', socialLinks: [{ platform: 'Instagram', url: '#' }, { platform: 'Facebook', url: '#' }], legalLinks: [{ text: 'Privacy', url: '/privacy' }] } } };
 const bakeryConfig: SiteConfig = { id: 'variant-20-bakery', name: 'Sweet Bliss Bakery', businessType: 'Bakery & Café', theme: { primaryColor: '#ea580c', fonts: { display: 'Playfair Display', body: 'Noto Sans' } }, navigation: { logo: 'Sweet Bliss', items: [{ text: 'Home', href: '/' }, { text: 'Menu', href: '/menu' }, { text: 'Custom Orders', href: '/custom' }, { text: 'Catering', href: '/catering' }], accountMenu: [{ text: 'Order Online', href: '/order' }] }, content: { hero: { title: 'Baked Fresh Daily', subtitle: 'Artisan pastries and custom cakes', ctaText: 'View Menu', backgroundImage: 'https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1920' }, services: [{ title: 'Custom Cakes', description: 'Wedding, birthday, and special occasion cakes', image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800' }, { title: 'Pastries', description: 'French pastries, croissants, and more', image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800' }, { title: 'Catering', description: 'Dessert tables for events', image: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800' }], gallery: { title: 'Recent Creations', images: [{ url: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600', alt: 'Wedding cake' }, { url: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600', alt: 'Pastries' }, { url: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600', alt: 'Desserts' }] }, emailSignup: { title: 'Weekly Specials', subtitle: 'Get first access to seasonal treats', placeholder: 'Enter your email', buttonText: 'Subscribe' }, footer: { businessName: 'Sweet Bliss Bakery', tagline: 'Baked Fresh Daily', socialLinks: [{ platform: 'Instagram', url: '#' }, { platform: 'Facebook', url: '#' }], legalLinks: [{ text: 'Privacy', url: '/privacy' }] } } };
+
+// Export all variants
+export const siteVariants = {
+  lawFirm: lawFirmConfig,
+  fitness: fitnessConfig,
+  restaurant: restaurantConfig,
+  realEstate: realEstateConfig,
+  medSpa: medSpaConfig,
+  consulting: consultingConfig,
+  photography: photographyConfig,
+  accounting: accountingConfig,
+  dental: dentalConfig,
+  salon: salonConfig,
+  architecture: architectureConfig,
+  marketing: marketingConfig,
+  eventPlanning: eventPlanningConfig,
+  coaching: coachingConfig,
+  therapy: therapyConfig,
+  veterinary: veterinaryConfig,
+  tutoring: tutoringConfig,
+  musicSchool: musicSchoolConfig,
+  yoga: yogaConfig,
+  bakery: bakeryConfig,
+};
 

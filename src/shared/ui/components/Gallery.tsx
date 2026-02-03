@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import type { GalleryContent } from '../../types/config';
 
 interface GalleryProps {
-  content: GalleryContent;
-  variant?: number;
+  title: string;
+  images: Array<{ url: string; alt: string; caption?: string }>;
 }
 
-export const Gallery = ({ content, variant = 1 }: GalleryProps) => {
+export const Gallery = ({ title, images }: GalleryProps) => {
+  const variant = 1;
   // Different grid layouts based on variant
   const getGridClass = () => {
     const layouts = [
@@ -27,11 +27,11 @@ export const Gallery = ({ content, variant = 1 }: GalleryProps) => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-display font-bold text-center mb-12 text-gray-900"
         >
-          {content.title}
+          {title}
         </motion.h2>
 
         <div className={`grid ${getGridClass()} gap-6`}>
-          {content.images.map((image, index) => (
+          {images.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}

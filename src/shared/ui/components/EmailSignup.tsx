@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import type { EmailSignupContent } from '../../types/config';
 
 interface EmailSignupProps {
-  content: EmailSignupContent;
-  variant?: number;
+  title: string;
+  subtitle: string;
+  placeholder: string;
+  buttonText: string;
 }
 
-export const EmailSignup = ({ content }: EmailSignupProps) => {
+export const EmailSignup = ({ title, subtitle, placeholder, buttonText }: EmailSignupProps) => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -31,7 +32,7 @@ export const EmailSignup = ({ content }: EmailSignupProps) => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-display font-bold mb-4 text-gray-900"
         >
-          {content.title}
+          {title}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +41,7 @@ export const EmailSignup = ({ content }: EmailSignupProps) => {
           transition={{ delay: 0.1 }}
           className="text-lg text-gray-600 mb-8"
         >
-          {content.subtitle}
+          {subtitle}
         </motion.p>
 
         <motion.form
@@ -55,7 +56,7 @@ export const EmailSignup = ({ content }: EmailSignupProps) => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder={content.placeholder}
+            placeholder={placeholder}
             required
             className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
           />
@@ -66,7 +67,7 @@ export const EmailSignup = ({ content }: EmailSignupProps) => {
             className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors"
             disabled={submitted}
           >
-            {submitted ? '✓ Sent!' : content.buttonText}
+            {submitted ? '✓ Sent!' : buttonText}
           </motion.button>
         </motion.form>
       </div>
