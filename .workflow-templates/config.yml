@@ -1,0 +1,197 @@
+# ═══════════════════════════════════════════════════════════════
+# CAE ATLANTA 20X - WORKFLOW CONFIGURATION
+# Edit this file to customize for your project
+# ═══════════════════════════════════════════════════════════════
+
+project:
+  name: "CAE Luxury Hair"
+  repository: "DaBigHomie/Cae"
+  target_demographic: "African American women, ages 21-35, Metro Atlanta"
+  brand_voice: "Aspirational, culturally-authentic, exclusive"
+
+# Cultural keyword validation
+cultural_keywords:
+  primary:
+    - "The Melt"
+    - "Soft Life"
+    - "Boss Up"
+    - "Inner Circle"
+    - "Atlanta"
+    - "Metro ATL"
+    - "Buckhead"
+    - "Midtown"
+    - "Investment"
+    - "Boss Babe"
+    - "CEO"
+    - "Exclusive"
+    - "Limited"
+    - "Access"
+  
+  # Minimum density (keywords per 500 words)
+  min_density: 3
+  
+  # Target density for optimal cultural resonance
+  target_density: 5
+
+# Terms to avoid (generic luxury language)
+avoid_terms:
+  - "premium quality"
+  - "luxury items"
+  - "exclusive deal"
+  - "buy now pay later"
+  - "special offer"
+  - "limited time"
+
+# Conversion killers (phrases that reduce trust)
+conversion_killers:
+  - "strict policy"
+  - "limited availability"
+  - "high demand"
+  - "exclusive membership"
+  - "VIP access"
+  - "premium tier"
+
+# Conversion triggers (replacement phrases)
+conversion_triggers:
+  deposit_language: "Investment Options" # instead of "buy now pay later"
+  membership: "Inner Circle" # instead of "exclusive membership"
+  urgency: "Limited Access" # instead of "limited time"
+  quality: "The Melt" # instead of "premium quality"
+  exclusivity: "Boss Up Status" # instead of "VIP access"
+  pricing: "Investment" # instead of "price"
+
+# Success metrics (conversion funnel)
+success_metrics:
+  homepage_to_shop: 60%        # Homepage → Shop page
+  product_to_cart: 40%         # Product view → Add to cart
+  booking_to_deposit: 35%      # Booking form → Deposit paid
+  cart_to_checkout: 50%        # Cart → Checkout
+  checkout_to_purchase: 70%    # Checkout → Order complete
+
+# Accessibility requirements
+accessibility:
+  wcag_level: "AA"
+  min_contrast_ratio: 4.5
+  keyboard_navigation: true
+  screen_reader_support: true
+  aria_labels_required: true
+
+# Performance requirements
+performance:
+  lighthouse_score: 90         # Overall Lighthouse score
+  lcp_target: 2.5              # Largest Contentful Paint (seconds)
+  fid_target: 100              # First Input Delay (milliseconds)
+  cls_target: 0.1              # Cumulative Layout Shift
+  bundle_size_max: 250         # Max JS bundle size (KB)
+
+# Phase configuration
+phases:
+  phase_1:
+    name: "Visual Trust Foundation"
+    duration_days: 5
+    dependencies: []
+    issue_number: 2
+    components:
+      - HeroVideo
+      - LaceMatchViewer
+      - Typography
+      - CEO positioning
+  
+  phase_2:
+    name: "Conversion Triggers"
+    duration_days: 4
+    dependencies: ["phase_1"]
+    issue_number: 3
+    components:
+      - Testimonials
+      - Social Proof
+      - FOMO elements
+      - Policy language
+  
+  phase_3:
+    name: "Booking Experience"
+    duration_days: 3
+    dependencies: ["phase_1"]
+    issue_number: 4
+    components:
+      - Calendar
+      - Deposit integration
+      - Confirmation system
+  
+  phase_4:
+    name: "Digital Products"
+    duration_days: 2
+    dependencies: ["phase_1"]
+    issue_number: 5
+    components:
+      - Workbook PDF
+      - Membership tiers
+      - Certificate downloads
+  
+  phase_5:
+    name: "Atlanta Local Integration"
+    duration_days: 3
+    dependencies: ["phase_1", "phase_2", "phase_3", "phase_4"]
+    issue_number: 6
+    components:
+      - Events calendar
+      - Google Maps
+      - Local partnerships
+  
+  phase_6:
+    name: "Technical Polish"
+    duration_days: 3
+    dependencies: ["phase_1", "phase_2", "phase_3", "phase_4", "phase_5"]
+    issue_number: 7
+    components:
+      - Lighthouse optimization
+      - A/B testing setup
+      - Analytics integration
+      - Focus group feedback
+
+# Agent configuration
+agents:
+  code_review:
+    enabled: true
+    min_approval_score: 7  # 0-10 scale
+    auto_approve_score: 9
+    checks:
+      - typescript_compilation
+      - eslint_errors
+      - atlanta_keywords
+      - avoid_terms
+      - conversion_killers
+      - wcag_aa_compliance
+  
+  cultural_validation:
+    enabled: false  # Planned
+    keyword_density_min: 3
+    keyword_density_target: 5
+    brand_voice_check: true
+  
+  pr_manager:
+    enabled: false  # Planned
+    phase_gate_enforcement: true
+    auto_merge_approved: false
+    review_timeout_hours: 24
+
+# Testing configuration
+testing:
+  e2e_required: true
+  unit_test_coverage_min: 80
+  lighthouse_ci: true
+  accessibility_testing: true
+  visual_regression: false  # Planned
+
+# Deployment configuration
+deployment:
+  platform: "Vercel"
+  staging_branch: "develop"
+  production_branch: "main"
+  auto_deploy_staging: true
+  auto_deploy_production: false
+  pre_deploy_checks:
+    - typescript_compilation
+    - eslint_clean
+    - tests_passing
+    - lighthouse_score_90

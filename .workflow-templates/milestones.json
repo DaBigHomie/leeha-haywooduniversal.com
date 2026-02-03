@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Phase 1: Visual Trust",
+    "description": "Foundation phase with HeroVideo, LaceMatchViewer, Typography, and CEO positioning. Blocks all other phases.",
+    "due_on": "+5d",
+    "state": "open"
+  },
+  {
+    "title": "Phase 2: Conversion Triggers",
+    "description": "Testimonials, social proof, FOMO elements, policy language. Depends on Phase 1.",
+    "due_on": "+9d",
+    "state": "open"
+  },
+  {
+    "title": "Phase 3: Booking Experience",
+    "description": "Calendar, deposit integration, confirmation system. Depends on Phase 1.",
+    "due_on": "+12d",
+    "state": "open"
+  },
+  {
+    "title": "Phase 4: Digital Products",
+    "description": "Workbook PDF, membership tiers, certificate downloads. Depends on Phase 1.",
+    "due_on": "+14d",
+    "state": "open"
+  },
+  {
+    "title": "Phase 5: Atlanta Local",
+    "description": "Events calendar, Google Maps, local partnerships. Depends on Phases 1-4.",
+    "due_on": "+17d",
+    "state": "open"
+  },
+  {
+    "title": "Phase 6: Technical Polish",
+    "description": "Lighthouse optimization, A/B testing, analytics, focus group feedback. Depends on Phases 1-5.",
+    "due_on": "+20d",
+    "state": "open"
+  }
+]

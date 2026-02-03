@@ -1,0 +1,12 @@
+{
+  "total": 19,
+  "sections": 19,
+  "checkbox_items": 124,
+  "blockers": 6,
+  "high_priority": 25,
+  "documentation": 1,
+  "performance": 0,
+  "items": [{"title":"Payment Integration - Orders Stuck at "Pending"","priority":"P0"},{"title":"Database Migrations Pending Manual Application","priority":"P1"},{"title":"E2E Testing Gaps - Critical Routes Untested","priority":"P0"},{"title":"Missing data-testid Attributes","priority":"P1"},{"title":"Playwright Config Verification","priority":"P1"},{"title":"Pre-Existing TypeScript Errors","priority":"P1"},{"title":"Environment Variable Verification","priority":"P1"},{"title":"ESLint Errors (15 pre-existing)","priority":"P1"},{"title":"P1 E-Commerce Features (DAMIEUS_ECOMMERCE_GAP_ANALYSIS_COMPREHENSIVE.md)","priority":"P0"},{"title":"Inventory Management Enhancement","priority":"P1"},{"title":"Abandoned Cart Recovery","priority":"P1"},{"title":"Order Status Email Templates","priority":"P2"},{"title":"Homepage Restructuring Tasks","priority":"P1"},{"title":"API Documentation","priority":"P1"},{"title":"Pre-Deployment Testing Checklist","priority":"P0"},{"title":"Supabase Client Import Enforcement","priority":"P0"},{"title":"Component Props Verification","priority":"P2"},{"title":"JSONB Type Casting","priority":"P2"},{"title":"Copilot Review Checklist","priority":"P1"},{"title":"This Week (Priority 1)","priority":"P2"},{"title":"Next Sprint (Priority 2)","priority":"P2"},{"title":"Future Sprints (Priority 3)","priority":"P2"}],
+  "source_file": "ACTION_ITEMS.md",
+  "parsed_at": "2026-02-03T21:53:57Z"
+}

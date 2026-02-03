@@ -1,0 +1,107 @@
+[
+  {
+    "name": "phase-1-visual-trust",
+    "color": "0E8A16",
+    "description": "Phase 1: Visual Trust Foundation"
+  },
+  {
+    "name": "phase-2-conversion-triggers",
+    "color": "1D76DB",
+    "description": "Phase 2: Conversion Triggers"
+  },
+  {
+    "name": "phase-3-booking-experience",
+    "color": "5319E7",
+    "description": "Phase 3: Booking Experience"
+  },
+  {
+    "name": "phase-4-digital-products",
+    "color": "D93F0B",
+    "description": "Phase 4: Digital Products"
+  },
+  {
+    "name": "phase-5-atlanta-local",
+    "color": "FBCA04",
+    "description": "Phase 5: Atlanta Local Integration"
+  },
+  {
+    "name": "phase-6-technical-polish",
+    "color": "006B75",
+    "description": "Phase 6: Technical Polish"
+  },
+  {
+    "name": "priority:p0",
+    "color": "B60205",
+    "description": "Blocking - must fix before merge"
+  },
+  {
+    "name": "priority:p1",
+    "color": "D93F0B",
+    "description": "High - fix in current phase"
+  },
+  {
+    "name": "priority:p2",
+    "color": "FBCA04",
+    "description": "Nice-to-have - backlog"
+  },
+  {
+    "name": "type:feature",
+    "color": "0E8A16",
+    "description": "New functionality"
+  },
+  {
+    "name": "type:fix",
+    "color": "D93F0B",
+    "description": "Bug fix"
+  },
+  {
+    "name": "type:docs",
+    "color": "0075CA",
+    "description": "Documentation"
+  },
+  {
+    "name": "type:refactor",
+    "color": "5319E7",
+    "description": "Code improvement"
+  },
+  {
+    "name": "area:atlanta-keywords",
+    "color": "C5DEF5",
+    "description": "Cultural keyword validation"
+  },
+  {
+    "name": "area:wcag-aa",
+    "color": "1D76DB",
+    "description": "Accessibility compliance"
+  },
+  {
+    "name": "area:conversion-psychology",
+    "color": "5319E7",
+    "description": "Conversion optimization"
+  },
+  {
+    "name": "area:performance",
+    "color": "006B75",
+    "description": "Speed/bundle size"
+  },
+  {
+    "name": "status:blocked",
+    "color": "B60205",
+    "description": "Waiting on dependency"
+  },
+  {
+    "name": "status:in-review",
+    "color": "FBCA04",
+    "description": "Agent/human review in progress"
+  },
+  {
+    "name": "status:approved",
+    "color": "0E8A16",
+    "description": "Ready to merge"
+  },
+  {
+    "name": "status:deployed",
+    "color": "006B75",
+    "description": "Live in production"
+  }
+]
