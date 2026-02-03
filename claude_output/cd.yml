@@ -1,0 +1,303 @@
+name: CD Pipeline - Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+env:
+  NODE_VERSION: '20.x'
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  # Pre-deployment checks
+  pre-deploy:
+    name: Pre-deployment Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./nextjs-app
+
+      - name: Run all tests
+        run: |
+          npm run lint
+          npm run type-check
+          npm test
+        working-directory: ./nextjs-app
+
+      - name: Build verification
+        run: npm run build
+        working-directory: ./nextjs-app
+
+  # Deploy to Staging
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    needs: pre-deploy
+    if: github.ref == 'refs/heads/develop' || github.event.inputs.environment == 'staging'
+    environment:
+      name: staging
+      url: https://staging.haywooduniversal.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./nextjs-app
+
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./nextjs-app
+
+      - name: Deploy to Staging
+        id: deploy-staging
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deployment_url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+        working-directory: ./nextjs-app
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀 Deployed to staging: ${{ steps.deploy-staging.outputs.deployment_url }}'
+            })
+
+  # Run Smoke Tests on Staging
+  smoke-tests-staging:
+    name: Smoke Tests (Staging)
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Run smoke tests
+        run: |
+          npm install -g newman
+          newman run tests/smoke-tests.postman_collection.json \
+            --environment tests/staging-environment.json
+
+      - name: Health check
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://staging.haywooduniversal.com/api/health)
+          if [ $response != "200" ]; then
+            echo "::error::Health check failed with status $response"
+            exit 1
+          fi
+
+  # Deploy to Production
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [pre-deploy, smoke-tests-staging]
+    if: github.ref == 'refs/heads/main' || github.event.inputs.environment == 'production'
+    environment:
+      name: production
+      url: https://haywooduniversal.com
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./nextjs-app
+
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ./nextjs-app
+
+      - name: Deploy to Production
+        id: deploy-production
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deployment_url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+        working-directory: ./nextjs-app
+
+      - name: Create deployment notification
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body: '✅ Deployed to production: ${{ steps.deploy-production.outputs.deployment_url }}'
+            })
+
+  # Run Smoke Tests on Production
+  smoke-tests-production:
+    name: Smoke Tests (Production)
+    runs-on: ubuntu-latest
+    needs: deploy-production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Run smoke tests
+        run: |
+          npm install -g newman
+          newman run tests/smoke-tests.postman_collection.json \
+            --environment tests/production-environment.json
+
+      - name: Health check
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://haywooduniversal.com/api/health)
+          if [ $response != "200" ]; then
+            echo "::error::Production health check failed with status $response"
+            exit 1
+          fi
+
+      - name: Check Core Web Vitals
+        run: |
+          npx unlighthouse --site https://haywooduniversal.com --build-static
+
+  # Database Migration
+  database-migration:
+    name: Database Migration
+    runs-on: ubuntu-latest
+    needs: deploy-production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./nextjs-app
+
+      - name: Run Prisma migrations
+        run: npx prisma migrate deploy
+        working-directory: ./nextjs-app
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Verify migration
+        run: npx prisma db pull
+        working-directory: ./nextjs-app
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+  # Post-deployment monitoring
+  post-deploy-monitoring:
+    name: Post-deployment Monitoring
+    runs-on: ubuntu-latest
+    needs: [deploy-production, smoke-tests-production]
+    steps:
+      - name: Wait for metrics
+        run: sleep 300 # Wait 5 minutes for metrics to populate
+
+      - name: Check error rate (Sentry)
+        run: |
+          # Check Sentry for error spikes
+          echo "Checking Sentry for errors..."
+          # Add Sentry API call here
+
+      - name: Check performance (Vercel Analytics)
+        run: |
+          # Check Vercel Analytics for performance regressions
+          echo "Checking performance metrics..."
+          # Add Vercel Analytics API call here
+
+      - name: Notify team
+        if: success()
+        uses: slackapi/slack-github-action@v1
+        with:
+          payload: |
+            {
+              "text": "✅ Production deployment successful!",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Production Deployment Successful* ✅\n\nCommit: ${{ github.sha }}\nDeployed by: ${{ github.actor }}\nURL: https://haywooduniversal.com"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Notify on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1
+        with:
+          payload: |
+            {
+              "text": "❌ Production deployment failed!",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Production Deployment Failed* ❌\n\nCommit: ${{ github.sha }}\nDeployed by: ${{ github.actor }}\nCheck logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  # Rollback capability
+  rollback:
+    name: Rollback (Manual)
+    runs-on: ubuntu-latest
+    if: failure() && github.ref == 'refs/heads/main'
+    steps:
+      - name: Rollback instructions
+        run: |
+          echo "::error::Deployment failed. To rollback:"
+          echo "1. Go to Vercel dashboard"
+          echo "2. Select previous deployment"
+          echo "3. Click 'Promote to Production'"
+          echo ""
+          echo "Or run: vercel rollback --token=${{ secrets.VERCEL_TOKEN }}"

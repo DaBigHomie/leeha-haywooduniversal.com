@@ -1,0 +1,252 @@
+name: Agent Pipeline Execution
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent_number:
+        description: 'Agent to execute (1-10)'
+        required: true
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+          - '6'
+          - '7'
+          - '8'
+          - '9'
+          - '10'
+          - 'all'
+      target_url:
+        description: 'Target URL to crawl (Agent 1 only)'
+        required: false
+        default: 'https://haywooduniversal.com'
+
+env:
+  NODE_VERSION: '20.x'
+
+jobs:
+  # Agent 1: Site Crawler
+  agent-1-crawler:
+    name: 'Agent 1: Site Crawler'
+    runs-on: ubuntu-latest
+    if: github.event.inputs.agent_number == '1' || github.event.inputs.agent_number == 'all'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./agents/agent-1-crawler
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+        working-directory: ./agents/agent-1-crawler
+
+      - name: Run Agent 1 - Site Crawler
+        run: npm run crawl
+        working-directory: ./agents/agent-1-crawler
+        env:
+          TARGET_URL: ${{ github.event.inputs.target_url }}
+
+      - name: Upload crawl data
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-1-output
+          path: output/crawl-data/
+          retention-days: 30
+
+      - name: Generate report
+        run: |
+          echo "## Agent 1: Site Crawler - Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Target URL:** ${{ github.event.inputs.target_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ✅ Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f output/crawl-data/site-structure.json ]; then
+            PAGES=$(jq '.pages | length' output/crawl-data/site-structure.json)
+            IMAGES=$(jq '.assets.images | length' output/crawl-data/site-structure.json)
+            echo "**Pages Crawled:** $PAGES" >> $GITHUB_STEP_SUMMARY
+            echo "**Images Found:** $IMAGES" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # Agent 2: Content Extractor
+  agent-2-content:
+    name: 'Agent 2: Content Extractor'
+    runs-on: ubuntu-latest
+    needs: agent-1-crawler
+    if: |
+      always() && 
+      (github.event.inputs.agent_number == '2' || github.event.inputs.agent_number == 'all') &&
+      (needs.agent-1-crawler.result == 'success' || needs.agent-1-crawler.result == 'skipped')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Download Agent 1 output
+        uses: actions/download-artifact@v4
+        with:
+          name: agent-1-output
+          path: output/crawl-data/
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./agents/agent-2-content
+
+      - name: Run Agent 2 - Content Extractor
+        run: npm run extract
+        working-directory: ./agents/agent-2-content
+
+      - name: Upload content data
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-2-output
+          path: output/content-data/
+          retention-days: 30
+
+      - name: Generate report
+        run: |
+          echo "## Agent 2: Content Extractor - Results" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ✅ Complete" >> $GITHUB_STEP_SUMMARY
+
+  # Agent 3: Asset Manager
+  agent-3-assets:
+    name: 'Agent 3: Asset Manager'
+    runs-on: ubuntu-latest
+    needs: agent-1-crawler
+    if: |
+      always() && 
+      (github.event.inputs.agent_number == '3' || github.event.inputs.agent_number == 'all') &&
+      (needs.agent-1-crawler.result == 'success' || needs.agent-1-crawler.result == 'skipped')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Download Agent 1 output
+        uses: actions/download-artifact@v4
+        with:
+          name: agent-1-output
+          path: output/crawl-data/
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./agents/agent-3-assets
+
+      - name: Run Agent 3 - Asset Manager
+        run: npm run process
+        working-directory: ./agents/agent-3-assets
+
+      - name: Upload asset data
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-3-output
+          path: output/asset-data/
+          retention-days: 30
+
+      - name: Generate optimization report
+        run: |
+          echo "## Agent 3: Asset Manager - Results" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ✅ Complete" >> $GITHUB_STEP_SUMMARY
+          if [ -f output/asset-data/asset-manifest.json ]; then
+            SAVINGS=$(jq '.optimizationReport.savingsPercent' output/asset-data/asset-manifest.json)
+            echo "**Optimization Savings:** ${SAVINGS}%" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # Validation
+  validate-pipeline:
+    name: Validate Pipeline Output
+    runs-on: ubuntu-latest
+    needs: [agent-1-crawler, agent-2-content, agent-3-assets]
+    if: |
+      always() &&
+      github.event.inputs.agent_number == 'all'
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Validate Agent 1 output
+        run: |
+          if [ ! -f agent-1-output/site-structure.json ]; then
+            echo "::error::Agent 1 output missing"
+            exit 1
+          fi
+
+      - name: Validate Agent 2 output
+        run: |
+          if [ ! -f agent-2-output/content-inventory.json ]; then
+            echo "::error::Agent 2 output missing"
+            exit 1
+          fi
+
+      - name: Validate Agent 3 output
+        run: |
+          if [ ! -f agent-3-output/asset-manifest.json ]; then
+            echo "::error::Agent 3 output missing"
+            exit 1
+          fi
+
+      - name: Pipeline success
+        run: |
+          echo "## 🎉 Agent Pipeline Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All agents executed successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Next Steps:" >> $GITHUB_STEP_SUMMARY
+          echo "1. Review output artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "2. Run Agents 4-5 (Design System)" >> $GITHUB_STEP_SUMMARY
+          echo "3. Begin development with Agent 6" >> $GITHUB_STEP_SUMMARY
+
+  # Notification
+  notify:
+    name: Send Notification
+    runs-on: ubuntu-latest
+    needs: [agent-1-crawler, agent-2-content, agent-3-assets, validate-pipeline]
+    if: always()
+    steps:
+      - name: Check overall status
+        id: status
+        run: |
+          if [ "${{ needs.agent-1-crawler.result }}" == "failure" ] || \
+             [ "${{ needs.agent-2-content.result }}" == "failure" ] || \
+             [ "${{ needs.agent-3-assets.result }}" == "failure" ] || \
+             [ "${{ needs.validate-pipeline.result }}" == "failure" ]; then
+            echo "status=failed" >> $GITHUB_OUTPUT
+          else
+            echo "status=success" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Notify on Slack
+        uses: slackapi/slack-github-action@v1
+        with:
+          payload: |
+            {
+              "text": "${{ steps.status.outputs.status == 'success' && '✅' || '❌' }} Agent Pipeline: ${{ steps.status.outputs.status }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Agent Pipeline Execution*\n\nAgent: ${{ github.event.inputs.agent_number }}\nStatus: ${{ steps.status.outputs.status }}\nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
