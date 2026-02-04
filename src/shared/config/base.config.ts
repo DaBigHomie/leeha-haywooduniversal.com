@@ -1,13 +1,11 @@
 import type { SiteConfig } from '../types/config';
+import { REAL_BUSINESS_DATA, REAL_NAVIGATION, REAL_SERVICES } from '../lib/real-data/haywood-data';
 
-/**
- * Base configuration for Haywood Universal site
- * This serves as the template for creating 20x variations
- */
 export const baseConfig: SiteConfig = {
-  id: 'haywood-universal-01',
-  name: 'Haywood Universal',
+  id: 'haywood-universal-live',
+  name: REAL_BUSINESS_DATA.name,
   businessType: 'Multi-Service Business',
+  
   theme: {
     primaryColor: '#f8b8a7',
     fonts: {
@@ -15,103 +13,70 @@ export const baseConfig: SiteConfig = {
       body: 'Noto Sans',
     },
   },
+
   navigation: {
-    logo: 'Haywood Universal',
-    items: [
-      { text: 'Home', href: '/' },
-      { text: 'Project Management', href: '/project-management' },
-      { text: 'Contact Us', href: '/contact' },
-      {
-        text: 'Purchase Merch',
-        href: '/merch',
-        children: [
-          { text: 'Apparel', href: '/merch/apparel' },
-          { text: 'Accessories', href: '/merch/accessories' },
-        ],
-      },
-      { text: 'Gallery', href: '/gallery' },
-      {
-        text: 'Services',
-        href: '/services',
-        children: [
-          { text: 'All Services', href: '/services' },
-          { text: 'Consulting', href: '/services/consulting' },
-          { text: 'Training', href: '/services/training' },
-        ],
-      },
-      { text: 'Rooms for Rent', href: '/rooms' },
-    ],
-    accountMenu: [
-      { text: 'Sign In', href: '/account/signin' },
-      { text: 'Create Account', href: '/account/create' },
-      { text: 'Bookings', href: '/account/bookings' },
-    ],
+    logo: REAL_BUSINESS_DATA.name,
+    items: REAL_NAVIGATION.main.map(item => ({
+      text: item.label,
+      href: item.href
+    })),
+    accountMenu: REAL_NAVIGATION.account.map(item => ({
+      text: item.label,
+      href: item.href
+    })),
   },
+
   content: {
     hero: {
-      title: 'Making Life Easy For You',
-      subtitle: 'Professional services tailored to your needs',
-      ctaText: 'Get Started',
-      backgroundImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920',
+      title: `Welcome to ${REAL_BUSINESS_DATA.name}`,
+      subtitle: REAL_BUSINESS_DATA.tagline,
+      ctaText: 'Schedule Now',
+      backgroundImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920',
     },
-    services: [
-      {
-        title: 'Project Management',
-        description: 'Expert guidance for your business projects',
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
-        link: '/project-management',
-      },
-      {
-        title: 'Real Estate Seminars',
-        description: 'Learn from industry professionals',
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800',
-        link: '/services/seminars',
-      },
-      {
-        title: 'Speaking Engagements',
-        description: 'Inspiring presentations for your events',
-        image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800',
-        link: '/services/speaking',
-      },
-    ],
+
+    services: REAL_SERVICES.map(service => ({
+      title: service.title,
+      description: service.description,
+      image: `https://images.unsplash.com/photo-${service.id === 'project-management' ? '1454165804606-c3d57bc86b40' : service.id === 'real-estate-seminars' ? '1560518883-ce09059eeffa' : service.id === 'speaking-engagements' ? '1475721027785-f74eccf877e2' : service.id === 'business-consulting' ? '1454165804606-c3d57bc86b40' : '1497366811353-6870744d04b2'}?w=800`,
+      link: `/${service.id}`
+    })),
+
     gallery: {
       title: 'Speaking Engagements / Real Estate Seminars / Events',
       images: [
-        {
-          url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600',
-          alt: 'Conference event',
-          caption: 'Annual Business Conference 2025',
-        },
-        {
-          url: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600',
-          alt: 'Real estate seminar',
-          caption: 'Real Estate Investment Seminar',
-        },
-        {
-          url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600',
-          alt: 'Speaking engagement',
-          caption: 'Leadership Workshop',
-        },
+        { url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800', alt: 'Speaking Engagement', caption: '' },
+        { url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800', alt: 'Real Estate Seminar', caption: '' },
+        { url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800', alt: 'Business Event', caption: '' },
+        { url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800', alt: 'Conference', caption: '' },
+        { url: 'https://images.unsplash.com/photo-1560439514-4e9645039924?w=800', alt: 'Workshop', caption: '' },
+        { url: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800', alt: 'Networking Event', caption: '' },
       ],
     },
+
     emailSignup: {
       title: 'Schedule Now',
-      subtitle: 'Ask About Our New Client Specials',
-      placeholder: 'Enter your email',
-      buttonText: 'Submit',
+      subtitle: REAL_BUSINESS_DATA.features[0], // "Payment plans up to 36 Months Available"
+      placeholder: 'Email Address',
+      buttonText: 'SIGN UP',
     },
+
     footer: {
-      businessName: 'Haywood Universal',
-      tagline: 'Making Life Easy For You',
+      businessName: REAL_BUSINESS_DATA.name,
+      tagline: REAL_BUSINESS_DATA.description,
       socialLinks: [
-        { platform: 'Facebook', url: 'https://facebook.com' },
-        { platform: 'Twitter', url: 'https://twitter.com' },
-        { platform: 'LinkedIn', url: 'https://linkedin.com' },
+        { platform: 'instagram', url: REAL_BUSINESS_DATA.social.instagramUrl },
+        { platform: 'facebook', url: REAL_BUSINESS_DATA.social.facebook },
+        { platform: 'twitter', url: REAL_BUSINESS_DATA.social.twitter },
       ],
       legalLinks: [
         { text: 'Privacy Policy', url: '/privacy' },
         { text: 'Terms of Service', url: '/terms' },
+        { text: REAL_BUSINESS_DATA.contact.phone, url: `tel:${REAL_BUSINESS_DATA.contact.phone}` },
+        { text: REAL_BUSINESS_DATA.contact.email, url: `mailto:${REAL_BUSINESS_DATA.contact.email}` },
       ],
     },
   },
 };
+
+// Export real data for use in components
+export { REAL_BUSINESS_DATA, REAL_SERVICES };

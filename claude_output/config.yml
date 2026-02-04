@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/DaBigHomie/leeha-haywooduniversal.com/discussions
+    about: Ask questions and discuss with the community
+  - name: 📚 Documentation
+    url: https://github.com/DaBigHomie/leeha-haywooduniversal.com/tree/main/docs
+    about: Read the comprehensive documentation
+  - name: 🐛 Security Issue
+    url: https://github.com/DaBigHomie/leeha-haywooduniversal.com/security
+    about: Report a security vulnerability privately
