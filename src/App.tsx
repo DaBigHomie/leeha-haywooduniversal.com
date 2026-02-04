@@ -1,19 +1,23 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './shared/ui/components/Header';
 import { Footer } from './shared/ui/components/Footer';
-import { HomePage } from './pages/HomePage';
-import { ServicesPage } from './pages/ServicesPage';
-import { GalleryPage } from './pages/GalleryPage';
-import { ContactPage } from './pages/ContactPage';
-import { DigitalProductsPage } from './pages/DigitalProductsPage';
-import { MembershipPage } from './pages/MembershipPage';
-import { CoursesPage } from './pages/CoursesPage';
-import { LegalGuidesPage } from './pages/LegalGuidesPage';
-import { TemplatesPage } from './pages/TemplatesPage';
+import { ConciergeChatbot } from './shared/ui/components/ConciergeChatbot';
+import { LoadingSpinner } from './shared/ui/components/LoadingSpinner';
 import { VariantSwitcher } from './shared/ui/components/VariantSwitcher';
 import { baseConfig } from './shared/config/base.config';
 import { siteVariants } from './shared/config/variants.config';
+
+// Lazy load page components for better performance
+const HomePage = lazy(() => import('./pages/HomePage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const GalleryPage = lazy(() => import('./pages/GalleryPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const DigitalProductsPage = lazy(() => import('./pages/DigitalProductsPage'));
+const MembershipPage = lazy(() => import('./pages/MembershipPage'));
+const CoursesPage = lazy(() => import('./pages/CoursesPage'));
+const LegalGuidesPage = lazy(() => import('./pages/LegalGuidesPage'));
+const TemplatesPage = lazy(() => import('./pages/TemplatesPage'));
 
 function App() {
   // Load variant from localStorage or default to baseConfig
@@ -52,6 +56,19 @@ function App() {
         onVariantChange={handleVariantChange}
       />
       
+<<<<<<< HEAD
+      {/* Lazy loaded routes with loading spinner */}
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<HomePage config={config} />} />
+          <Route path="/services" element={<ServicesPage config={config} />} />
+          <Route path="/gallery" element={<GalleryPage config={config} />} />
+          <Route path="/contact" element={<ContactPage config={config} />} />
+          {/* Fallback route for any other paths */}
+          <Route path="*" element={<HomePage config={config} />} />
+        </Routes>
+      </Suspense>
+=======
       <Routes>
         <Route path="/" element={<HomePage config={config} />} />
         <Route path="/services" element={<ServicesPage config={config} />} />
@@ -65,6 +82,7 @@ function App() {
         {/* Fallback route for any other paths */}
         <Route path="*" element={<HomePage config={config} />} />
       </Routes>
+>>>>>>> origin/main
       
       <Footer 
         businessName={config.content.footer.businessName}
@@ -72,6 +90,9 @@ function App() {
         socialLinks={config.content.footer.socialLinks}
         legalLinks={config.content.footer.legalLinks}
       />
+      
+      {/* Concierge Chatbot - available on all pages */}
+      <ConciergeChatbot />
     </div>
   );
 }
