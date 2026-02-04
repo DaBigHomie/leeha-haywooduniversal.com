@@ -54,25 +54,27 @@ for issue_num in "$@"; do
     
     log_info "Assigning Copilot with instructions: ${custom_instructions}"
     
-    # Use GitHub CLI to assign Copilot (requires gh extension)
-    if ! gh copilot assign-issue "$issue_num" --repo "${REPO_OWNER}/${REPO_NAME}" --base-ref "$BASE_REF" --custom-instructions "$custom_instructions" 2>/dev/null; then
-        log_warning "gh copilot extension not found. Using API directly..."
+    # Use GitHub API to assign Copilot
+    log_info "Assigning @copilot to issue via API..."
+    
+    # Assign Copilot to the issue using the correct endpoint
+    if gh api \
+        -X POST \
+        "/repos/${REPO_OWNER}/${REPO_NAME}/issues/${issue_num}/copilot" \
+        -f base_ref="$BASE_REF" \
+        -f custom_instructions="$custom_instructions" 2>&1 | tee /tmp/copilot_response_${issue_num}.json; then
         
-        # Fallback: Use GitHub API via gh api
-        response=$(gh api \
-            -X POST \
-            "/repos/${REPO_OWNER}/${REPO_NAME}/issues/${issue_num}/assignees/copilot" \
-            -f base_ref="$BASE_REF" \
-            -f custom_instructions="$custom_instructions" 2>&1)
+        log_success "Copilot assigned to issue #${issue_num}"
         
-        if echo "$response" | grep -q "pull_request"; then
-            pr_number=$(echo "$response" | jq -r '.pull_request.number')
-            log_success "Copilot assigned! PR #${pr_number} created"
-        else
-            log_warning "Assignment response: $response"
+        # Check if PR was created
+        if [ -f "/tmp/copilot_response_${issue_num}.json" ]; then
+            pr_number=$(jq -r '.pull_request.number // empty' /tmp/copilot_response_${issue_num}.json 2>/dev/null)
+            if [ -n "$pr_number" ]; then
+                log_success "PR #${pr_number} created by Copilot"
+            fi
         fi
     else
-        log_success "Copilot assigned to issue #${issue_num}"
+        log_warning "Failed to assign Copilot to issue #${issue_num}"
     fi
     
     echo ""

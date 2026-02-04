@@ -9,3 +9,7 @@ export { SalonVibeGallery } from './SalonVibeGallery';
 export { BookingPolicy } from './BookingPolicy';
 export { MeltTestimonials } from './MeltTestimonials';
 export { AttorneyBio } from './AttorneyBio';
+export { PaymentOptions } from './PaymentOptions';
+export { UrgencyTimer } from './UrgencyTimer';
+export { TrustSignals } from './TrustSignals';
+export { SocialProof } from './SocialProof';

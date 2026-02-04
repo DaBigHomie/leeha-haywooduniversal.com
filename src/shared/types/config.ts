@@ -6,6 +6,7 @@ export interface SiteConfig {
   content: ContentConfig;
   navigation: NavigationConfig;
   bookingExperience?: BookingExperienceConfig;
+  conversionTriggers?: ConversionTriggersConfig;
 }
 
 export interface ThemeConfig {
@@ -125,4 +126,16 @@ export interface AttorneyBio {
   approach: string;
   specialties: string[];
   experience: string;
+}
+
+export interface ConversionTriggersConfig {
+  showPaymentOptions?: boolean;
+  showUrgencyTimer?: boolean;
+  showTrustSignals?: boolean;
+  showSocialProof?: boolean;
+  deliveryCutoffHour?: number;
+  deliveryCutoffMinute?: number;
+  urgencyMessage?: string;
+  urgencyCompletedMessage?: string;
+  consultationPrice?: number;
 }

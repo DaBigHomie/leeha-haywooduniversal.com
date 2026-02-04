@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { EmailSignup } from '../shared/ui/components/EmailSignup';
-import { BookingPolicy } from '../shared/ui/components/BookingPolicy';
-import { MeltTestimonials } from '../shared/ui/components/MeltTestimonials';
-import { AttorneyBio } from '../shared/ui/components/AttorneyBio';
+import { PaymentOptions } from '../shared/ui/components/PaymentOptions';
+import { UrgencyTimer } from '../shared/ui/components/UrgencyTimer';
 import type { SiteConfig } from '../shared/types/config';
 
 interface ContactPageProps {
@@ -16,10 +15,12 @@ export function ContactPage({ config }: ContactPageProps) {
     phone: '',
     message: '',
   });
+  const [paymentMethod, setPaymentMethod] = useState<'full' | 'afterpay' | 'klarna'>('full');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Contact form submitted:', formData);
+    console.log('Payment method selected:', paymentMethod);
     alert('Thank you for your message! We will be in touch soon.');
   };
 
@@ -30,31 +31,35 @@ export function ContactPage({ config }: ContactPageProps) {
         Have questions? We're here to help. Reach out to us and we'll respond as soon as possible.
       </p>
       
-      {/* Attorney Bio Section */}
-      {config.bookingExperience?.attorneyBio && (
-        <div className="mb-24">
-          <AttorneyBio attorney={config.bookingExperience.attorneyBio} variant="full" />
-        </div>
-      )}
-
-      {/* Booking Policy Section */}
-      {config.bookingExperience && (
-        <div className="mb-16 max-w-4xl mx-auto">
-          <BookingPolicy
-            variant="inline"
-            depositAmount={config.bookingExperience.depositAmount}
-            depositPercentage={config.bookingExperience.depositPercentage}
-            cancellationWindow={config.bookingExperience.cancellationWindow}
-            rescheduleWindow={config.bookingExperience.rescheduleWindow}
-            serviceName={config.content.footer.businessName}
+      {/* Urgency Timer */}
+      {config.conversionTriggers?.showUrgencyTimer && (
+        <div className="max-w-4xl mx-auto mb-8">
+          <UrgencyTimer
+            cutoffHour={config.conversionTriggers.deliveryCutoffHour || 17}
+            cutoffMinute={config.conversionTriggers.deliveryCutoffMinute || 0}
+            message={config.conversionTriggers.urgencyMessage || 'Schedule today for priority service'}
+            completedMessage={config.conversionTriggers.urgencyCompletedMessage || 'We\'ll get back to you tomorrow'}
+            variant="urgent"
           />
         </div>
       )}
       
-      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-24">
+      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
         {/* Contact Form */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-display mb-6">Send Us a Message</h2>
+          
+          {/* Payment Options */}
+          {config.conversionTriggers?.showPaymentOptions && config.conversionTriggers.consultationPrice && (
+            <div className="mb-8">
+              <PaymentOptions
+                totalPrice={config.conversionTriggers.consultationPrice}
+                businessName={config.name}
+                onPaymentMethodSelect={setPaymentMethod}
+              />
+            </div>
+          )}
+          
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -153,19 +158,6 @@ export function ContactPage({ config }: ContactPageProps) {
           />
         </div>
       </div>
-
-      {/* Testimonials Section */}
-      {config.bookingExperience?.testimonials && (
-        <div className="mt-24">
-          <MeltTestimonials
-            testimonials={config.bookingExperience.testimonials}
-            title="Client Success Stories"
-            subtitle="What our clients say about working with us"
-            autoplay={true}
-            autoplayInterval={6000}
-          />
-        </div>
-      )}
     </main>
   );
 }
