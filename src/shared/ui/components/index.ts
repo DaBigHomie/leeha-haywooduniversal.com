@@ -8,3 +8,7 @@ export { DigitalCourseCard } from './DigitalCourseCard';
 export { ProductTangibility } from './ProductTangibility';
 export { LegalGuides } from './LegalGuides';
 export { DocumentTemplates } from './DocumentTemplates';
+export { PaymentOptions } from './PaymentOptions';
+export { UrgencyTimer } from './UrgencyTimer';
+export { TrustSignals } from './TrustSignals';
+export { SocialProof } from './SocialProof';
