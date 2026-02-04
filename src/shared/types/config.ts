@@ -1,3 +1,5 @@
+import type { DigitalProductsConfig } from './digital-products';
+
 export interface SiteConfig {
   id: string;
   name: string;
@@ -6,6 +8,7 @@ export interface SiteConfig {
   content: ContentConfig;
   navigation: NavigationConfig;
   bookingExperience?: BookingExperienceConfig;
+  digitalProducts?: DigitalProductsConfig;
   conversionTriggers?: ConversionTriggersConfig;
 }
 

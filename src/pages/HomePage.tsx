@@ -61,3 +61,5 @@ export function HomePage({ config }: HomePageProps) {
     </main>
   );
 }
+
+export default HomePage;

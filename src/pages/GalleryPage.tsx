@@ -46,3 +46,5 @@ export function GalleryPage({ config }: GalleryPageProps) {
     </main>
   );
 }
+
+export default GalleryPage;
