@@ -44,21 +44,6 @@ export function ReferralProgram({
     ? (currentReferrals / nextTier.referralsNeeded) * 100
     : 100;
 
-  const getTierIcon = (tierId: string) => {
-    switch (tierId) {
-      case 'bronze':
-        return Gift;
-      case 'silver':
-        return Award;
-      case 'gold':
-        return Crown;
-      default:
-        return Gift;
-    }
-  };
-
-  const CurrentTierIcon = getTierIcon(currentTier.id);
-
   return (
     <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
@@ -88,7 +73,9 @@ export function ReferralProgram({
           <div>
             <p className="text-blue-100 text-sm mb-1">Your Current Tier</p>
             <div className="flex items-center space-x-3">
-              <CurrentTierIcon size={32} className="text-white" />
+              {currentTier.id === 'bronze' && <Gift size={32} className="text-white" />}
+              {currentTier.id === 'silver' && <Award size={32} className="text-white" />}
+              {currentTier.id === 'gold' && <Crown size={32} className="text-white" />}
               <h3 className="text-3xl font-bold">{currentTier.name}</h3>
             </div>
           </div>
@@ -152,7 +139,6 @@ export function ReferralProgram({
 
         <div className="grid md:grid-cols-3 gap-6">
           {tiers.map((tier) => {
-            const TierIcon = getTierIcon(tier.id);
             const isCurrentTier = currentTier.id === tier.id;
             const isAchieved = currentReferrals >= tier.referralsNeeded;
 
@@ -183,10 +169,24 @@ export function ReferralProgram({
                     w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3
                     ${isCurrentTier ? 'bg-white' : tier.bgColor}
                   `}>
-                    <TierIcon 
-                      size={32} 
-                      className={isCurrentTier ? tier.color.replace('border-', 'text-') : 'text-gray-400'} 
-                    />
+                    {tier.id === 'bronze' && (
+                      <Gift 
+                        size={32} 
+                        className={isCurrentTier ? tier.color.replace('border-', 'text-') : 'text-gray-400'} 
+                      />
+                    )}
+                    {tier.id === 'silver' && (
+                      <Award 
+                        size={32} 
+                        className={isCurrentTier ? tier.color.replace('border-', 'text-') : 'text-gray-400'} 
+                      />
+                    )}
+                    {tier.id === 'gold' && (
+                      <Crown 
+                        size={32} 
+                        className={isCurrentTier ? tier.color.replace('border-', 'text-') : 'text-gray-400'} 
+                      />
+                    )}
                   </div>
 
                   <h4 className="text-xl font-bold text-gray-900 mb-1">
