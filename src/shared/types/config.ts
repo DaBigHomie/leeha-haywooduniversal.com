@@ -1,3 +1,5 @@
+import type { DigitalProductsConfig } from './digital-products';
+
 export interface SiteConfig {
   id: string;
   name: string;
@@ -5,6 +7,7 @@ export interface SiteConfig {
   theme: ThemeConfig;
   content: ContentConfig;
   navigation: NavigationConfig;
+  digitalProducts?: DigitalProductsConfig;
   conversionTriggers?: ConversionTriggersConfig;
 }
 
