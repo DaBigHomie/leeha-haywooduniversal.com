@@ -83,6 +83,17 @@ export const lawFirmConfig: SiteConfig = {
       ],
     },
   },
+  conversionTriggers: {
+    showPaymentOptions: true,
+    showUrgencyTimer: true,
+    showTrustSignals: true,
+    showSocialProof: true,
+    deliveryCutoffHour: 17, // 5PM ET
+    deliveryCutoffMinute: 0,
+    urgencyMessage: 'Schedule by 5PM ET for callback today',
+    urgencyCompletedMessage: 'We\'ll call you back first thing tomorrow morning',
+    consultationPrice: 599,
+  },
 };
 
 // Variant 2: Fitness Studio

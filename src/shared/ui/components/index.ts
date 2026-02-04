@@ -7,3 +7,7 @@ export { AtlantaEventsCalendar } from './AtlantaEventsCalendar';
 export { CommunityPartnerships } from './CommunityPartnerships';
 export { ReferralProgram } from './ReferralProgram';
 export { LocalPresence } from './LocalPresence';
+export { PaymentOptions } from './PaymentOptions';
+export { UrgencyTimer } from './UrgencyTimer';
+export { TrustSignals } from './TrustSignals';
+export { SocialProof } from './SocialProof';
