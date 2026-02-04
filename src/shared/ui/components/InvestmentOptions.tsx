@@ -4,7 +4,7 @@ import { CreditCard, Calendar, DollarSign, Info } from 'lucide-react';
 
 interface InvestmentOptionsProps {
   totalPrice: number;
-  serviceName: string;
+  businessName: string;
   onPaymentMethodSelect: (method: 'full' | 'afterpay' | 'klarna') => void;
 }
 
@@ -21,7 +21,7 @@ interface PaymentPlan {
 
 export function InvestmentOptions({
   totalPrice,
-  serviceName,
+  businessName,
   onPaymentMethodSelect
 }: InvestmentOptionsProps) {
   const [selectedMethod, setSelectedMethod] = useState<string | null>(null);
@@ -66,10 +66,10 @@ export function InvestmentOptions({
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-gray-900">
-          Investment Options
+          Payment Options
         </h3>
         <span className="text-sm text-gray-500">
-          for {serviceName}
+          for {businessName}
         </span>
       </div>
 

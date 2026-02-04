@@ -49,12 +49,12 @@ export function ContactPage({ config }: ContactPageProps) {
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-display mb-6">Send Us a Message</h2>
           
-          {/* Investment Options */}
+          {/* Payment Options */}
           {config.conversionTriggers?.showInvestmentOptions && config.conversionTriggers.consultationPrice && (
             <div className="mb-8">
               <InvestmentOptions
                 totalPrice={config.conversionTriggers.consultationPrice}
-                serviceName={config.name}
+                businessName={config.name}
                 onPaymentMethodSelect={setPaymentMethod}
               />
             </div>

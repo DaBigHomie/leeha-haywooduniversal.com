@@ -6,7 +6,7 @@ interface Notification {
   id: string;
   name: string;
   action: string;
-  timeAgo: string;
+  minutesAgo: number; // Changed from string to number for dynamic calculation
   location?: string;
 }
 
@@ -21,35 +21,35 @@ const defaultNotifications: Notification[] = [
     id: '1',
     name: 'John D.',
     action: 'booked a consultation',
-    timeAgo: '5 minutes ago',
+    minutesAgo: 5,
     location: 'Atlanta, GA'
   },
   {
     id: '2',
     name: 'Sarah M.',
     action: 'requested case evaluation',
-    timeAgo: '12 minutes ago',
+    minutesAgo: 12,
     location: 'Decatur, GA'
   },
   {
     id: '3',
     name: 'Michael R.',
     action: 'scheduled appointment',
-    timeAgo: '18 minutes ago',
+    minutesAgo: 18,
     location: 'Marietta, GA'
   },
   {
     id: '4',
     name: 'Emily P.',
     action: 'booked a consultation',
-    timeAgo: '25 minutes ago',
+    minutesAgo: 25,
     location: 'Roswell, GA'
   },
   {
     id: '5',
     name: 'David L.',
     action: 'requested callback',
-    timeAgo: '32 minutes ago',
+    minutesAgo: 32,
     location: 'Sandy Springs, GA'
   }
 ];
@@ -61,6 +61,7 @@ export function SocialProof({
 }: SocialProofProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [elapsedMinutes, setElapsedMinutes] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -75,7 +76,26 @@ export function SocialProof({
     return () => clearInterval(timer);
   }, [notifications.length, displayInterval]);
 
+  // Update elapsed time every minute
+  useEffect(() => {
+    const minuteTimer = setInterval(() => {
+      setElapsedMinutes((prev) => prev + 1);
+    }, 60000); // Update every minute
+
+    return () => clearInterval(minuteTimer);
+  }, []);
+
   const currentNotification = notifications[currentIndex];
+  
+  // Calculate display time
+  const getTimeAgo = (minutesAgo: number) => {
+    const totalMinutes = minutesAgo + elapsedMinutes;
+    if (totalMinutes < 60) {
+      return `${totalMinutes} minute${totalMinutes !== 1 ? 's' : ''} ago`;
+    }
+    const hours = Math.floor(totalMinutes / 60);
+    return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
+  };
 
   return (
     <div className="fixed bottom-4 left-4 z-50 max-w-sm">
@@ -107,7 +127,7 @@ export function SocialProof({
                 </p>
                 <div className="flex items-center space-x-2 mt-1">
                   <span className="text-xs text-gray-500">
-                    {currentNotification.timeAgo}
+                    {getTimeAgo(currentNotification.minutesAgo)}
                   </span>
                   {currentNotification.location && (
                     <>
