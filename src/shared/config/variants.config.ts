@@ -84,7 +84,7 @@ export const lawFirmConfig: SiteConfig = {
     },
   },
   conversionTriggers: {
-    showInvestmentOptions: true,
+    showPaymentOptions: true,
     showUrgencyTimer: true,
     showTrustSignals: true,
     showSocialProof: true,

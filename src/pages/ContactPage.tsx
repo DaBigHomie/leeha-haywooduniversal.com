@@ -50,7 +50,7 @@ export function ContactPage({ config }: ContactPageProps) {
           <h2 className="text-3xl font-display mb-6">Send Us a Message</h2>
           
           {/* Payment Options */}
-          {config.conversionTriggers?.showInvestmentOptions && config.conversionTriggers.consultationPrice && (
+          {config.conversionTriggers?.showPaymentOptions && config.conversionTriggers.consultationPrice && (
             <div className="mb-8">
               <PaymentOptions
                 totalPrice={config.conversionTriggers.consultationPrice}

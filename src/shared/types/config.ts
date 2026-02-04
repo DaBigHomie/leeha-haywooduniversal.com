@@ -82,7 +82,7 @@ export interface NavItem {
 }
 
 export interface ConversionTriggersConfig {
-  showInvestmentOptions?: boolean;
+  showPaymentOptions?: boolean;
   showUrgencyTimer?: boolean;
   showTrustSignals?: boolean;
   showSocialProof?: boolean;
