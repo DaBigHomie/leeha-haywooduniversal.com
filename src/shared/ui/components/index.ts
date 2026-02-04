@@ -3,7 +3,3 @@ export { Hero } from './Hero';
 export { Gallery } from './Gallery';
 export { EmailSignup } from './EmailSignup';
 export { Footer } from './Footer';
-export { PaymentOptions } from './PaymentOptions';
-export { UrgencyTimer } from './UrgencyTimer';
-export { TrustSignals } from './TrustSignals';
-export { SocialProof } from './SocialProof';

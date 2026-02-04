@@ -5,7 +5,6 @@ export interface SiteConfig {
   theme: ThemeConfig;
   content: ContentConfig;
   navigation: NavigationConfig;
-  conversionTriggers?: ConversionTriggersConfig;
 }
 
 export interface ThemeConfig {
@@ -79,16 +78,4 @@ export interface NavItem {
   text: string;
   href: string;
   children?: NavItem[];
-}
-
-export interface ConversionTriggersConfig {
-  showPaymentOptions?: boolean;
-  showUrgencyTimer?: boolean;
-  showTrustSignals?: boolean;
-  showSocialProof?: boolean;
-  deliveryCutoffHour?: number;
-  deliveryCutoffMinute?: number;
-  urgencyMessage?: string;
-  urgencyCompletedMessage?: string;
-  consultationPrice?: number;
 }
