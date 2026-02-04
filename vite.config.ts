@@ -14,7 +14,7 @@ export default defineConfig({
         },
       },
     },
-    // Enable source maps for production debugging
+    // Disable source maps for production to reduce bundle size
     sourcemap: false,
     // Minify for better performance
     minify: 'esbuild',

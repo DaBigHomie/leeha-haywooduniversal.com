@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 interface Story {
   id: string;
@@ -60,11 +60,25 @@ export function StoryNavigation() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const touchStartY = useRef(0);
+  const touchStartYRef = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const currentStory = CASE_STORIES[currentIndex];
   const STORY_DURATION = 6000; // 6 seconds for legal content
+
+  const goToNextStory = useCallback(() => {
+    if (currentIndex < CASE_STORIES.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      setProgress(0);
+    }
+  }, [currentIndex]);
+
+  const goToPrevStory = useCallback(() => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      setProgress(0);
+    }
+  }, [currentIndex]);
 
   // Auto-advance progress bar
   useEffect(() => {
@@ -81,29 +95,15 @@ export function StoryNavigation() {
     }, 50);
 
     return () => clearInterval(interval);
-  }, [currentIndex, isPaused]);
-
-  const goToNextStory = () => {
-    if (currentIndex < CASE_STORIES.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setProgress(0);
-    }
-  };
-
-  const goToPrevStory = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-      setProgress(0);
-    }
-  };
+  }, [currentIndex, isPaused, goToNextStory]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartY.current = e.touches[0].clientY;
+    touchStartYRef.current = e.touches[0].clientY;
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const touchEndY = e.changedTouches[0].clientY;
-    const diff = touchStartY.current - touchEndY;
+    const diff = touchStartYRef.current - touchEndY;
 
     // Swipe up = next story
     if (diff > 50) {
