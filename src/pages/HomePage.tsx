@@ -1,6 +1,10 @@
 import { Hero } from '../shared/ui/components/Hero';
 import { Gallery } from '../shared/ui/components/Gallery';
 import { EmailSignup } from '../shared/ui/components/EmailSignup';
+import { AtlantaEventsCalendar } from '../shared/ui/components/AtlantaEventsCalendar';
+import { CommunityPartnerships } from '../shared/ui/components/CommunityPartnerships';
+import { ReferralProgram } from '../shared/ui/components/ReferralProgram';
+import { LocalPresence } from '../shared/ui/components/LocalPresence';
 import type { SiteConfig } from '../shared/types/config';
 
 interface HomePageProps {
@@ -40,6 +44,56 @@ export function HomePage({ config }: HomePageProps) {
         title={config.content.gallery.title}
         images={config.content.gallery.images}
       />
+
+      {/* Atlanta Local Advantage Sections */}
+      {config.atlantaLocal && (
+        <>
+          {config.atlantaLocal.events && config.atlantaLocal.events.length > 0 && (
+            <section className="container mx-auto px-4 py-16">
+              <AtlantaEventsCalendar 
+                events={config.atlantaLocal.events}
+                onRegister={(event) => {
+                  console.log('Event registration clicked:', event.title);
+                }}
+              />
+            </section>
+          )}
+
+          {config.atlantaLocal.partnerships && config.atlantaLocal.partnerships.length > 0 && (
+            <section className="container mx-auto px-4 py-16 bg-gray-50">
+              <CommunityPartnerships partnerships={config.atlantaLocal.partnerships} />
+            </section>
+          )}
+
+          {config.atlantaLocal.referralTiers && config.atlantaLocal.referralTiers.length > 0 && (
+            <section className="container mx-auto px-4 py-16">
+              <ReferralProgram 
+                referralCode={config.atlantaLocal.userReferralCode || 'ATLANTA2026'}
+                referralLink={`https://${window.location.host}/ref/${config.atlantaLocal.userReferralCode || 'ATLANTA2026'}`}
+                currentReferrals={config.atlantaLocal.userReferralCount || 0}
+                tiers={config.atlantaLocal.referralTiers}
+                onShare={(platform) => {
+                  console.log('Share clicked:', platform);
+                  const code = config.atlantaLocal?.userReferralCode || 'ATLANTA2026';
+                  const link = `https://${window.location.host}/ref/${code}`;
+                  if (platform === 'facebook') {
+                    window.open(`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`);
+                  } else if (platform === 'twitter') {
+                    window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(link)}&text=Check out this amazing service!`);
+                  }
+                }}
+              />
+            </section>
+          )}
+
+          {config.atlantaLocal.localPresence && (
+            <section className="container mx-auto px-4 py-16 bg-gray-50">
+              <LocalPresence localPresence={config.atlantaLocal.localPresence} />
+            </section>
+          )}
+        </>
+      )}
+
       <EmailSignup 
         title={config.content.emailSignup.title}
         subtitle={config.content.emailSignup.subtitle}

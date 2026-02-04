@@ -1,5 +1,6 @@
 import type { SiteConfig } from '../types/config';
 import { REAL_BUSINESS_DATA, REAL_NAVIGATION, REAL_SERVICES } from '../lib/real-data/haywood-data';
+import { ATLANTA_EVENTS, COMMUNITY_PARTNERSHIPS, REFERRAL_TIERS, LOCAL_PRESENCE } from '../lib/atlanta-local-data';
 
 export const baseConfig: SiteConfig = {
   id: 'haywood-universal-live',
@@ -76,6 +77,15 @@ export const baseConfig: SiteConfig = {
       ],
     },
   },
+
+  atlantaLocal: {
+    events: ATLANTA_EVENTS,
+    partnerships: COMMUNITY_PARTNERSHIPS,
+    referralTiers: REFERRAL_TIERS,
+    userReferralCode: 'ATLANTA2026',
+    userReferralCount: 0,
+    localPresence: LOCAL_PRESENCE
+  }
 };
 
 // Export real data for use in components
