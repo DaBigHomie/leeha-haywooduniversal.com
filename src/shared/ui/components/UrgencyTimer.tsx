@@ -24,24 +24,43 @@ export function UrgencyTimer({
 
   useEffect(() => {
     const calculateTimeRemaining = () => {
+      // Get current time in the specified timezone
       const now = new Date();
-      const cutoff = new Date();
-      cutoff.setHours(cutoffHour, cutoffMinute, 0, 0);
-
-      // If past cutoff, set for tomorrow
-      if (now > cutoff) {
+      const formatter = new Intl.DateTimeFormat('en-US', {
+        timeZone: timezone,
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: false
+      });
+      
+      const parts = formatter.formatToParts(now);
+      const currentHour = parseInt(parts.find(p => p.type === 'hour')?.value || '0');
+      const currentMinute = parseInt(parts.find(p => p.type === 'minute')?.value || '0');
+      const currentSecond = parseInt(parts.find(p => p.type === 'second')?.value || '0');
+      
+      // Calculate cutoff time in seconds from midnight
+      const cutoffSeconds = cutoffHour * 3600 + cutoffMinute * 60;
+      const currentSeconds = currentHour * 3600 + currentMinute * 60 + currentSecond;
+      
+      // Check if past cutoff
+      if (currentSeconds >= cutoffSeconds) {
         setIsPastCutoff(true);
-        cutoff.setDate(cutoff.getDate() + 1);
+        // Calculate time until cutoff tomorrow
+        const diff = (24 * 3600) - currentSeconds + cutoffSeconds;
+        const hours = Math.floor(diff / 3600);
+        const minutes = Math.floor((diff % 3600) / 60);
+        const seconds = diff % 60;
+        setTimeRemaining(`${hours}h ${minutes}m ${seconds}s`);
       } else {
         setIsPastCutoff(false);
+        // Calculate time until cutoff today
+        const diff = cutoffSeconds - currentSeconds;
+        const hours = Math.floor(diff / 3600);
+        const minutes = Math.floor((diff % 3600) / 60);
+        const seconds = diff % 60;
+        setTimeRemaining(`${hours}h ${minutes}m ${seconds}s`);
       }
-
-      const diff = cutoff.getTime() - now.getTime();
-      const hours = Math.floor(diff / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      setTimeRemaining(`${hours}h ${minutes}m ${seconds}s`);
     };
 
     calculateTimeRemaining();
