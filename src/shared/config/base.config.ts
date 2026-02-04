@@ -1,5 +1,13 @@
 import type { SiteConfig } from '../types/config';
 import { REAL_BUSINESS_DATA, REAL_NAVIGATION, REAL_SERVICES } from '../lib/real-data/haywood-data';
+import {
+  LAW_FIRM_MEMBERSHIP_TIERS,
+  LAW_FIRM_MEMBER_TESTIMONIALS,
+  LEGAL_DOCUMENT_STARTER_KIT_COURSE,
+  LEGAL_COURSE_BENEFITS,
+  LEGAL_GUIDES,
+  DOCUMENT_TEMPLATES
+} from '../lib/real-data/digital-products-data';
 
 export const baseConfig: SiteConfig = {
   id: 'haywood-universal-live',
@@ -76,6 +84,14 @@ export const baseConfig: SiteConfig = {
       ],
     },
   },
+  digitalProducts: {
+    membershipTiers: LAW_FIRM_MEMBERSHIP_TIERS,
+    membershipTestimonials: LAW_FIRM_MEMBER_TESTIMONIALS,
+    courses: [LEGAL_DOCUMENT_STARTER_KIT_COURSE],
+    tangibleBenefits: LEGAL_COURSE_BENEFITS,
+    legalGuides: LEGAL_GUIDES,
+    documentTemplates: DOCUMENT_TEMPLATES
+  }
 };
 
 // Export real data for use in components

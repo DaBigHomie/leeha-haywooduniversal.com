@@ -3,3 +3,8 @@ export { Hero } from './Hero';
 export { Gallery } from './Gallery';
 export { EmailSignup } from './EmailSignup';
 export { Footer } from './Footer';
+export { InnerCircleMembership } from './InnerCircleMembership';
+export { DigitalCourseCard } from './DigitalCourseCard';
+export { ProductTangibility } from './ProductTangibility';
+export { LegalGuides } from './LegalGuides';
+export { DocumentTemplates } from './DocumentTemplates';

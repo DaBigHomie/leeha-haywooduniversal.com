@@ -6,6 +6,11 @@ import { HomePage } from './pages/HomePage';
 import { ServicesPage } from './pages/ServicesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { ContactPage } from './pages/ContactPage';
+import { DigitalProductsPage } from './pages/DigitalProductsPage';
+import { MembershipPage } from './pages/MembershipPage';
+import { CoursesPage } from './pages/CoursesPage';
+import { LegalGuidesPage } from './pages/LegalGuidesPage';
+import { TemplatesPage } from './pages/TemplatesPage';
 import { VariantSwitcher } from './shared/ui/components/VariantSwitcher';
 import { baseConfig } from './shared/config/base.config';
 import { siteVariants } from './shared/config/variants.config';
@@ -52,6 +57,11 @@ function App() {
         <Route path="/services" element={<ServicesPage config={config} />} />
         <Route path="/gallery" element={<GalleryPage config={config} />} />
         <Route path="/contact" element={<ContactPage config={config} />} />
+        <Route path="/digital-products" element={<DigitalProductsPage config={config} />} />
+        <Route path="/membership" element={<MembershipPage config={config} />} />
+        <Route path="/courses" element={<CoursesPage config={config} />} />
+        <Route path="/legal-guides" element={<LegalGuidesPage config={config} />} />
+        <Route path="/templates" element={<TemplatesPage config={config} />} />
         {/* Fallback route for any other paths */}
         <Route path="*" element={<HomePage config={config} />} />
       </Routes>
