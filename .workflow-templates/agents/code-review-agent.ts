@@ -96,7 +96,7 @@ class CodeReviewAgent {
     return skipPatterns.some(pattern => filename.includes(pattern));
   }
 
-  private async analyzeFile(file: any): Promise<CodeIssue[]> {
+  private async analyzeFile(file: { filename: string; patch?: string; additions?: number; deletions?: number }): Promise<CodeIssue[]> {
     const issues: CodeIssue[] = [];
 
     // Get file content if needed for deeper analysis

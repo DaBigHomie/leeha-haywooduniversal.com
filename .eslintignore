@@ -1,0 +1,18 @@
+# ESLint ignore patterns
+node_modules/
+dist/
+build/
+.next/
+.vercel/
+coverage/
+
+# Generated/auto-generated code
+claude_output/
+
+# Build artifacts
+*.min.js
+*.bundle.js
+
+# Temporary files
+*.log
+.DS_Store

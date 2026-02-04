@@ -259,7 +259,7 @@ class AssetManager {
       this.manifest.optimizationReport.imagesProcessed++;
 
       spinner.succeed(`Processed: ${filename} (${variants.length} variants)`);
-    } catch (error) {
+    } catch (_error) {
       spinner.fail(`Failed: ${this.getFilename(url)}`);
     }
   }
@@ -292,7 +292,7 @@ class AssetManager {
       this.manifest.optimizationReport.fontsDownloaded++;
 
       spinner.succeed(`Downloaded: ${filename}`);
-    } catch (error) {
+    } catch (_error) {
       spinner.fail(`Failed: ${this.getFilename(url)}`);
     }
   }
