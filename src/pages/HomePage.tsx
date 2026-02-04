@@ -50,12 +50,7 @@ export function HomePage({ config }: HomePageProps) {
         <>
           {config.atlantaLocal.events && config.atlantaLocal.events.length > 0 && (
             <section className="container mx-auto px-4 py-16">
-              <AtlantaEventsCalendar 
-                events={config.atlantaLocal.events}
-                onRegister={(event) => {
-                  console.log('Event registration clicked:', event.title);
-                }}
-              />
+              <AtlantaEventsCalendar events={config.atlantaLocal.events} />
             </section>
           )}
 
@@ -69,13 +64,14 @@ export function HomePage({ config }: HomePageProps) {
             <section className="container mx-auto px-4 py-16">
               <ReferralProgram 
                 referralCode={config.atlantaLocal.userReferralCode || 'ATLANTA2026'}
-                referralLink={`https://${window.location.host}/ref/${config.atlantaLocal.userReferralCode || 'ATLANTA2026'}`}
+                referralLink={`${typeof window !== 'undefined' ? window.location.origin : ''}/ref/${config.atlantaLocal.userReferralCode || 'ATLANTA2026'}`}
                 currentReferrals={config.atlantaLocal.userReferralCount || 0}
                 tiers={config.atlantaLocal.referralTiers}
                 onShare={(platform) => {
-                  console.log('Share clicked:', platform);
+                  // TODO: Implement analytics tracking
+                  // trackEvent('referral_shared', { platform, referralCode: config.atlantaLocal?.userReferralCode });
                   const code = config.atlantaLocal?.userReferralCode || 'ATLANTA2026';
-                  const link = `https://${window.location.host}/ref/${code}`;
+                  const link = `${typeof window !== 'undefined' ? window.location.origin : ''}/ref/${code}`;
                   if (platform === 'facebook') {
                     window.open(`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(link)}`);
                   } else if (platform === 'twitter') {
