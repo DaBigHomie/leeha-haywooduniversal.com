@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CreditCard, Calendar, DollarSign, Info } from 'lucide-react';
 
-interface InvestmentOptionsProps {
+interface PaymentOptionsProps {
   totalPrice: number;
   businessName: string;
   onPaymentMethodSelect: (method: 'full' | 'afterpay' | 'klarna') => void;
@@ -19,11 +19,11 @@ interface PaymentPlan {
   popular?: boolean;
 }
 
-export function InvestmentOptions({
+export function PaymentOptions({
   totalPrice,
   businessName,
   onPaymentMethodSelect
-}: InvestmentOptionsProps) {
+}: PaymentOptionsProps) {
   const [selectedMethod, setSelectedMethod] = useState<string | null>(null);
   const [showDetails, setShowDetails] = useState<string | null>(null);
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { EmailSignup } from '../shared/ui/components/EmailSignup';
-import { InvestmentOptions } from '../shared/ui/components/InvestmentOptions';
+import { PaymentOptions } from '../shared/ui/components/PaymentOptions';
 import { UrgencyTimer } from '../shared/ui/components/UrgencyTimer';
 import type { SiteConfig } from '../shared/types/config';
 
@@ -52,7 +52,7 @@ export function ContactPage({ config }: ContactPageProps) {
           {/* Payment Options */}
           {config.conversionTriggers?.showInvestmentOptions && config.conversionTriggers.consultationPrice && (
             <div className="mb-8">
-              <InvestmentOptions
+              <PaymentOptions
                 totalPrice={config.conversionTriggers.consultationPrice}
                 businessName={config.name}
                 onPaymentMethodSelect={setPaymentMethod}

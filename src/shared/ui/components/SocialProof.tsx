@@ -61,7 +61,7 @@ export function SocialProof({
 }: SocialProofProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const [elapsedMinutes, setElapsedMinutes] = useState(0);
+  const [startTime] = useState(() => Date.now()); // Fixed starting timestamp
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -76,24 +76,20 @@ export function SocialProof({
     return () => clearInterval(timer);
   }, [notifications.length, displayInterval]);
 
-  // Update elapsed time every minute
-  useEffect(() => {
-    const minuteTimer = setInterval(() => {
-      setElapsedMinutes((prev) => prev + 1);
-    }, 60000); // Update every minute
-
-    return () => clearInterval(minuteTimer);
-  }, []);
-
   const currentNotification = notifications[currentIndex];
   
-  // Calculate display time
+  // Calculate display time from the notification's original timestamp
   const getTimeAgo = (minutesAgo: number) => {
-    const totalMinutes = minutesAgo + elapsedMinutes;
-    if (totalMinutes < 60) {
-      return `${totalMinutes} minute${totalMinutes !== 1 ? 's' : ''} ago`;
+    // Calculate the original timestamp of the notification
+    const notificationTime = startTime - (minutesAgo * 60 * 1000);
+    const now = Date.now();
+    const diffMs = now - notificationTime;
+    const diffMinutes = Math.floor(diffMs / 60000);
+    
+    if (diffMinutes < 60) {
+      return `${diffMinutes} minute${diffMinutes !== 1 ? 's' : ''} ago`;
     }
-    const hours = Math.floor(totalMinutes / 60);
+    const hours = Math.floor(diffMinutes / 60);
     return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
   };
 
