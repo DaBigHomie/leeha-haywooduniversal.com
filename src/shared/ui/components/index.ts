@@ -6,3 +6,7 @@ export { Footer } from './Footer';
 export { StoryNavigation } from './StoryNavigation';
 export { ConciergeChatbot } from './ConciergeChatbot';
 export { LoadingSpinner } from './LoadingSpinner';
+export { PaymentOptions } from './PaymentOptions';
+export { UrgencyTimer } from './UrgencyTimer';
+export { TrustSignals } from './TrustSignals';
+export { SocialProof } from './SocialProof';
