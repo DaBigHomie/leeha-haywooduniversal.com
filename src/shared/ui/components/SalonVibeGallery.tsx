@@ -156,6 +156,9 @@ export function SalonVibeGallery({
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
             onClick={closeLightbox}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="lightbox-title"
           >
             {/* Close Button */}
             <button
@@ -206,7 +209,7 @@ export function SalonVibeGallery({
 
               {/* Image Details */}
               <div className="mt-4 text-center text-white">
-                <h3 className="text-2xl font-bold mb-2">{lightboxImage.title}</h3>
+                <h3 id="lightbox-title" className="text-2xl font-bold mb-2">{lightboxImage.title}</h3>
                 {lightboxImage.description && (
                   <p className="text-gray-300">{lightboxImage.description}</p>
                 )}

@@ -11,12 +11,19 @@ interface PolicySection {
 }
 
 interface BookingPolicyProps {
+  /** Deposit amount in dollars. If not provided, shows 'calculated at booking' */
   depositAmount?: number;
+  /** Deposit percentage (default: 50) */
   depositPercentage?: number;
-  cancellationWindow?: number; // hours
-  rescheduleWindow?: number; // hours
+  /** Cancellation window in hours (default: 48) */
+  cancellationWindow?: number;
+  /** Reschedule window in hours (default: 24) */
+  rescheduleWindow?: number;
+  /** Name of the service being booked */
   serviceName: string;
+  /** Display variant: 'modal' for full page overlay, 'inline' for collapsible section */
   variant?: 'modal' | 'inline';
+  /** Callback when user accepts the policy (modal variant only) */
   onAccept?: () => void;
 }
 

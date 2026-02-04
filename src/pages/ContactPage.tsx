@@ -46,7 +46,7 @@ export function ContactPage({ config }: ContactPageProps) {
             depositPercentage={config.bookingExperience.depositPercentage}
             cancellationWindow={config.bookingExperience.cancellationWindow}
             rescheduleWindow={config.bookingExperience.rescheduleWindow}
-            serviceName={config.name}
+            serviceName={config.content.footer.businessName}
           />
         </div>
       )}

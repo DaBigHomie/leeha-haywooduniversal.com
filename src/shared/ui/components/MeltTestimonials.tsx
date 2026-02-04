@@ -33,7 +33,7 @@ export function MeltTestimonials({
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [currentIndex, autoplay, isPaused, autoplayInterval]);
+  }, [autoplay, isPaused, autoplayInterval]);
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -50,7 +50,9 @@ export function MeltTestimonials({
 
     let highlightedText = text;
     keywords.forEach((keyword) => {
-      const regex = new RegExp(`(${keyword})`, 'gi');
+      // Escape special regex characters
+      const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(${escapedKeyword})`, 'gi');
       highlightedText = highlightedText.replace(
         regex,
         '<mark class="bg-yellow-200 px-1 rounded">$1</mark>'
