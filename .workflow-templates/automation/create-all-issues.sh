@@ -70,8 +70,8 @@ Includes:
 ---
 
 **Assignee**: @github-copilot  
-**Label**: phase-implementation, enhancement, ugwtf, phase-2" \
-  --label "phase-implementation,enhancement,ugwtf,phase-2"
+**Labels**: phase-2-conversion-triggers, type:feature, priority:p1" \
+  --label "phase-2-conversion-triggers,type:feature,priority:p1"
 
 sleep 2
 
@@ -139,8 +139,8 @@ Includes:
 ---
 
 **Assignee**: @github-copilot  
-**Label**: phase-implementation, enhancement, ugwtf, phase-3" \
-  --label "phase-implementation,enhancement,ugwtf,phase-3"
+**Labels**: phase-3-booking-experience, type:feature, priority:p1" \
+  --label "phase-3-booking-experience,type:feature,priority:p1"
 
 sleep 2
 
@@ -208,8 +208,8 @@ Includes:
 ---
 
 **Assignee**: @github-copilot  
-**Label**: phase-implementation, enhancement, ugwtf, phase-4" \
-  --label "phase-implementation,enhancement,ugwtf,phase-4"
+**Labels**: phase-4-digital-products, type:feature, priority:p1" \
+  --label "phase-4-digital-products,type:feature,priority:p1"
 
 sleep 2
 
@@ -277,8 +277,8 @@ Includes:
 ---
 
 **Assignee**: @github-copilot  
-**Label**: phase-implementation, enhancement, ugwtf, phase-5" \
-  --label "phase-implementation,enhancement,ugwtf,phase-5"
+**Labels**: phase-5-atlanta-local, type:feature, area:atlanta-keywords, priority:p1" \
+  --label "phase-5-atlanta-local,type:feature,area:atlanta-keywords,priority:p1"
 
 sleep 2
 
@@ -347,8 +347,8 @@ Includes:
 ---
 
 **Assignee**: @github-copilot  
-**Label**: phase-implementation, enhancement, ugwtf, phase-6" \
-  --label "phase-implementation,enhancement,ugwtf,phase-6"
+**Labels**: phase-6-technical-polish, type:feature, area:performance, area:wcag-aa, priority:p1" \
+  --label "phase-6-technical-polish,type:feature,area:performance,area:wcag-aa,priority:p1"
 
 echo ""
 echo "✅ All 5 phase issues created!"
