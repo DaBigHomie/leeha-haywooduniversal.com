@@ -1,0 +1,15 @@
+# Ignore root Vite project - ONLY build from next-app/
+/components
+/pages
+/src
+/lib
+/public
+/agents
+/output
+/scripts
+/claude_output
+/haywood-universal
+/haywood-universal-ugwtf
+/archived-vite-project
+*.html
+/dist
