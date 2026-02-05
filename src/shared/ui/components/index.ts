@@ -7,6 +7,20 @@ export { AtlantaEventsCalendar } from './AtlantaEventsCalendar';
 export { CommunityPartnerships } from './CommunityPartnerships';
 export { ReferralProgram } from './ReferralProgram';
 export { LocalPresence } from './LocalPresence';
+
+// Phase 3: Premium Booking Experience Components
+export { SalonVibeGallery } from './SalonVibeGallery';
+export { BookingPolicy } from './BookingPolicy';
+export { MeltTestimonials } from './MeltTestimonials';
+export { AttorneyBio } from './AttorneyBio';
+export { StoryNavigation } from './StoryNavigation';
+export { ConciergeChatbot } from './ConciergeChatbot';
+export { LoadingSpinner } from './LoadingSpinner';
+export { InnerCircleMembership } from './InnerCircleMembership';
+export { DigitalCourseCard } from './DigitalCourseCard';
+export { ProductTangibility } from './ProductTangibility';
+export { LegalGuides } from './LegalGuides';
+export { DocumentTemplates } from './DocumentTemplates';
 export { PaymentOptions } from './PaymentOptions';
 export { UrgencyTimer } from './UrgencyTimer';
 export { TrustSignals } from './TrustSignals';

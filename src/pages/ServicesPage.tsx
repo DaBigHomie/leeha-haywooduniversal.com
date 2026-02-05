@@ -32,3 +32,5 @@ export function ServicesPage({ config }: ServicesPageProps) {
     </main>
   );
 }
+
+export default ServicesPage;

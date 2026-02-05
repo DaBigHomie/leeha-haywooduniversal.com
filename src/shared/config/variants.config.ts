@@ -1,4 +1,12 @@
 import type { SiteConfig } from '../types/config';
+import {
+  LAW_FIRM_MEMBERSHIP_TIERS,
+  LAW_FIRM_MEMBER_TESTIMONIALS,
+  LEGAL_DOCUMENT_STARTER_KIT_COURSE,
+  LEGAL_COURSE_BENEFITS,
+  LEGAL_GUIDES,
+  DOCUMENT_TEMPLATES
+} from '../lib/real-data/digital-products-data';
 
 /**
  * 20 site variations for different business verticals
@@ -23,7 +31,7 @@ export const lawFirmConfig: SiteConfig = {
       { text: 'Home', href: '/' },
       { text: 'Practice Areas', href: '/practice' },
       { text: 'Attorneys', href: '/team' },
-      { text: 'Case Results', href: '/results' },
+      { text: 'Digital Products', href: '/digital-products' },
       { text: 'Contact', href: '/contact' },
     ],
     accountMenu: [
@@ -82,6 +90,14 @@ export const lawFirmConfig: SiteConfig = {
         { text: 'Attorney Disclaimer', url: '/disclaimer' },
       ],
     },
+  },
+  digitalProducts: {
+    membershipTiers: LAW_FIRM_MEMBERSHIP_TIERS,
+    membershipTestimonials: LAW_FIRM_MEMBER_TESTIMONIALS,
+    courses: [LEGAL_DOCUMENT_STARTER_KIT_COURSE],
+    tangibleBenefits: LEGAL_COURSE_BENEFITS,
+    legalGuides: LEGAL_GUIDES,
+    documentTemplates: DOCUMENT_TEMPLATES
   },
   conversionTriggers: {
     showPaymentOptions: true,

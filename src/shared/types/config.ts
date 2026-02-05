@@ -1,3 +1,5 @@
+import type { DigitalProductsConfig } from './digital-products';
+
 export interface SiteConfig {
   id: string;
   name: string;
@@ -6,6 +8,8 @@ export interface SiteConfig {
   content: ContentConfig;
   navigation: NavigationConfig;
   atlantaLocal?: AtlantaLocalConfig;
+  bookingExperience?: BookingExperienceConfig;
+  digitalProducts?: DigitalProductsConfig;
   conversionTriggers?: ConversionTriggersConfig;
 }
 
@@ -150,6 +154,52 @@ export interface LocalPresenceInfo {
     jurisdiction: string;
     description: string;
   }>;
+}
+
+// Phase 3: Booking Experience Types
+export interface BookingExperienceConfig {
+  galleryImages?: GalleryImage[];
+  galleryCategories?: string[];
+  depositAmount?: number;
+  depositPercentage?: number;
+  cancellationWindow?: number;
+  rescheduleWindow?: number;
+  testimonials?: Testimonial[];
+  attorneyBio?: AttorneyBio;
+}
+
+export interface GalleryImage {
+  id: string;
+  url: string;
+  category: string;
+  title: string;
+  description?: string;
+  aspect?: 'square' | 'portrait' | 'landscape';
+}
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  photo: string;
+  title?: string;
+  location?: string;
+  rating: number;
+  date: string;
+  content: string;
+  keywords?: string[];
+  videoUrl?: string;
+  serviceName: string;
+  verified?: boolean;
+}
+
+export interface AttorneyBio {
+  name: string;
+  title: string;
+  photo: string;
+  credentials: string[];
+  approach: string;
+  specialties: string[];
+  experience: string;
 }
 
 export interface ConversionTriggersConfig {

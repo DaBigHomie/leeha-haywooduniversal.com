@@ -1,6 +1,13 @@
 import type { SiteConfig } from '../types/config';
 import { REAL_BUSINESS_DATA, REAL_NAVIGATION, REAL_SERVICES } from '../lib/real-data/haywood-data';
-import { ATLANTA_EVENTS, COMMUNITY_PARTNERSHIPS, REFERRAL_TIERS, LOCAL_PRESENCE } from '../lib/atlanta-local-data';
+import {
+  LAW_FIRM_MEMBERSHIP_TIERS,
+  LAW_FIRM_MEMBER_TESTIMONIALS,
+  LEGAL_DOCUMENT_STARTER_KIT_COURSE,
+  LEGAL_COURSE_BENEFITS,
+  LEGAL_GUIDES,
+  DOCUMENT_TEMPLATES
+} from '../lib/real-data/digital-products-data';
 
 export const baseConfig: SiteConfig = {
   id: 'haywood-universal-live',
@@ -78,13 +85,132 @@ export const baseConfig: SiteConfig = {
     },
   },
 
-  atlantaLocal: {
-    events: ATLANTA_EVENTS,
-    partnerships: COMMUNITY_PARTNERSHIPS,
-    referralTiers: REFERRAL_TIERS,
-    userReferralCode: 'ATLANTA2026',
-    userReferralCount: 0,
-    localPresence: LOCAL_PRESENCE
+  // Phase 3: Premium Booking Experience
+  bookingExperience: {
+    galleryImages: [
+      {
+        id: '1',
+        url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800',
+        category: 'Office Tour',
+        title: 'Modern Reception Area',
+        description: 'Welcome to our Atlanta office',
+        aspect: 'landscape'
+      },
+      {
+        id: '2',
+        url: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800',
+        category: 'Office Tour',
+        title: 'Executive Conference Room',
+        description: 'Where we discuss your strategy',
+        aspect: 'landscape'
+      },
+      {
+        id: '3',
+        url: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800',
+        category: 'Meet the Team',
+        title: 'Leeha Haywood',
+        description: 'Founder & Lead Professional',
+        aspect: 'portrait'
+      },
+      {
+        id: '4',
+        url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800',
+        category: 'Client Events',
+        title: 'Business Networking Event',
+        description: 'Building connections in Atlanta',
+        aspect: 'landscape'
+      },
+      {
+        id: '5',
+        url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800',
+        category: 'Speaking Engagements',
+        title: 'Industry Conference',
+        description: 'Sharing expertise and insights',
+        aspect: 'landscape'
+      },
+      {
+        id: '6',
+        url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800',
+        category: 'Client Events',
+        title: 'Real Estate Seminar',
+        description: 'Educating our community',
+        aspect: 'landscape'
+      }
+    ],
+    galleryCategories: ['Office Tour', 'Meet the Team', 'Client Events', 'Speaking Engagements'],
+    depositAmount: 299,
+    depositPercentage: 50,
+    cancellationWindow: 48,
+    rescheduleWindow: 24,
+    testimonials: [
+      {
+        id: '1',
+        name: 'Marcus Johnson',
+        photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
+        title: 'Small Business Owner',
+        location: 'Buckhead, Atlanta',
+        rating: 5,
+        date: 'January 2025',
+        content: 'Working with Leeha has been transformative for my business. Her expertise in project management and real estate helped me navigate complex challenges with ease. Professional, knowledgeable, and always available when I needed guidance.',
+        keywords: ['transformative', 'expertise', 'Professional'],
+        serviceName: 'Business Consulting',
+        verified: true
+      },
+      {
+        id: '2',
+        name: 'Shanice Williams',
+        photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400',
+        title: 'Marketing Executive',
+        location: 'Midtown, Atlanta',
+        rating: 5,
+        date: 'December 2024',
+        content: 'I attended one of Leeha\'s speaking engagements and was so impressed that I immediately booked a consultation. Her approach is both strategic and compassionate. She truly cares about her clients\' success and goes above and beyond.',
+        keywords: ['impressed', 'strategic', 'compassionate'],
+        serviceName: 'Speaking Engagement',
+        verified: true
+      },
+      {
+        id: '3',
+        name: 'David Chen',
+        photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400',
+        title: 'Real Estate Investor',
+        location: 'Old Fourth Ward, Atlanta',
+        rating: 5,
+        date: 'November 2024',
+        content: 'The real estate seminars provided invaluable insights that directly increased my portfolio returns. Leeha\'s knowledge of the Atlanta market is unmatched. She made complex concepts easy to understand and implement.',
+        keywords: ['invaluable insights', 'increased my portfolio', 'unmatched'],
+        serviceName: 'Real Estate Seminar',
+        verified: true
+      }
+    ],
+    attorneyBio: {
+      name: 'Leeha Haywood',
+      title: 'Founder & Principal',
+      photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800',
+      credentials: [
+        'MBA in Business Administration',
+        'Certified Project Management Professional (PMP)',
+        'Real Estate License - Georgia',
+        'Professional Speaker & Business Consultant'
+      ],
+      approach: 'I believe in empowering clients through education and strategic planning. Every engagement is personalized to your unique goals, whether you\'re building a business, investing in real estate, or seeking professional development. My approach combines practical experience with proven methodologies to deliver results that matter.',
+      specialties: [
+        'Project Management',
+        'Business Consulting',
+        'Real Estate Seminars',
+        'Speaking Engagements',
+        'Strategic Planning'
+      ],
+      experience: '15+'
+    }
+  },
+  digitalProducts: {
+    membershipTiers: LAW_FIRM_MEMBERSHIP_TIERS,
+    membershipTestimonials: LAW_FIRM_MEMBER_TESTIMONIALS,
+    courses: [LEGAL_DOCUMENT_STARTER_KIT_COURSE],
+    tangibleBenefits: LEGAL_COURSE_BENEFITS,
+    legalGuides: LEGAL_GUIDES,
+    documentTemplates: DOCUMENT_TEMPLATES
   }
 };
 
