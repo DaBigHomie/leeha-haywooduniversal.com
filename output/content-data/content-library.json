@@ -1,0 +1,1054 @@
+{
+  "generatedAt": "2026-02-05T01:40:53.534Z",
+  "summary": {
+    "totalPages": 5,
+    "totalHeadings": 19,
+    "totalCTAs": 13,
+    "totalSections": 15
+  },
+  "allHeadings": [
+    {
+      "level": 1,
+      "text": "WELCOME TO HAYWOOD UNIVERSAL \nA variety Of Services to Make Life Easier !",
+      "slug": "welcome-to-haywood-universal-a-variety-of-services-to-make-life-easier-",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "level": 2,
+      "text": "Welcome to Haywood Universal LLC",
+      "slug": "welcome-to-haywood-universal-llc",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "level": 2,
+      "text": "Some of my Speaking engagements/ Real Estate Seminars/ Events",
+      "slug": "some-of-my-speaking-engagements-real-estate-seminars-events",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "level": 2,
+      "text": "Schedule Now",
+      "slug": "schedule-now",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "level": 1,
+      "text": "PROJECT MANAGEMENT",
+      "slug": "project-management",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "level": 2,
+      "text": "How can we help you?",
+      "slug": "how-can-we-help-you",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "level": 2,
+      "text": "Here's our latest projects!",
+      "slug": "heres-our-latest-projects",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "level": 2,
+      "text": "Connect With Us",
+      "slug": "connect-with-us",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "level": 1,
+      "text": "Let’s Consult about your next project",
+      "slug": "lets-consult-about-your-next-project",
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "level": 2,
+      "text": "We Accept Credit Cards , Zelle , Apple pay , Cash App",
+      "slug": "we-accept-credit-cards-zelle-apple-pay-cash-app",
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "level": 2,
+      "text": "Connect With Us",
+      "slug": "connect-with-us",
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "level": 1,
+      "text": "Menu / Price List",
+      "slug": "menu-price-list",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 2,
+      "text": "SERVICES",
+      "slug": "services",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 2,
+      "text": "Connect With Us",
+      "slug": "connect-with-us",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 3,
+      "text": "Tax preparation services",
+      "slug": "tax-preparation-services",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 3,
+      "text": "Business Services",
+      "slug": "business-services",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 3,
+      "text": "MENTORSHIP",
+      "slug": "mentorship",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 3,
+      "text": "Consultant & Coaching  Services",
+      "slug": "consultant-coaching-services",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "level": 1,
+      "text": "This website uses cookies.",
+      "slug": "this-website-uses-cookies",
+      "pageUrl": "https://haywooduniversal.com/rooms-for-rent"
+    }
+  ],
+  "allCTAs": [
+    {
+      "text": "Bookings",
+      "href": "https://haywooduniversal.com/m/bookings",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://haywooduniversal.com/contact-us",
+      "type": "link",
+      "context": "",
+      "priority": "primary",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "text": "Book Online",
+      "href": "https://haywooduniversal.com/#",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "text": "Call Now",
+      "href": "tel:+16782749182",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "text": "Bookings",
+      "href": "https://haywooduniversal.com/m/bookings",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://haywooduniversal.com/contact-us",
+      "type": "link",
+      "context": "",
+      "priority": "primary",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "text": "Call Now",
+      "href": "tel:+12159607774",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "text": "Bookings",
+      "href": "https://haywooduniversal.com/m/bookings",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://haywooduniversal.com/contact-us",
+      "type": "link",
+      "context": "",
+      "priority": "primary",
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "text": "Bookings",
+      "href": "https://haywooduniversal.com/m/bookings",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://haywooduniversal.com/contact-us",
+      "type": "link",
+      "context": "",
+      "priority": "primary",
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "text": "Bookings",
+      "href": "https://haywooduniversal.com/m/bookings",
+      "type": "link",
+      "context": "",
+      "priority": "tertiary",
+      "pageUrl": "https://haywooduniversal.com/rooms-for-rent"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://haywooduniversal.com/contact-us",
+      "type": "link",
+      "context": "",
+      "priority": "primary",
+      "pageUrl": "https://haywooduniversal.com/rooms-for-rent"
+    }
+  ],
+  "allSections": [
+    {
+      "id": "section-0",
+      "type": "content-section",
+      "heading": "WELCOME TO HAYWOOD UNIVERSAL \nA variety Of Services to Make Life Easier !",
+      "content": [],
+      "order": 0,
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "id": "section-1",
+      "type": "content-section",
+      "heading": "Welcome to Haywood Universal LLC",
+      "content": [],
+      "order": 1,
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "id": "section-2",
+      "type": "content-section",
+      "heading": "Some of my Speaking engagements/ Real Estate Seminars/ Events",
+      "content": [],
+      "order": 2,
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "id": "section-3",
+      "type": "content-section",
+      "heading": "Schedule Now",
+      "content": [
+        {
+          "id": "p-0",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "html": "<p data-ux=\"PromoBannerText\" data-aid=\"BANNER_TEXT_RENDERED\" data-typography=\"HeadingBeta\" class=\"x-el x-el-p c1-1g c1-1h c1-1i c1-1j c1-1k c1-1l c1-1m c1-1n c1-1o c1-1p c1-1q c1-1r c1-b c1-c c1-1s c1-1t c1-1u c1-1v c1-d c1-e c1-f c1-g\">3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 4
+        },
+        {
+          "id": "p-1",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-1m c1-1o c1-3k c1-1p c1-3l c1-b c1-2h c1-3m c1-1t c1-3n c1-3o c1-3p c1-3q\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 5
+        },
+        {
+          "id": "p-5",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-1m c1-1o c1-3k c1-1p c1-3l c1-b c1-2h c1-3m c1-1t c1-3n c1-3o c1-3p c1-3q\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 6
+        },
+        {
+          "id": "p-11",
+          "type": "paragraph",
+          "content": "@NOTYOURAVERAGEPRENEUR",
+          "html": "<p style=\"margin:0\"><span><strong class=\"x-el x-el-span c1-29 c1-2a c1-b c1-9d c1-69 c1-5e c1-9e\">@NOTYOURAVERAGEPRENEUR&nbsp;</strong></span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 7
+        },
+        {
+          "id": "p-12",
+          "type": "paragraph",
+          "content": "follow us on all social media platforms",
+          "html": "<p style=\"margin:0\"><span><strong class=\"x-el x-el-span c1-29 c1-2a c1-b c1-9d c1-69 c1-5e c1-9e\">&nbsp;&nbsp;follow us on all social media platforms&nbsp;</strong></span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 8
+        },
+        {
+          "id": "p-13",
+          "type": "paragraph",
+          "content": "Ask About Our New Client Specials",
+          "html": "<p data-ux=\"Text\" data-aid=\"FORM_DESC_REND\" data-typography=\"BodyAlpha\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-4l c1-1o c1-1p c1-b c1-ad c1-c c1-1t c1-d c1-e c1-f c1-g\">Ask About Our New Client Specials</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 9
+        },
+        {
+          "id": "p-14",
+          "type": "paragraph",
+          "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+          "html": "<p style=\"margin:0\"><span>Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 10
+        },
+        {
+          "id": "p-15",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+          "html": "<p style=\"margin:0\"><span>3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 11
+        },
+        {
+          "id": "p-18",
+          "type": "paragraph",
+          "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+          "html": "<p style=\"margin:0\"><span>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 12
+        }
+      ],
+      "order": 3,
+      "pageUrl": "https://haywooduniversal.com/"
+    },
+    {
+      "id": "section-0",
+      "type": "content-section",
+      "heading": "PROJECT MANAGEMENT",
+      "content": [],
+      "order": 0,
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "id": "section-1",
+      "type": "content-section",
+      "heading": "How can we help you?",
+      "content": [],
+      "order": 1,
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "id": "section-2",
+      "type": "content-section",
+      "heading": "Here's our latest projects!",
+      "content": [],
+      "order": 2,
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "id": "section-3",
+      "type": "content-section",
+      "heading": "Connect With Us",
+      "content": [
+        {
+          "id": "p-0",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "html": "<p data-ux=\"PromoBannerText\" data-aid=\"BANNER_TEXT_RENDERED\" data-typography=\"HeadingBeta\" class=\"x-el x-el-p c1-1g c1-1h c1-1i c1-1j c1-1k c1-1l c1-t c1-1m c1-1n c1-1o c1-1p c1-1q c1-b c1-c c1-1r c1-1s c1-1t c1-1u c1-d c1-e c1-f c1-g\">3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 4
+        },
+        {
+          "id": "p-1",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 5
+        },
+        {
+          "id": "p-5",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 6
+        },
+        {
+          "id": "p-10",
+          "type": "paragraph",
+          "content": "Pull expediting permits for $750 & up - prices depends on square footage and the scope of work. Pricing will also depend on project being residential or commercial!",
+          "html": "<p style=\"margin:0\"><span>Pull expediting permits for $750 &amp; up - prices depends on square footage and the scope of work. Pricing will also depend on project being residential or commercial!</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 7
+        },
+        {
+          "id": "p-11",
+          "type": "paragraph",
+          "content": "Either residential or commercial,Haywood Universal can   assist your project with purchasing materials and will oversee your project from start to finish!",
+          "html": "<p style=\"margin:0\"><span>Either residential or commercial,Haywood Universal can &nbsp;&nbsp;assist your project with purchasing materials and will oversee your project from start to finish!&nbsp;</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 8
+        },
+        {
+          "id": "p-12",
+          "type": "paragraph",
+          "content": "Give us a call 470-995-1206",
+          "html": "<p style=\"margin:0\"><span>Give us a call 470-995-1206</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 9
+        },
+        {
+          "id": "p-13",
+          "type": "paragraph",
+          "content": "Residential remodeling of a 3 bedroom 2 bath home that is now used for private rentals for families, events, or music video rentals.",
+          "html": "<p style=\"margin: 0px;\"><span>Residential remodeling of a 3 bedroom 2 bath home that is now used for private rentals for families, events, or music video rentals.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 10
+        },
+        {
+          "id": "p-14",
+          "type": "paragraph",
+          "content": "Commercial property remodeled for a massage & spa business.",
+          "html": "<p style=\"margin: 0px;\"><span>Commercial property remodeled for a massage &amp; spa business.&nbsp;</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 11
+        },
+        {
+          "id": "p-15",
+          "type": "paragraph",
+          "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+          "html": "<p style=\"margin:0\"><span>Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 12
+        },
+        {
+          "id": "p-16",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+          "html": "<p style=\"margin:0\"><span>3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 13
+        },
+        {
+          "id": "p-19",
+          "type": "paragraph",
+          "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+          "html": "<p style=\"margin:0\"><span>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 14
+        }
+      ],
+      "order": 3,
+      "pageUrl": "https://haywooduniversal.com/project-management"
+    },
+    {
+      "id": "section-0",
+      "type": "content-section",
+      "heading": "Let’s Consult about your next project",
+      "content": [],
+      "order": 0,
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "id": "section-1",
+      "type": "content-section",
+      "heading": "We Accept Credit Cards , Zelle , Apple pay , Cash App",
+      "content": [],
+      "order": 1,
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "id": "section-2",
+      "type": "content-section",
+      "heading": "Connect With Us",
+      "content": [
+        {
+          "id": "p-0",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "html": "<p data-ux=\"PromoBannerText\" data-aid=\"BANNER_TEXT_RENDERED\" data-typography=\"HeadingBeta\" class=\"x-el x-el-p c1-1g c1-1h c1-1i c1-1j c1-1k c1-1l c1-t c1-1m c1-1n c1-1o c1-1p c1-1q c1-b c1-c c1-1r c1-1s c1-1t c1-1u c1-d c1-e c1-f c1-g\">3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 3
+        },
+        {
+          "id": "p-1",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 4
+        },
+        {
+          "id": "p-5",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 5
+        },
+        {
+          "id": "p-10",
+          "type": "paragraph",
+          "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+          "html": "<p style=\"margin:0\"><span>Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 6
+        },
+        {
+          "id": "p-11",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+          "html": "<p style=\"margin:0\"><span>3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 7
+        },
+        {
+          "id": "p-14",
+          "type": "paragraph",
+          "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+          "html": "<p style=\"margin:0\"><span>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 8
+        }
+      ],
+      "order": 2,
+      "pageUrl": "https://haywooduniversal.com/gallery"
+    },
+    {
+      "id": "section-0",
+      "type": "content-section",
+      "heading": "Menu / Price List",
+      "content": [],
+      "order": 0,
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "id": "section-1",
+      "type": "content-section",
+      "heading": "SERVICES",
+      "content": [],
+      "order": 1,
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "id": "section-2",
+      "type": "content-section",
+      "heading": "Connect With Us",
+      "content": [
+        {
+          "id": "h3-0",
+          "type": "heading",
+          "content": "Tax preparation services",
+          "html": "<h3>Tax preparation services</h3>",
+          "tag": "h3",
+          "level": 3,
+          "attributes": {},
+          "position": 3
+        },
+        {
+          "id": "h3-1",
+          "type": "heading",
+          "content": "Business Services",
+          "html": "<h3>Business Services</h3>",
+          "tag": "h3",
+          "level": 3,
+          "attributes": {},
+          "position": 4
+        },
+        {
+          "id": "h3-2",
+          "type": "heading",
+          "content": "MENTORSHIP",
+          "html": "<h3>MENTORSHIP</h3>",
+          "tag": "h3",
+          "level": 3,
+          "attributes": {},
+          "position": 5
+        },
+        {
+          "id": "h3-3",
+          "type": "heading",
+          "content": "Consultant & Coaching  Services",
+          "html": "<h3>Consultant & Coaching  Services</h3>",
+          "tag": "h3",
+          "level": 3,
+          "attributes": {},
+          "position": 6
+        },
+        {
+          "id": "p-0",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "html": "<p data-ux=\"PromoBannerText\" data-aid=\"BANNER_TEXT_RENDERED\" data-typography=\"HeadingBeta\" class=\"x-el x-el-p c1-1g c1-1h c1-1i c1-1j c1-1k c1-1l c1-t c1-1m c1-1n c1-1o c1-1p c1-1q c1-b c1-c c1-1r c1-1s c1-1t c1-1u c1-d c1-e c1-f c1-g\">3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 7
+        },
+        {
+          "id": "p-1",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 8
+        },
+        {
+          "id": "p-5",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 9
+        },
+        {
+          "id": "p-10",
+          "type": "paragraph",
+          "content": "Skilled tax preparation services for all business and personal clients",
+          "html": "<p data-ux=\"Details\" data-aid=\"MENU_SECTION_DESCRIPTION_0\" data-typography=\"DetailsAlpha\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-1o c1-b c1-8y c1-5y c1-1s c1-61 c1-62 c1-63 c1-64\">Skilled tax preparation services for all business and personal clients</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 10
+        },
+        {
+          "id": "p-12",
+          "type": "paragraph",
+          "content": "Files for small to medium size businesses The price will vary based on your needs. Please contact the tax professional today by clicking the consultation link For immediate assistance",
+          "html": "<p style=\"margin:0\"><span>Files for small to medium size businesses The price will vary based on your needs. Please contact the tax professional today by clicking the consultation link For immediate assistance</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 11
+        },
+        {
+          "id": "p-13",
+          "type": "paragraph",
+          "content": "Whether you are a W-2 employee or self-employed, 1099 independent contractor, our tax professionals can assist you with your return. Be sure to click the services tab and schedule a consultation today to get started",
+          "html": "<p style=\"margin:0\"><span>Whether you are a W-2 employee or self-employed, 1099 independent contractor, our tax professionals can assist you with your return. Be sure to click the services tab and schedule a consultation today to get started</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 12
+        },
+        {
+          "id": "p-14",
+          "type": "paragraph",
+          "content": "Startups and Existing Businesses",
+          "html": "<p data-ux=\"Details\" data-aid=\"MENU_SECTION_DESCRIPTION_1\" data-typography=\"DetailsAlpha\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-1o c1-b c1-8y c1-5y c1-1s c1-61 c1-62 c1-63 c1-64\">Startups and Existing Businesses  </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 13
+        },
+        {
+          "id": "p-15",
+          "type": "paragraph",
+          "content": "This service is to obtain LLC. This is the first step in starting your new business. The price listed is for my services only your local state fees are separate. Ein is included",
+          "html": "<p style=\"margin:0\"><span>This service is to obtain LLC. This is the first step in starting your new business. The price listed is for my services only your local state fees are separate. Ein is included&nbsp;</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 14
+        },
+        {
+          "id": "p-16",
+          "type": "paragraph",
+          "content": "An  agreement is essential for every business, and requested by most financial institutions",
+          "html": "<p style=\"margin:0\"><span>An &nbsp;agreement is essential for every business, and requested by most financial institutions</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 15
+        },
+        {
+          "id": "p-17",
+          "type": "paragraph",
+          "content": "It’s essential every small business starts to build business credit with positive trade lines in order to obtain funding",
+          "html": "<p style=\"margin:0\"><span>It’s essential every small business starts to build business credit with positive trade lines in order to obtain funding</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 16
+        },
+        {
+          "id": "p-18",
+          "type": "paragraph",
+          "content": "Neuro- linguistics programming(NLP) can benefit business staff in various ways. It can streamline communication, automate routine tasks, and enhance customer interactions. Implementing NLP in chatbots or virtual assistants can improve customer support efficiency, allowing staff to focus on more complex issues. Integrating NLP into data analytics can also aid in extracting valuable insights from unstructured text data, supporting informed decision-making.",
+          "html": "<p style=\"margin:0\"><span>Neuro- linguistics programming(NLP) can benefit business staff in various ways. It can streamline communication, automate routine tasks, and enhance customer interactions. Implementing NLP in chatbots or virtual assistants can improve customer support efficiency, allowing staff to focus on more complex issues. Integrating NLP into data analytics can also aid in extracting valuable insights from unstructured text data, supporting informed decision-making.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 17
+        },
+        {
+          "id": "p-19",
+          "type": "paragraph",
+          "content": "Add a footnote if this applies to your business",
+          "html": "<p data-ux=\"DetailsMinor\" data-aid=\"MENU_SECTION_FOOTNOTE_RENDERED\" data-typography=\"DetailsBeta\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-1o c1-b c1-8y c1-9y c1-1s c1-9z c1-a0 c1-a1 c1-a2\">Add a footnote if this applies to your business</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 18
+        },
+        {
+          "id": "p-20",
+          "type": "paragraph",
+          "content": "Invest in Your Success:  This mentorship program is a paid service, reflecting our commitment to delivering high-value, results-driven mentorship. The investment you make in your professional growth and success is an investment in a future where your real estate and entrepreneurial endeavors thrive.  Embark on this transformative journey with us, and let’s build your legacy in real estate and entrepreneurship together. To explore pricing details&secure your spot, Schedule customized consultation",
+          "html": "<p data-ux=\"Details\" data-aid=\"MENU_SECTION_DESCRIPTION_0\" data-typography=\"DetailsAlpha\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-b c1-8y c1-5y c1-1s c1-61 c1-62 c1-63 c1-64\">Invest in Your Success:  This mentorship program is a paid service, reflecting our commitment to delivering high-value, results-driven mentorship. The investment you make in your professional growth and success is an investment in a future where your real estate and entrepreneurial endeavors thrive.  Embark on this transformative journey with us, and let’s build your legacy in real estate and entrepreneurship together. To explore pricing details&amp;secure your spot, Schedule customized consultation</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 19
+        },
+        {
+          "id": "p-21",
+          "type": "paragraph",
+          "content": "Let’s get your Goals and Projects Moving in the right direction with personalized One on One customized Packages",
+          "html": "<p data-ux=\"Details\" data-aid=\"MENU_SECTION_DESCRIPTION_1\" data-typography=\"DetailsAlpha\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-b c1-8y c1-5y c1-1s c1-61 c1-62 c1-63 c1-64\">Let’s get your Goals and Projects Moving in the right direction with personalized One on One customized Packages </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 20
+        },
+        {
+          "id": "p-22",
+          "type": "paragraph",
+          "content": "For any immediate bookings contact via email",
+          "html": "<p data-ux=\"DetailsMinor\" data-aid=\"MENU_SECTION_FOOTNOTE_RENDERED\" data-typography=\"DetailsBeta\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-1o c1-b c1-8y c1-9y c1-1s c1-9z c1-a0 c1-a1 c1-a2\">For any immediate bookings contact via email </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 21
+        },
+        {
+          "id": "p-23",
+          "type": "paragraph",
+          "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+          "html": "<p style=\"margin:0\"><span>Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 22
+        },
+        {
+          "id": "p-24",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+          "html": "<p style=\"margin:0\"><span>3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 23
+        },
+        {
+          "id": "p-27",
+          "type": "paragraph",
+          "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+          "html": "<p style=\"margin:0\"><span>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 24
+        }
+      ],
+      "order": 2,
+      "pageUrl": "https://haywooduniversal.com/services"
+    },
+    {
+      "id": "section-0",
+      "type": "content-section",
+      "heading": "This website uses cookies.",
+      "content": [
+        {
+          "id": "p-0",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "html": "<p data-ux=\"PromoBannerText\" data-aid=\"BANNER_TEXT_RENDERED\" data-typography=\"HeadingBeta\" class=\"x-el x-el-p c1-1g c1-1h c1-1i c1-1j c1-1k c1-1l c1-t c1-1m c1-1n c1-1o c1-1p c1-1q c1-b c1-c c1-1r c1-1s c1-1t c1-1u c1-d c1-e c1-f c1-g\">3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774</p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 1
+        },
+        {
+          "id": "p-1",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 2
+        },
+        {
+          "id": "p-5",
+          "type": "paragraph",
+          "content": "We have payment plans up to 36 Months Available",
+          "html": "<p data-ux=\"Phone\" data-aid=\"HEADER_PHONE_RENDERED\" data-tccl=\"ux2.header.phone_number.click,click\" data-typography=\"BodyGamma\" class=\"x-el x-el-p c1-1 c1-2 c1-1i c1-1j c1-1k c1-1l c1-t c1-1n c1-3j c1-1o c1-3k c1-b c1-2g c1-3l c1-1s c1-3m c1-3n c1-3o c1-3p\">We have payment plans up to 36 Months Available </p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 3
+        },
+        {
+          "id": "p-10",
+          "type": "paragraph",
+          "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+          "html": "<p style=\"margin:0\"><span>Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 4
+        },
+        {
+          "id": "p-11",
+          "type": "paragraph",
+          "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+          "html": "<p style=\"margin:0\"><span>3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 5
+        },
+        {
+          "id": "p-14",
+          "type": "paragraph",
+          "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.",
+          "html": "<p style=\"margin:0\"><span>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>",
+          "tag": "p",
+          "attributes": {},
+          "position": 6
+        }
+      ],
+      "order": 0,
+      "pageUrl": "https://haywooduniversal.com/rooms-for-rent"
+    }
+  ],
+  "contentPatterns": {
+    "commonHeadings": [
+      {
+        "text": "connect with us",
+        "count": 3
+      },
+      {
+        "text": "welcome to haywood universal \na variety of services to make life easier !",
+        "count": 1
+      },
+      {
+        "text": "welcome to haywood universal llc",
+        "count": 1
+      },
+      {
+        "text": "some of my speaking engagements/ real estate seminars/ events",
+        "count": 1
+      },
+      {
+        "text": "schedule now",
+        "count": 1
+      },
+      {
+        "text": "project management",
+        "count": 1
+      },
+      {
+        "text": "how can we help you?",
+        "count": 1
+      },
+      {
+        "text": "here's our latest projects!",
+        "count": 1
+      },
+      {
+        "text": "let’s consult about your next project",
+        "count": 1
+      },
+      {
+        "text": "we accept credit cards , zelle , apple pay , cash app",
+        "count": 1
+      },
+      {
+        "text": "menu / price list",
+        "count": 1
+      },
+      {
+        "text": "services",
+        "count": 1
+      },
+      {
+        "text": "tax preparation services",
+        "count": 1
+      },
+      {
+        "text": "business services",
+        "count": 1
+      },
+      {
+        "text": "mentorship",
+        "count": 1
+      }
+    ],
+    "commonCTAs": [
+      {
+        "text": "bookings",
+        "count": 5
+      },
+      {
+        "text": "contact us",
+        "count": 5
+      },
+      {
+        "text": "call now",
+        "count": 2
+      },
+      {
+        "text": "book online",
+        "count": 1
+      }
+    ],
+    "ctasByPriority": {
+      "primary": [
+        {
+          "text": "Contact Us",
+          "href": "https://haywooduniversal.com/contact-us",
+          "type": "link",
+          "context": "",
+          "priority": "primary"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://haywooduniversal.com/contact-us",
+          "type": "link",
+          "context": "",
+          "priority": "primary"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://haywooduniversal.com/contact-us",
+          "type": "link",
+          "context": "",
+          "priority": "primary"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://haywooduniversal.com/contact-us",
+          "type": "link",
+          "context": "",
+          "priority": "primary"
+        },
+        {
+          "text": "Contact Us",
+          "href": "https://haywooduniversal.com/contact-us",
+          "type": "link",
+          "context": "",
+          "priority": "primary"
+        }
+      ],
+      "secondary": [],
+      "tertiary": [
+        {
+          "text": "Bookings",
+          "href": "https://haywooduniversal.com/m/bookings",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Book Online",
+          "href": "https://haywooduniversal.com/#",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Call Now",
+          "href": "tel:+16782749182",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Bookings",
+          "href": "https://haywooduniversal.com/m/bookings",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Call Now",
+          "href": "tel:+12159607774",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Bookings",
+          "href": "https://haywooduniversal.com/m/bookings",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Bookings",
+          "href": "https://haywooduniversal.com/m/bookings",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        },
+        {
+          "text": "Bookings",
+          "href": "https://haywooduniversal.com/m/bookings",
+          "type": "link",
+          "context": "",
+          "priority": "tertiary"
+        }
+      ]
+    }
+  },
+  "reusableBlocks": [
+    {
+      "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+      "occurrences": 5
+    },
+    {
+      "content": "We have payment plans up to 36 Months Available",
+      "occurrences": 10
+    },
+    {
+      "content": "Copyright © 2009 HAYWOOD UNIVERSAL LLC. - All Rights Reserved.",
+      "occurrences": 5
+    },
+    {
+      "content": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326",
+      "occurrences": 5
+    },
+    {
+      "content": "We use cookies to analyze website traffic and optimize your website experience. By accepting our use",
+      "occurrences": 5
+    },
+    {
+      "content": "Connect With Us",
+      "occurrences": 3
+    }
+  ]
+}

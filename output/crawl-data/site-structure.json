@@ -1,0 +1,3622 @@
+{
+  "baseUrl": "https://haywooduniversal.com",
+  "crawledAt": "2026-02-05T01:39:09.079Z",
+  "summary": {
+    "totalPages": 5,
+    "totalImages": 22,
+    "totalFonts": 0,
+    "totalVideos": 0,
+    "totalDocuments": 0
+  },
+  "pages": [
+    {
+      "url": "https://haywooduniversal.com/",
+      "title": "HAYWOODUNIVERSAL.COM",
+      "description": "",
+      "canonicalUrl": "https://haywooduniversal.com/",
+      "ogTags": {
+        "url": "https://haywooduniversal.com/",
+        "site_name": "HAYWOODUNIVERSAL.COM",
+        "title": "HAYWOODUNIVERSAL.COM",
+        "description": "\n@NOTYOURAVERAGEPRENEUR \n  follow us on all social media platforms ",
+        "type": "website",
+        "image": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg",
+        "locale": "en_US"
+      },
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "image": [
+            "http://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg"
+          ],
+          "@id": "http://043ace45.04e5.465e.a497.b46a6eb0d029.com",
+          "url": "haywooduniversal.com",
+          "name": "HAYWOODUNIVERSAL.COM",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3379 Peachtree Rd NE",
+            "addressLocality": "Atlanta",
+            "addressRegion": "GA",
+            "postalCode": "30326",
+            "addressCountry": ""
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.84809",
+            "longitude": "-84.36582"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "10:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "12:00",
+              "closes": "17:00"
+            }
+          ]
+        }
+      ],
+      "h1": [
+        "WELCOME TO HAYWOOD UNIVERSAL \nA variety Of Services to Make Life Easier !"
+      ],
+      "h2": [
+        "Welcome to Haywood Universal LLC",
+        "Some of my Speaking engagements/ Real Estate Seminars/ Events",
+        "Schedule Now"
+      ],
+      "h3": [],
+      "images": [
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg/:/rs=h:1000,cg:true,m",
+          "alt": ""
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2713.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2713.jpg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/13EBDD73-99D5-42C1-8347-1B7864279792.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/13EBDD73-99D5-42C1-8347-1B7864279792.jpeg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/",
+          "alt": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/rs=w:1300,h:800"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image0"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image1"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2713.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image2"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/13EBDD73-99D5-42C1-8347-1B7864279792.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image3"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image4"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+          "alt": "image5"
+        }
+      ],
+      "links": [
+        {
+          "href": "mailto:info@haywooduniversal.com",
+          "text": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/create-account",
+          "text": "Create Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "More",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Book Online",
+          "isInternal": true
+        },
+        {
+          "href": "tel:+16782749182",
+          "text": "Call Now",
+          "isInternal": true
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base",
+          "text": "",
+          "rel": "nofollow noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Close",
+          "isInternal": true
+        }
+      ],
+      "forms": [
+        {
+          "action": "",
+          "method": "get",
+          "inputs": [
+            {
+              "type": "text",
+              "name": "",
+              "required": false
+            }
+          ]
+        }
+      ],
+      "scripts": [
+        {
+          "src": "https://connect.facebook.net/en_US/fbevents.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";\n\nif ('serviceWorker' in navigator) {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('/sw.js');\n  });\n}",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout27-Theme-publish-Theme-c96d5dca.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/MESSAGING/bs-Component-d750a9f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-5804ec33.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-cbda470b.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-52fbaa26.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-ceddc91a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-6afcb3a5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/form/formIdentifiers-99523055.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/traffic2-0a7e72c6.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Recaptcha/badge-e542c4f1.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-7574d33c.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-dc689f22.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-30d4bb8e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-ComponentGoPay-d63d303e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-FlyoutMenu-Component-b4b95853.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-LinkAwareComponent-0e7597ad.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/bs-gallery1-Gallery-28634237.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-ComponentPropTypes-60bd54d0.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-Toggle-0f009dec.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-CustomArrows-49960b5a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-dataAids-318b181e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-directionalKeyHandlers-acff1496.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-util-5fd4c061.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-wrapWithDeviceDetection-f9dc1d72.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleoff: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleon: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/603f9672a4f8dccb/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.51.10.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/393d1a118efc1c92/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.poynt.net/pb.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(() => {var _window$dataLayer, _window$dataLayer$, _window$dataLayer2, _window$dataLayer2$;window.dataLayer && Array.isArray(window.dataLayer) && ((_window",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
+          "content": "",
+          "async": false,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "//img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js",
+          "content": "",
+          "async": false,
+          "defer": true
+        },
+        {
+          "content": "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"image\":[\"http://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg\"],\"@id\":\"http://043ace45.04e5.465e.a497.b46a6eb0d0",
+          "async": false,
+          "defer": false,
+          "type": "application/ld+json"
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_cli",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.reamaze.com/assets/reamaze-godaddy-loader.js",
+          "content": "",
+          "async": true,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "https://cart-checkout.secureserver.net/dist/embed.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        }
+      ],
+      "styles": [
+        {
+          "content": "/* cyrillic */\n@font-face {\n  font-family: 'Playfair Display';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZ"
+        },
+        {
+          "content": ".x{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;box-sizing:border-box}.x *,.x :after,.x :before{box-sizing:inherit}.x-el a[href^=\"mailto:\""
+        },
+        {
+          "content": "/*\nCopyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name \"Playfair Display\".\n\nThis Font Software is licensed under the SIL Open"
+        },
+        {
+          "content": ".x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > "
+        },
+        {
+          "content": "@media (max-width: 450px){.x .c1-at{background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(\"//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/"
+        },
+        {
+          "content": "@media (max-width: 767px){.x .c1-q{padding-top:32px}}@media (max-width: 767px){.x .c1-r{padding-bottom:32px}}@media (max-width: 767px){.x .c1-1u{padding-left:0px}}@media (max-width: 767px){.x .c1-1v{p"
+        },
+        {
+          "content": "@media (min-width: 768px){.x .c1-d{font-size:16px}}@media (min-width: 768px){.x .c1-u{margin-bottom:40px}}@media (min-width: 768px){.x .c1-1c{width:100%}}@media (min-width: 768px) and (max-width: 1023"
+        },
+        {
+          "content": "@media (min-width: 1024px){.x .c1-e{font-size:16px}}@media (min-width: 1024px){.x .c1-10{transition:filter 0.6s}}@media (min-width: 1024px){.x .c1-11:hover{filter:invert(.2)}}@media (min-width: 1024px"
+        },
+        {
+          "content": "@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-1e{width:1160px}}@media (min-width: 1280px){.x .c1-3p{font-size:22px}}@media (min-width: 1280px){.x .c1-63{font-si"
+        },
+        {
+          "content": "@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-1f{width:1280px}}@media (min-width: 1536px){.x .c1-3q{font-size:24px}}@media (min-width: 1536px){.x .c1-64{font-si"
+        },
+        {
+          "content": "@keyframes opacity-bounce { \n      0% {opacity: 0;transform: translateY(100%); } \n      60% { transform: translateY(-20%); } \n      100% { opacity: 1; transform: translateY(0); }\n    }"
+        },
+        {
+          "content": ".gd-ad-flex-parent {\n          animation-name: opacity-bounce; \n          animation-duration: 800ms; \n          animation-delay: 400ms; \n          animation-fill-mode: forwards; \n          animation-t"
+        },
+        {
+          "content": ".carousel {\n  text-align: center;\n  position: relative;\n  opacity: 0;\n  margin: 0 auto;\n  transition: opacity 0.5s;\n}\n.carousel .carousel-container-inner {\n  margin: 0 auto;\n  position: relative;\n}\n.c"
+        },
+        {
+          "content": ".page-inner { background-color: rgb(255, 255, 255); min-height: 100vh; }"
+        },
+        {
+          "content": "#dynamic-tagline-166027 { font-size: 24px !important; }"
+        },
+        {
+          "content": "\n  #pay-buttons-js-container,\n  #pay-buttons-js-container * {\n    box-sizing: border-box;\n  }\n  #pay-buttons-js-container {\n    width: 441px;\n    max-width: 100%;\n    height: 100vh;\n    background: #f"
+        }
+      ]
+    },
+    {
+      "url": "https://haywooduniversal.com/project-management",
+      "title": "Project Management",
+      "description": "",
+      "canonicalUrl": "https://haywooduniversal.com/project-management",
+      "ogTags": {
+        "url": "https://haywooduniversal.com/project-management",
+        "site_name": "HAYWOODUNIVERSAL.COM",
+        "title": "HAYWOODUNIVERSAL.COM",
+        "description": "\n@NOTYOURAVERAGEPRENEUR \n  follow us on all social media platforms ",
+        "type": "website",
+        "image": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg",
+        "locale": "en_US"
+      },
+      "structuredData": [],
+      "h1": [
+        "PROJECT MANAGEMENT"
+      ],
+      "h2": [
+        "How can we help you?",
+        "Here's our latest projects!",
+        "Connect With Us"
+      ],
+      "h3": [],
+      "images": [
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/33243E8B-3C1C-4D78-8725-8F9894361CE2.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1023,cg:true",
+          "alt": ""
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/A53EA26A-B503-4A30-9881-78BA8A31A08B.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1023,cg:true",
+          "alt": ""
+        }
+      ],
+      "links": [
+        {
+          "href": "mailto:info@haywooduniversal.com",
+          "text": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/create-account",
+          "text": "Create Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "More",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "tel:+12159607774",
+          "text": "Call Now",
+          "isInternal": true
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base",
+          "text": "",
+          "rel": "nofollow noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        }
+      ],
+      "forms": [],
+      "scripts": [
+        {
+          "src": "https://connect.facebook.net/en_US/fbevents.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";\n\nif ('serviceWorker' in navigator) {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('/sw.js');\n  });\n}",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout27-Theme-publish-Theme-c96d5dca.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/MESSAGING/bs-Component-d750a9f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-5804ec33.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-cbda470b.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-52fbaa26.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-ceddc91a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-6afcb3a5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/form/formIdentifiers-99523055.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/traffic2-0a7e72c6.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Recaptcha/badge-e542c4f1.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-7574d33c.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-dc689f22.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-30d4bb8e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-ComponentGoPay-d63d303e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-FlyoutMenu-Component-b4b95853.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-LinkAwareComponent-0e7597ad.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/bs-gallery7-Gallery-d5c989f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-ComponentPropTypes-60bd54d0.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-Toggle-0f009dec.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-dataAids-318b181e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-GalleryImage-cac21684.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-getAllCaptionText-ea8d5cb5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-wrapWithDeviceDetection-f9dc1d72.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/RichText-e0049770.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react-dom_commonjs-external-61540793.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/index-f85dddbe.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleoff: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleon: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/dde3d0790f0c9732/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.51.10.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/3100a6a8377c17c7/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(() => {var _window$dataLayer, _window$dataLayer$, _window$dataLayer2, _window$dataLayer2$;window.dataLayer && Array.isArray(window.dataLayer) && ((_window",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
+          "content": "",
+          "async": false,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "//img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js",
+          "content": "",
+          "async": false,
+          "defer": true
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_cli",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.reamaze.com/assets/reamaze-godaddy-loader.js",
+          "content": "",
+          "async": true,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "https://cart-checkout.secureserver.net/dist/embed.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        }
+      ],
+      "styles": [
+        {
+          "content": "/* cyrillic */\n@font-face {\n  font-family: 'Playfair Display';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZ"
+        },
+        {
+          "content": ".x{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;box-sizing:border-box}.x *,.x :after,.x :before{box-sizing:inherit}.x-el a[href^=\"mailto:\""
+        },
+        {
+          "content": "/*\nCopyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name \"Playfair Display\".\n\nThis Font Software is licensed under the SIL Open"
+        },
+        {
+          "content": ".x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > "
+        },
+        {
+          "content": "@media (max-width: 450px){.x .c1-b4{background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(\"//img1.wsimg.com/isteam/stock/wVrR6px/:/rs=w:450,m\")}}@media (max-widt"
+        },
+        {
+          "content": "@media (max-width: 767px){.x .c1-q{padding-top:32px}}@media (max-width: 767px){.x .c1-r{padding-bottom:32px}}@media (max-width: 767px){.x .c1-1t{padding-left:0px}}@media (max-width: 767px){.x .c1-1u{p"
+        },
+        {
+          "content": "@media (min-width: 768px){.x .c1-d{font-size:16px}}@media (min-width: 768px){.x .c1-u{margin-bottom:0px}}@media (min-width: 768px){.x .c1-1c{width:100%}}@media (min-width: 768px) and (max-width: 1023p"
+        },
+        {
+          "content": "@media (min-width: 1024px){.x .c1-e{font-size:16px}}@media (min-width: 1024px){.x .c1-10{transition:filter 0.6s}}@media (min-width: 1024px){.x .c1-11:hover{filter:invert(.2)}}@media (min-width: 1024px"
+        },
+        {
+          "content": "@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-1e{width:1160px}}@media (min-width: 1280px){.x .c1-3o{font-size:22px}}@media (min-width: 1280px){.x .c1-63{font-si"
+        },
+        {
+          "content": "@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-1f{width:1280px}}@media (min-width: 1536px){.x .c1-3p{font-size:24px}}@media (min-width: 1536px){.x .c1-64{font-si"
+        },
+        {
+          "content": "@keyframes opacity-bounce { \n      0% {opacity: 0;transform: translateY(100%); } \n      60% { transform: translateY(-20%); } \n      100% { opacity: 1; transform: translateY(0); }\n    }"
+        },
+        {
+          "content": ".gd-ad-flex-parent {\n          animation-name: opacity-bounce; \n          animation-duration: 800ms; \n          animation-delay: 400ms; \n          animation-fill-mode: forwards; \n          animation-t"
+        },
+        {
+          "content": ".page-inner { background-color: rgb(255, 255, 255); min-height: 100vh; }"
+        }
+      ]
+    },
+    {
+      "url": "https://haywooduniversal.com/gallery",
+      "title": "HAYWOODUNIVERSAL.COM",
+      "description": "",
+      "canonicalUrl": "https://haywooduniversal.com/gallery",
+      "ogTags": {
+        "url": "https://haywooduniversal.com/gallery",
+        "site_name": "HAYWOODUNIVERSAL.COM",
+        "title": "HAYWOODUNIVERSAL.COM",
+        "description": "\n@NOTYOURAVERAGEPRENEUR \n  follow us on all social media platforms ",
+        "type": "website",
+        "image": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg",
+        "locale": "en_US"
+      },
+      "structuredData": [],
+      "h1": [
+        "Let’s Consult about your next project"
+      ],
+      "h2": [
+        "We Accept Credit Cards , Zelle , Apple pay , Cash App",
+        "Connect With Us"
+      ],
+      "h3": [],
+      "images": [
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        }
+      ],
+      "links": [
+        {
+          "href": "mailto:info@haywooduniversal.com",
+          "text": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/create-account",
+          "text": "Create Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "More",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Find out more",
+          "isInternal": true
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base",
+          "text": "",
+          "rel": "nofollow noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Close",
+          "isInternal": true
+        }
+      ],
+      "forms": [],
+      "scripts": [
+        {
+          "src": "https://connect.facebook.net/en_US/fbevents.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";\n\nif ('serviceWorker' in navigator) {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('/sw.js');\n  });\n}",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout27-Theme-publish-Theme-c96d5dca.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/MESSAGING/bs-Component-d750a9f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-5804ec33.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-cbda470b.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-52fbaa26.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-ceddc91a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-6afcb3a5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/form/formIdentifiers-99523055.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/traffic2-0a7e72c6.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Recaptcha/badge-e542c4f1.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-7574d33c.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-dc689f22.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-30d4bb8e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-ComponentGoPay-d63d303e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-FlyoutMenu-Component-b4b95853.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-LinkAwareComponent-0e7597ad.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/bs-gallery2-Gallery-a96c48b3.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-ComponentPropTypes-60bd54d0.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-Toggle-0f009dec.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-dataAids-318b181e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-GalleryImage-cac21684.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-renderLightbox-069ccd76.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-util-5fd4c061.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/GALLERY/c/bs-CustomArrows-49960b5a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleoff: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleon: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/11d01bccccd4f43/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.51.10.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/9877231acc67a4e0/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.poynt.net/pb.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(() => {var _window$dataLayer, _window$dataLayer$, _window$dataLayer2, _window$dataLayer2$;window.dataLayer && Array.isArray(window.dataLayer) && ((_window",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
+          "content": "",
+          "async": false,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "//img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js",
+          "content": "",
+          "async": false,
+          "defer": true
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_cli",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.reamaze.com/assets/reamaze-godaddy-loader.js",
+          "content": "",
+          "async": true,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "https://cart-checkout.secureserver.net/dist/embed.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        }
+      ],
+      "styles": [
+        {
+          "content": "/* cyrillic */\n@font-face {\n  font-family: 'Playfair Display';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZ"
+        },
+        {
+          "content": ".x{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;box-sizing:border-box}.x *,.x :after,.x :before{box-sizing:inherit}.x-el a[href^=\"mailto:\""
+        },
+        {
+          "content": "/*\nCopyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name \"Playfair Display\".\n\nThis Font Software is licensed under the SIL Open"
+        },
+        {
+          "content": ".x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > "
+        },
+        {
+          "content": "@media (max-width: 450px){.x .c1-87{background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(\"//img1.wsimg.com/isteam/stock/107927/:/cr=t:0%25,l:0%25,w:100%25"
+        },
+        {
+          "content": "@media (max-width: 767px){.x .c1-q{padding-top:32px}}@media (max-width: 767px){.x .c1-r{padding-bottom:32px}}@media (max-width: 767px){.x .c1-1t{padding-left:0px}}@media (max-width: 767px){.x .c1-1u{p"
+        },
+        {
+          "content": "@media (min-width: 768px){.x .c1-d{font-size:16px}}@media (min-width: 768px){.x .c1-u{margin-bottom:0px}}@media (min-width: 768px){.x .c1-1c{width:100%}}@media (min-width: 768px) and (max-width: 1023p"
+        },
+        {
+          "content": "@media (min-width: 1024px){.x .c1-e{font-size:16px}}@media (min-width: 1024px){.x .c1-10{transition:filter 0.6s}}@media (min-width: 1024px){.x .c1-11:hover{filter:invert(.2)}}@media (min-width: 1024px"
+        },
+        {
+          "content": "@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-1e{width:1160px}}@media (min-width: 1280px){.x .c1-3o{font-size:22px}}@media (min-width: 1280px){.x .c1-63{font-si"
+        },
+        {
+          "content": "@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-1f{width:1280px}}@media (min-width: 1536px){.x .c1-3p{font-size:24px}}@media (min-width: 1536px){.x .c1-64{font-si"
+        },
+        {
+          "content": "@keyframes opacity-bounce { \n      0% {opacity: 0;transform: translateY(100%); } \n      60% { transform: translateY(-20%); } \n      100% { opacity: 1; transform: translateY(0); }\n    }"
+        },
+        {
+          "content": ".gd-ad-flex-parent {\n          animation-name: opacity-bounce; \n          animation-duration: 800ms; \n          animation-delay: 400ms; \n          animation-fill-mode: forwards; \n          animation-t"
+        },
+        {
+          "content": ".page-inner { background-color: rgb(255, 255, 255); min-height: 100vh; }"
+        },
+        {
+          "content": "\n  #pay-buttons-js-container,\n  #pay-buttons-js-container * {\n    box-sizing: border-box;\n  }\n  #pay-buttons-js-container {\n    width: 441px;\n    max-width: 100%;\n    height: 100vh;\n    background: #f"
+        }
+      ]
+    },
+    {
+      "url": "https://haywooduniversal.com/services",
+      "title": "Services",
+      "description": "",
+      "canonicalUrl": "https://haywooduniversal.com/services",
+      "ogTags": {
+        "url": "https://haywooduniversal.com/services",
+        "site_name": "HAYWOODUNIVERSAL.COM",
+        "title": "HAYWOODUNIVERSAL.COM",
+        "description": "\n@NOTYOURAVERAGEPRENEUR \n  follow us on all social media platforms ",
+        "type": "website",
+        "image": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg",
+        "locale": "en_US"
+      },
+      "structuredData": [],
+      "h1": [
+        "Menu / Price List"
+      ],
+      "h2": [
+        "SERVICES",
+        "Connect With Us"
+      ],
+      "h3": [
+        "Tax preparation services",
+        "Business Services",
+        "MENTORSHIP",
+        "Consultant & Coaching  Services"
+      ],
+      "images": [
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/3360/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/3360/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:360,h:271,cg:true, //img1.wsimg.com/isteam/stock/3360/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:720,h:541,cg:true 2x, //img1.wsimg.com/isteam/stock/3360/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:1080,h:812,cg:true 3x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/8406/:/cr=t:0%25,l:10.14%25,w:88.75%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/8406/:/cr=t:0%25,l:10.14%25,w:88.75%25,h:100%25/rs=w:360,h:271,cg:true, //img1.wsimg.com/isteam/stock/8406/:/cr=t:0%25,l:10.14%25,w:88.75%25,h:100%25/rs=w:720,h:541,cg:true 2x, //img1.wsimg.com/isteam/stock/8406/:/cr=t:0%25,l:10.14%25,w:88.75%25,h:100%25/rs=w:1080,h:812,cg:true 3x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/13867/:/rs=w:360,h:270.6766917293233,cg:true,m/cr=w:360,h:270.6766917293233",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/13867/:/rs=w:360,h:271,cg:true,m/cr=w:360,h:271, //img1.wsimg.com/isteam/stock/13867/:/rs=w:720,h:541,cg:true,m/cr=w:720,h:541 2x, //img1.wsimg.com/isteam/stock/13867/:/rs=w:1080,h:812,cg:true,m/cr=w:1080,h:812 3x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/7006/:/cr=t:0%25,l:5.61%25,w:88.79%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/7006/:/cr=t:0%25,l:5.61%25,w:88.79%25,h:100%25/rs=w:360,h:271,cg:true, //img1.wsimg.com/isteam/stock/7006/:/cr=t:0%25,l:5.61%25,w:88.79%25,h:100%25/rs=w:720,h:541,cg:true 2x, //img1.wsimg.com/isteam/stock/7006/:/cr=t:0%25,l:5.61%25,w:88.79%25,h:100%25/rs=w:1080,h:812,cg:true 3x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/6075/:/cr=t:0%25,l:5.63%25,w:88.75%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/6075/:/cr=t:0%25,l:5.63%25,w:88.75%25,h:100%25/rs=w:360,h:271,cg:true, //img1.wsimg.com/isteam/stock/6075/:/cr=t:0%25,l:5.63%25,w:88.75%25,h:100%25/rs=w:720,h:541,cg:true 2x, //img1.wsimg.com/isteam/stock/6075/:/cr=t:0%25,l:5.63%25,w:88.75%25,h:100%25/rs=w:1080,h:812,cg:true 3x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/stock/4W1rol4/:/cr=t:0%25,l:5.61%25,w:88.77%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+          "alt": "",
+          "srcset": "//img1.wsimg.com/isteam/stock/4W1rol4/:/cr=t:0%25,l:5.61%25,w:88.77%25,h:100%25/rs=w:360,h:271,cg:true, //img1.wsimg.com/isteam/stock/4W1rol4/:/cr=t:0%25,l:5.61%25,w:88.77%25,h:100%25/rs=w:720,h:541,cg:true 2x, //img1.wsimg.com/isteam/stock/4W1rol4/:/cr=t:0%25,l:5.61%25,w:88.77%25,h:100%25/rs=w:1080,h:812,cg:true 3x"
+        }
+      ],
+      "links": [
+        {
+          "href": "mailto:info@haywooduniversal.com",
+          "text": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/create-account",
+          "text": "Create Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "More",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base",
+          "text": "",
+          "rel": "nofollow noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        }
+      ],
+      "forms": [],
+      "scripts": [
+        {
+          "src": "https://connect.facebook.net/en_US/fbevents.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";\n\nif ('serviceWorker' in navigator) {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('/sw.js');\n  });\n}",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout27-Theme-publish-Theme-c96d5dca.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/MESSAGING/bs-Component-d750a9f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-5804ec33.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-cbda470b.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-52fbaa26.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-ceddc91a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-6afcb3a5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/form/formIdentifiers-99523055.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/traffic2-0a7e72c6.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Recaptcha/badge-e542c4f1.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-7574d33c.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-dc689f22.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-30d4bb8e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-ComponentGoPay-d63d303e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-FlyoutMenu-Component-b4b95853.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-LinkAwareComponent-0e7597ad.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-ComponentPropTypes-60bd54d0.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-Toggle-0f009dec.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleoff: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleon: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/98f7d84294e7d943/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.51.10.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/9620695a24e534fa/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(() => {var _window$dataLayer, _window$dataLayer$, _window$dataLayer2, _window$dataLayer2$;window.dataLayer && Array.isArray(window.dataLayer) && ((_window",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
+          "content": "",
+          "async": false,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "//img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js",
+          "content": "",
+          "async": false,
+          "defer": true
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_cli",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.reamaze.com/assets/reamaze-godaddy-loader.js",
+          "content": "",
+          "async": true,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "https://cart-checkout.secureserver.net/dist/embed.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        }
+      ],
+      "styles": [
+        {
+          "content": "/* cyrillic */\n@font-face {\n  font-family: 'Playfair Display';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZ"
+        },
+        {
+          "content": ".x{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;box-sizing:border-box}.x *,.x :after,.x :before{box-sizing:inherit}.x-el a[href^=\"mailto:\""
+        },
+        {
+          "content": "/*\nCopyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name \"Playfair Display\".\n\nThis Font Software is licensed under the SIL Open"
+        },
+        {
+          "content": ".x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > "
+        },
+        {
+          "content": "@media (max-width: 767px){.x .c1-q{padding-top:32px}}@media (max-width: 767px){.x .c1-r{padding-bottom:32px}}@media (max-width: 767px){.x .c1-1t{padding-left:0px}}@media (max-width: 767px){.x .c1-1u{p"
+        },
+        {
+          "content": "@media (min-width: 768px){.x .c1-d{font-size:16px}}@media (min-width: 768px){.x .c1-u{margin-bottom:0px}}@media (min-width: 768px){.x .c1-1c{width:100%}}@media (min-width: 768px) and (max-width: 1023p"
+        },
+        {
+          "content": "@media (min-width: 1024px){.x .c1-e{font-size:16px}}@media (min-width: 1024px){.x .c1-10{transition:filter 0.6s}}@media (min-width: 1024px){.x .c1-11:hover{filter:invert(.2)}}@media (min-width: 1024px"
+        },
+        {
+          "content": "@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-1e{width:1160px}}@media (min-width: 1280px){.x .c1-3o{font-size:22px}}@media (min-width: 1280px){.x .c1-63{font-si"
+        },
+        {
+          "content": "@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-1f{width:1280px}}@media (min-width: 1536px){.x .c1-3p{font-size:24px}}@media (min-width: 1536px){.x .c1-64{font-si"
+        },
+        {
+          "content": "@keyframes opacity-bounce { \n      0% {opacity: 0;transform: translateY(100%); } \n      60% { transform: translateY(-20%); } \n      100% { opacity: 1; transform: translateY(0); }\n    }"
+        },
+        {
+          "content": ".gd-ad-flex-parent {\n          animation-name: opacity-bounce; \n          animation-duration: 800ms; \n          animation-delay: 400ms; \n          animation-fill-mode: forwards; \n          animation-t"
+        },
+        {
+          "content": ".page-inner { background-color: rgb(255, 255, 255); min-height: 100vh; }"
+        },
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "url": "https://haywooduniversal.com/rooms-for-rent",
+      "title": "Rooms for rent | HAYWOODUNIVERSAL.COM",
+      "description": "",
+      "canonicalUrl": "https://haywooduniversal.com/rooms-for-rent",
+      "ogTags": {
+        "url": "https://haywooduniversal.com/rooms-for-rent",
+        "site_name": "HAYWOODUNIVERSAL.COM",
+        "title": "HAYWOODUNIVERSAL.COM",
+        "description": "\n@NOTYOURAVERAGEPRENEUR \n  follow us on all social media platforms ",
+        "type": "website",
+        "image": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg",
+        "locale": "en_US"
+      },
+      "structuredData": [],
+      "h1": [
+        "This website uses cookies."
+      ],
+      "h2": [],
+      "h3": [],
+      "images": [
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        },
+        {
+          "src": "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+          "alt": "HAYWOOD UNIVERSAL LLC",
+          "srcset": "//img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:98,h:98,cg:true,m/cr=w:98,h:98/qt=q:100/ll, //img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=w:120,h:120,cg:true,m/cr=w:120,h:120/qt=q:100/ll 2x"
+        }
+      ],
+      "links": [
+        {
+          "href": "mailto:info@haywooduniversal.com",
+          "text": "3379 Peachtree Rd NE Suite 655-S40 Atlanta, GA 30326 \n215-960-7774",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/create-account",
+          "text": "Create Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "More",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Purchase Merch",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/#",
+          "text": "Services Menu",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/rooms-for-rent",
+          "text": "Rooms for rent",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "Sign In",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/bookings",
+          "text": "Bookings",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/m/account",
+          "text": "My Account",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://www.facebook.com/people/notyouraveragepreneur/100078954969427/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.instagram.com/notyouraveragepreneur/",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/isha-greene-55525826?original_referer=",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.tiktok.com/@notyouraveragepreneur?_d=secCgYIASAHKAESPgo8LeuFOp2Y9Uo4Vi%2FfrgO1DyivTBkLXpIgCQWXSlOV%2FFikhrToMcx97Rb4juRPVOw14CxihbBlf1h0KE80GgA%3D&checksum=ffaf2108c86a3e9e324c41009599ef3bd9233f95e7eb10a97a41c5c18286e2f9&language=en&sec_uid=MS4wLjABAAAA_I6rAJ4Xq2CGpTnqZWFRVufBT_LiCxHrzJQe0drk09OUpPefoQjkH9VaiKyFoiOU&sec_user_id=MS4wLjABAAAAxiDGFxcsEhLmZXOtk4jQ0TYvzM_vISOKjSYv-YWsrfte1EaFfcFtxeSil7geiUOJ&share_app_id=1233&share_author_id=7066923504805119022&share_link_id=4EE9A9BE-D1C7-4584-B858-1A6A1A3C5485&tt_from=copy&u_code=dak1j0536gg120&user_id=6790750810575864838&utm_campaign=client_share&utm_medium=ios&utm_source=copy&source=h5_m&_r=1",
+          "text": "",
+          "rel": "noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base",
+          "text": "",
+          "rel": "nofollow noopener",
+          "isInternal": false
+        },
+        {
+          "href": "https://haywooduniversal.com/",
+          "text": "Home",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/project-management",
+          "text": "Project Management",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/contact-us",
+          "text": "Contact Us",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/gallery",
+          "text": "Gallery",
+          "rel": "",
+          "isInternal": true
+        },
+        {
+          "href": "https://haywooduniversal.com/services",
+          "text": "Services",
+          "rel": "",
+          "isInternal": true
+        }
+      ],
+      "forms": [],
+      "scripts": [
+        {
+          "src": "https://connect.facebook.net/en_US/fbevents.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";\n\nif ('serviceWorker' in navigator) {\n  window.addEventListener('load', function () {\n    navigator.serviceWorker.register('/sw.js');\n  });\n}",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-layout27-Theme-publish-Theme-c96d5dca.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/MESSAGING/bs-Component-d750a9f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-_rollupPluginBabelHelpers-5804ec33.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-imageToHeaderTreatments-cbda470b.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index-52fbaa26.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index3-ceddc91a.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-loaders-fffeeba5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-overlayTypes-6afcb3a5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/form/formIdentifiers-99523055.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/common/constants/traffic2-0a7e72c6.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Recaptcha/badge-e542c4f1.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/Carousel-7574d33c.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/ColorSwatch-4196a0a9.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/lib/components/DynamicFontScaler-6cccd626.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-dataAids-dc689f22.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-index2-30d4bb8e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-navigationDrawer-27f5f1f5.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-searchFormLocations-c86f2a99.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_commonjsHelpers-67085353.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_react_commonjs-external-a1351e34.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/_rollupPluginBabelHelpers-8ce54c82.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/interopRequireDefault-c83974f7.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@wsb/guac-widget-shared/c/dynamicFontScaler-ecd443bf.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-ComponentGoPay-d63d303e.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-FlyoutMenu-Component-b4b95853.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/bs-LinkAwareComponent-0e7597ad.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-ComponentPropTypes-60bd54d0.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://img1.wsimg.com/blobby/go/static/radpack/@widget/LAYOUT/c/bs-Toggle-0f009dec.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleoff: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "content": "<!--googleon: all-->",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/b444f070bff31d8c/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.51.10.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/blobby/go/043ace45-04e5-465e-a497-b46a6eb0d029/gpub/c2dbd8a391295d0c/script.js",
+          "content": "",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://www.googletagmanager.com/gtag/js?id=G-BF2FDR6KMM",
+          "content": "",
+          "async": true,
+          "defer": false
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(() => {var _window$dataLayer, _window$dataLayer$, _window$dataLayer2, _window$dataLayer2$;window.dataLayer && Array.isArray(window.dataLayer) && ((_window",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "//img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
+          "content": "",
+          "async": false,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "//img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js",
+          "content": "",
+          "async": false,
+          "defer": true
+        },
+        {
+          "content": "\"use strict\";Core.utils.onAllowCookieTracking(function () {const queryString = window.location.search;const urlParams = new URLSearchParams(queryString);const whiteList = ['gclid', 'fbclid', 'gdan_cli",
+          "async": false,
+          "defer": false
+        },
+        {
+          "src": "https://cdn.reamaze.com/assets/reamaze-godaddy-loader.js",
+          "content": "",
+          "async": true,
+          "defer": false,
+          "type": "text/javascript"
+        },
+        {
+          "src": "https://cart-checkout.secureserver.net/dist/embed.js",
+          "content": "",
+          "async": true,
+          "defer": false
+        }
+      ],
+      "styles": [
+        {
+          "content": "/* cyrillic */\n@font-face {\n  font-family: 'Playfair Display';\n  font-style: normal;\n  font-weight: 400;\n  font-display: swap;\n  src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v40/nuFiD-vYSZ"
+        },
+        {
+          "content": ".x{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);margin:0;box-sizing:border-box}.x *,.x :after,.x :before{box-sizing:inherit}.x-el a[href^=\"mailto:\""
+        },
+        {
+          "content": "/*\nCopyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display), with Reserved Font Name \"Playfair Display\".\n\nThis Font Software is licensed under the SIL Open"
+        },
+        {
+          "content": ".x .c1-1{letter-spacing:normal}.x .c1-2{text-transform:none}.x .c1-3{background-color:rgb(255, 255, 255)}.x .c1-4{width:100%}.x .c1-5 > div{position:relative}.x .c1-6 > div{overflow:hidden}.x .c1-7 > "
+        },
+        {
+          "content": "@media (max-width: 767px){.x .c1-q{padding-top:32px}}@media (max-width: 767px){.x .c1-r{padding-bottom:32px}}@media (max-width: 767px){.x .c1-1t{padding-left:0px}}@media (max-width: 767px){.x .c1-1u{p"
+        },
+        {
+          "content": "@media (min-width: 768px){.x .c1-d{font-size:16px}}@media (min-width: 768px){.x .c1-u{margin-bottom:0px}}@media (min-width: 768px){.x .c1-1c{width:100%}}@media (min-width: 768px) and (max-width: 1023p"
+        },
+        {
+          "content": "@media (min-width: 1024px){.x .c1-e{font-size:16px}}@media (min-width: 1024px){.x .c1-10{transition:filter 0.6s}}@media (min-width: 1024px){.x .c1-11:hover{filter:invert(.2)}}@media (min-width: 1024px"
+        },
+        {
+          "content": "@media (min-width: 1280px){.x .c1-f{font-size:16px}}@media (min-width: 1280px){.x .c1-1e{width:1160px}}@media (min-width: 1280px){.x .c1-3o{font-size:22px}}@media (min-width: 1280px){.x .c1-63{font-si"
+        },
+        {
+          "content": "@media (min-width: 1536px){.x .c1-g{font-size:18px}}@media (min-width: 1536px){.x .c1-1f{width:1280px}}@media (min-width: 1536px){.x .c1-3p{font-size:24px}}@media (min-width: 1536px){.x .c1-64{font-si"
+        },
+        {
+          "content": "@keyframes opacity-bounce { \n      0% {opacity: 0;transform: translateY(100%); } \n      60% { transform: translateY(-20%); } \n      100% { opacity: 1; transform: translateY(0); }\n    }"
+        },
+        {
+          "content": ".gd-ad-flex-parent {\n          animation-name: opacity-bounce; \n          animation-duration: 800ms; \n          animation-delay: 400ms; \n          animation-fill-mode: forwards; \n          animation-t"
+        },
+        {
+          "content": ".page-inner { background-color: rgb(255, 255, 255); min-height: 100vh; }"
+        },
+        {
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "images": [
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/Logo%20small%20card%20size%20.PNG/:/rs=h:98,cg:true,m/qt=q:100/ll",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_6278.jpeg/:/rs=h:1000,cg:true,m",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2713.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/13EBDD73-99D5-42C1-8347-1B7864279792.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/2804E21A-9DCD-4A3E-8EF8-ADB80D61A585.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2714.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_2713.jpg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/13EBDD73-99D5-42C1-8347-1B7864279792.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/70A3E71F-FCEA-4B0E-AF73-4C6815FB6ED6.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/IMG_1457.jpeg/:/rs=w:70,h:70,cg:true,m/cr=w:70,h:70,a:cc",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/33243E8B-3C1C-4D78-8725-8F9894361CE2.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1023,cg:true",
+      "https://img1.wsimg.com/isteam/ip/043ace45-04e5-465e-a497-b46a6eb0d029/A53EA26A-B503-4A30-9881-78BA8A31A08B.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1023,cg:true",
+      "https://img1.wsimg.com/isteam/stock/3360/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+      "https://img1.wsimg.com/isteam/stock/8406/:/cr=t:0%25,l:10.14%25,w:88.75%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+      "https://img1.wsimg.com/isteam/stock/13867/:/rs=w:360,h:270.6766917293233,cg:true,m/cr=w:360,h:270.6766917293233",
+      "https://img1.wsimg.com/isteam/stock/7006/:/cr=t:0%25,l:5.61%25,w:88.79%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+      "https://img1.wsimg.com/isteam/stock/6075/:/cr=t:0%25,l:5.63%25,w:88.75%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true",
+      "https://img1.wsimg.com/isteam/stock/4W1rol4/:/cr=t:0%25,l:5.61%25,w:88.77%25,h:100%25/rs=w:360,h:270.6766917293233,cg:true"
+    ],
+    "fonts": [],
+    "videos": [],
+    "documents": []
+  },
+  "navigation": {
+    "header": [],
+    "footer": []
+  }
+}
