@@ -1,0 +1,16 @@
+# Haywood Universal - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://haywooduniversal.com/sitemap.xml
+
+# Disallow admin/auth pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+
+# Crawl-delay for bots
+User-agent: *
+Crawl-delay: 1

@@ -1,0 +1,297 @@
+import fs from 'fs-extra';
+import path from 'path';
+
+class SEOOptimizer {
+  private outputDir: string;
+  private publicDir: string;
+
+  constructor() {
+    this.outputDir = path.join(process.cwd(), '../../public');
+    this.publicDir = this.outputDir;
+  }
+
+  async build() {
+    console.log('🔍 Building SEO & Metadata files...\n');
+
+    await fs.ensureDir(this.publicDir);
+
+    // Generate SEO files
+    await this.createRobotsTxt();
+    await this.createSitemap();
+    await this.createMetaTags();
+    await this.createStructuredData();
+
+    console.log('\n✅ SEO optimization complete!');
+    console.log(`📁 Output: ${this.publicDir}`);
+  }
+
+  async createRobotsTxt() {
+    const content = `# Haywood Universal - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://haywooduniversal.com/sitemap.xml
+
+# Disallow admin/auth pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+
+# Crawl-delay for bots
+User-agent: *
+Crawl-delay: 1
+`;
+
+    await fs.writeFile(path.join(this.publicDir, 'robots.txt'), content);
+    console.log('  ✅ robots.txt created');
+  }
+
+  async createSitemap() {
+    const now = new Date().toISOString();
+    
+    const content = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://haywooduniversal.com/</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://haywooduniversal.com/services</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://haywooduniversal.com/gallery</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://haywooduniversal.com/contact</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Project Management Page -->
+  <url>
+    <loc>https://haywooduniversal.com/project-management</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rooms for Rent Page -->
+  <url>
+    <loc>https://haywooduniversal.com/rooms-for-rent</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
+`;
+
+    await fs.writeFile(path.join(this.publicDir, 'sitemap.xml'), content);
+    console.log('  ✅ sitemap.xml created');
+  }
+
+  async createMetaTags() {
+    const metaTagsConfig = {
+      siteName: 'Haywood Universal',
+      siteUrl: 'https://haywooduniversal.com',
+      defaultTitle: 'Haywood Universal - Professional Services',
+      defaultDescription: 'Professional painting, remodeling, and property management services. Quality workmanship and exceptional customer service.',
+      keywords: [
+        'painting services',
+        'home remodeling',
+        'property management',
+        'interior painting',
+        'exterior painting',
+        'kitchen remodeling',
+        'bathroom remodeling',
+        'rental management',
+      ],
+      author: 'Haywood Universal',
+      ogImage: 'https://haywooduniversal.com/images/og-image.jpg',
+      twitterCard: 'summary_large_image',
+      themeColor: '#2563eb',
+      pages: {
+        '/': {
+          title: 'Haywood Universal - Professional Painting & Remodeling',
+          description: 'Professional painting, remodeling, and property management services. Transform your space with quality workmanship.',
+        },
+        '/services': {
+          title: 'Our Services - Haywood Universal',
+          description: 'Comprehensive painting, remodeling, and property management services. Interior, exterior, and commercial solutions.',
+        },
+        '/gallery': {
+          title: 'Project Gallery - Haywood Universal',
+          description: 'Browse our portfolio of completed projects. See the quality and craftsmanship that sets us apart.',
+        },
+        '/contact': {
+          title: 'Contact Us - Haywood Universal',
+          description: 'Get in touch for a free consultation and quote. Professional service you can trust.',
+        },
+        '/project-management': {
+          title: 'Project Management - Haywood Universal',
+          description: 'End-to-end project management ensuring on-time, within-budget completion. Professional execution guaranteed.',
+        },
+        '/rooms-for-rent': {
+          title: 'Rooms for Rent - Haywood Universal',
+          description: 'Quality rooms for rent in safe neighborhoods. Affordable, clean, and well-maintained accommodations.',
+        },
+      },
+    };
+
+    const dir = path.join(process.cwd(), '../../lib');
+    await fs.ensureDir(dir);
+    
+    const content = `// SEO Metadata Configuration
+// Auto-generated by Agent 9
+
+export const seoConfig = ${JSON.stringify(metaTagsConfig, null, 2)};
+
+export function getPageMeta(path: string) {
+  const pageMeta = seoConfig.pages[path as keyof typeof seoConfig.pages];
+  
+  return {
+    title: pageMeta?.title || seoConfig.defaultTitle,
+    description: pageMeta?.description || seoConfig.defaultDescription,
+    keywords: seoConfig.keywords.join(', '),
+    openGraph: {
+      title: pageMeta?.title || seoConfig.defaultTitle,
+      description: pageMeta?.description || seoConfig.defaultDescription,
+      url: \`\${seoConfig.siteUrl}\${path}\`,
+      siteName: seoConfig.siteName,
+      images: [{ url: seoConfig.ogImage }],
+      type: 'website',
+    },
+    twitter: {
+      card: seoConfig.twitterCard,
+      title: pageMeta?.title || seoConfig.defaultTitle,
+      description: pageMeta?.description || seoConfig.defaultDescription,
+      images: [seoConfig.ogImage],
+    },
+  };
+}
+`;
+
+    await fs.writeFile(path.join(dir, 'seo.ts'), content);
+    console.log('  ✅ Meta tags configuration created');
+  }
+
+  async createStructuredData() {
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'Haywood Universal',
+      image: 'https://haywooduniversal.com/images/logo.jpg',
+      '@id': 'https://haywooduniversal.com',
+      url: 'https://haywooduniversal.com',
+      telephone: '(123) 456-7890',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '123 Main Street',
+        addressLocality: 'Your City',
+        addressRegion: 'ST',
+        postalCode: '12345',
+        addressCountry: 'US',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 40.7128,
+        longitude: -74.006,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '18:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: 'Saturday',
+          opens: '09:00',
+          closes: '16:00',
+        },
+      ],
+      sameAs: [
+        'https://facebook.com/haywooduniversal',
+        'https://instagram.com/haywooduniversal',
+      ],
+      priceRange: '$$',
+      areaServed: {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: 40.7128,
+          longitude: -74.006,
+        },
+        geoRadius: '50 miles',
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Services',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Professional Painting',
+              description: 'Interior and exterior painting services',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Home Remodeling',
+              description: 'Kitchen and bathroom remodeling',
+            },
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Property Management',
+              description: 'Comprehensive rental property management',
+            },
+          },
+        ],
+      },
+    };
+
+    const dir = path.join(process.cwd(), '../../lib');
+    await fs.ensureDir(dir);
+    
+    const content = `// Structured Data (JSON-LD) for SEO
+// Auto-generated by Agent 9
+
+export const structuredData = ${JSON.stringify(structuredData, null, 2)};
+
+export function getStructuredData() {
+  return JSON.stringify(structuredData);
+}
+`;
+
+    await fs.writeFile(path.join(dir, 'structured-data.ts'), content);
+    console.log('  ✅ Structured data (JSON-LD) created');
+  }
+}
+
+// Execute
+const optimizer = new SEOOptimizer();
+optimizer.build().catch(console.error);
