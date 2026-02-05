@@ -1,0 +1,19 @@
+{
+  "name": "agent-7-molecules",
+  "version": "1.0.0",
+  "description": "Agent 7: Build composite components (molecules & organisms)",
+  "type": "module",
+  "scripts": {
+    "build": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
