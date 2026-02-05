@@ -126,6 +126,147 @@ export const siteContent: PageContent = {
       "Apple Pay",
       "Cash App"
     ]
+  },
+  projectManagement: {
+    hero: {
+      title: "Construction Project Management",
+      subtitle: "Professional Oversight for Your Building Projects",
+      description: "End-to-end project management for residential and commercial construction in Metro Atlanta.",
+      ctaButtons: [
+        { text: "Get Quote", href: "/contact", type: "primary" },
+        { text: "Book Consultation", href: "https://haywooduniversal.com/m/bookings", type: "secondary" }
+      ]
+    },
+    services: [
+      {
+        title: "Residential Construction",
+        description: "Full project management for home builds, renovations, and additions.",
+        features: [
+          "Design coordination and planning",
+          "Contractor selection and oversight",
+          "Budget management and cost control",
+          "Timeline tracking and scheduling",
+          "Quality inspections and compliance"
+        ],
+        pricing: "From $2,500/project"
+      },
+      {
+        title: "Commercial Projects",
+        description: "Professional management for commercial construction and tenant improvements.",
+        features: [
+          "Permit acquisition and compliance",
+          "Vendor and subcontractor management",
+          "Safety protocol enforcement",
+          "Change order management",
+          "Final walkthrough and punch list"
+        ],
+        pricing: "From $5,000/project"
+      },
+      {
+        title: "Property Renovations",
+        description: "Specialized management for renovation and remodeling projects.",
+        features: [
+          "Scope of work development",
+          "Material selection assistance",
+          "Progress reporting and documentation",
+          "Issue resolution and problem-solving",
+          "Final inspection coordination"
+        ],
+        pricing: "From $1,500/project"
+      }
+    ],
+    process: [
+      { step: 1, title: "Initial Consultation", description: "Discuss project scope, timeline, and budget" },
+      { step: 2, title: "Planning & Design", description: "Develop detailed project plan and specifications" },
+      { step: 3, title: "Contractor Selection", description: "Bid management and contractor vetting" },
+      { step: 4, title: "Project Execution", description: "On-site management and quality control" },
+      { step: 5, title: "Final Delivery", description: "Walkthrough, punch list, and project closeout" }
+    ],
+    benefits: [
+      "Save 15-20% on construction costs through expert oversight",
+      "Avoid costly mistakes and rework",
+      "Keep projects on schedule and within budget",
+      "Access to pre-vetted, licensed contractors",
+      "Single point of contact for all project needs",
+      "Weekly progress reports and photo documentation"
+    ]
+  },
+  roomsForRent: {
+    hero: {
+      title: "Rooms for Rent in Metro Atlanta",
+      subtitle: "Find Your Perfect Shared Housing",
+      description: "Affordable room rentals in quality properties across Atlanta. Flexible terms and vetted roommates.",
+      ctaButtons: [
+        { text: "View Available Rooms", href: "/contact", type: "primary" },
+        { text: "List Your Room", href: "https://haywooduniversal.com/m/bookings", type: "secondary" }
+      ]
+    },
+    featured: [
+      {
+        title: "Buckhead Professional House",
+        location: "Buckhead, Atlanta",
+        price: "$850/month",
+        features: [
+          "Private bedroom with ensuite bathroom",
+          "Shared kitchen and living room",
+          "2 current roommates (professionals, ages 28-35)",
+          "In-unit washer/dryer",
+          "Off-street parking included",
+          "Utilities included (avg $100/month)"
+        ],
+        houseRules: ["No smoking", "Pets negotiable", "Quiet hours 10PM-7AM"],
+        availability: "Available February 1st"
+      },
+      {
+        title: "Midtown Student-Friendly",
+        location: "Midtown, Atlanta",
+        price: "$650/month",
+        features: [
+          "Furnished bedroom with desk",
+          "Shared bathroom (2 people)",
+          "3 current roommates (students/young professionals)",
+          "High-speed internet included",
+          "MARTA access (5 min walk)",
+          "Shared laundry in building"
+        ],
+        houseRules: ["No smoking", "No pets", "Guest policy: notify roommates"],
+        availability: "Available now"
+      },
+      {
+        title: "Decatur Quiet Living",
+        location: "Decatur, GA",
+        price: "$750/month",
+        features: [
+          "Large private bedroom with closet",
+          "Shared kitchen, living, and bathroom",
+          "1 current roommate (professional, quiet lifestyle)",
+          "Backyard patio access",
+          "Street parking",
+          "Utilities split 50/50 (avg $75/month)"
+        ],
+        houseRules: ["No smoking", "No pets", "Quiet hours 10PM-7AM"],
+        availability: "Available March 1st"
+      }
+    ],
+    benefits: [
+      "Save 30-40% compared to studio apartments",
+      "Vetted roommates through our screening process",
+      "Flexible lease terms (3, 6, or 12 months)",
+      "Trial stay option (1 week via Airbnb)",
+      "All properties inspected for safety and quality",
+      "24/7 maintenance request portal",
+      "Roommate matching assistance",
+      "Conflict resolution support"
+    ],
+    searchFilters: [
+      "Neighborhood (Buckhead, Midtown, Virginia-Highland, etc.)",
+      "Price range ($500-$1,200/month)",
+      "Private bathroom vs shared",
+      "Furnished vs unfurnished",
+      "Pet-friendly",
+      "Parking available",
+      "Utilities included"
+    ]
   }
 };
 

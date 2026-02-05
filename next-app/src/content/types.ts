@@ -59,4 +59,32 @@ export interface PageContent {
     contactInfo: ContactInfo;
     paymentMethods: string[];
   };
+  projectManagement: {
+    hero: HeroContent;
+    services: Array<{
+      title: string;
+      description: string;
+      features: string[];
+      pricing: string;
+    }>;
+    process: Array<{
+      step: number;
+      title: string;
+      description: string;
+    }>;
+    benefits: string[];
+  };
+  roomsForRent: {
+    hero: HeroContent;
+    featured: Array<{
+      title: string;
+      location: string;
+      price: string;
+      features: string[];
+      houseRules: string[];
+      availability: string;
+    }>;
+    benefits: string[];
+    searchFilters: string[];
+  };
 }
