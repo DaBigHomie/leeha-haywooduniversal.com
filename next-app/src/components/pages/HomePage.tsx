@@ -7,7 +7,8 @@ import { ServiceGrid, type Service } from '@/components/organisms/ServiceGrid/Se
 import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
 
-const content = getPageContent('home');
+const pageData = getPageContent('home');
+const content = 'services' in pageData ? pageData : { ...pageData, services: [], features: { title: '', items: [] } };
 
 const services: Service[] = content.services.map((service, idx) => ({
   id: String(idx + 1),
@@ -20,18 +21,20 @@ const services: Service[] = content.services.map((service, idx) => ({
 }));
 
 export const HomePage: React.FC = () => {
+  const heroData = 'title' in content ? content : (content as any).hero || content;
+  
   return (
     <Layout currentPath="/">
       <Hero
-        title={content.title}
-        subtitle={content.subtitle}
+        title={heroData.title}
+        subtitle={heroData.subtitle}
         cta={{
-          label: content.ctaButtons[0].text,
-          onClick: () => window.location.href = content.ctaButtons[0].href,
+          label: heroData.ctaButtons?.[0]?.text || 'Get Started',
+          onClick: () => window.location.href = heroData.ctaButtons?.[0]?.href || '/contact',
         }}
         secondaryCta={{
-          label: content.ctaButtons[1].text,
-          onClick: () => window.location.href = content.ctaButtons[1].href,
+          label: heroData.ctaButtons?.[1]?.text || 'Learn More',
+          onClick: () => window.location.href = heroData.ctaButtons?.[1]?.href || '/services',
         }}
       />
 

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Layout } from './Layout';
 import { Hero } from '@/components/organisms/Hero/Hero';
@@ -5,7 +7,12 @@ import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
 import Image from 'next/image';
 
-const content = getPageContent('gallery');
+const pageData = getPageContent('gallery');
+const content = 'images' in pageData ? pageData : { 
+  hero: 'hero' in pageData ? pageData.hero : pageData,
+  images: [],
+  categories: ['All']
+};
 
 export const GalleryPage: React.FC = () => {
   const [filter, setFilter] = useState<string>('All');
@@ -46,17 +53,17 @@ export const GalleryPage: React.FC = () => {
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
+            {filteredImages.map((project, idx) => (
+              <div key={idx} className="group cursor-pointer">
                 <div className="aspect-video bg-neutral-200 rounded-lg overflow-hidden">
                   <img
-                    src={project.image}
-                    alt={project.title}
+                    src={project.src}
+                    alt={project.alt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                   />
                 </div>
                 <Text variant="h5" className="mt-3">
-                  {project.title}
+                  {project.title || project.alt}
                 </Text>
                 <Text variant="caption" className="capitalize">
                   {project.category}

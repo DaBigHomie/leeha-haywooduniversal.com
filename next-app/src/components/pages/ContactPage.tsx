@@ -6,7 +6,11 @@ import { Text } from '@/components/atoms/Text/Text';
 import { Icon } from '@/components/atoms/Icon/Icon';
 import { getPageContent } from '@/content/data';
 
-const content = getPageContent('contact');
+const pageData = getPageContent('contact');
+const content = 'contactInfo' in pageData ? pageData : { 
+  hero: 'hero' in pageData ? pageData.hero : pageData,
+  contactInfo: { phone: '(555) 123-4567', email: 'info@haywooduniversal.com', address: '123 Main St' }
+};
 
 export const ContactPage: React.FC = () => {
   const handleSubmit = async (data: ContactFormData) => {
