@@ -1,0 +1,82 @@
+name: "Phase 3: Service Pages"
+description: "Tax, Property, Vehicle, Truck, Education, Project pages"
+title: "[Phase 3] "
+labels: ["phase-3-services", "priority:p1"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Phase 3: Service Pages
+        
+        This phase implements all 6 service pages with consistent templates.
+        
+        **Duration**: 5 days
+        **Priority**: P1 (High)
+        **Dependencies**: Phase 1, Phase 2
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      description: Which service page is this issue for?
+      options:
+        - "Service Page Template (reusable)"
+        - "Tax Preparation (/services/tax-preparation)"
+        - "Property Management (/services/property-management)"
+        - "Vehicle Rentals (/services/vehicle-rentals)"
+        - "Truck Driving (/services/truck-driving)"
+        - "Real Estate Education (/services/real-estate-education)"
+        - "Project Management (/services/project-management)"
+        - "ServiceCTA Component"
+        - "ServiceFAQ Component"
+        - "RelatedServices Component"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: page_structure
+    attributes:
+      label: Page Structure
+      description: Required sections for service pages
+      value: |
+        1. **Hero Section** - Service-specific image, title, subtitle, CTA
+        2. **Overview** - Description + benefits list
+        3. **Service Packages** - Pricing cards (4 tiers)
+        4. **Process** - How it works (4 steps)
+        5. **FAQ** - 5-10 questions
+        6. **CTA** - Schedule consultation
+        7. **Related Services** - 2-3 related offerings
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What are the acceptance criteria?
+      value: |
+        - [ ] Follows service page template structure
+        - [ ] Real content (no placeholders)
+        - [ ] Atlanta-specific where relevant
+        - [ ] Responsive design
+        - [ ] SEO meta tags
+        - [ ] Accessible (WCAG AA)
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to relevant documentation
+      value: |
+        - `03-page-templates-prompt.md`
+        - `HAYWOOD_UNIVERSAL_COMPLETE_SPEC.md` (Feature Set 1-6)

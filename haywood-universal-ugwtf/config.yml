@@ -1,0 +1,278 @@
+# ═══════════════════════════════════════════════════════════════
+# HAYWOOD UNIVERSAL - WORKFLOW CONFIGURATION
+# Edit this file to customize for your project
+# ═══════════════════════════════════════════════════════════════
+
+project:
+  name: "Haywood Universal LLC"
+  repository: "DaBigHomie/leeha-haywooduniversal.com"
+  target_demographic: "African American professionals and entrepreneurs, ages 25-55, Metro Atlanta"
+  brand_voice: "Professional, trustworthy, successful, sophisticated, warm, community-focused"
+  tagline: "Your Success Partner in Taxes, Real Estate, and Beyond"
+
+# Business information
+business:
+  phone: "(678) 274-9182"
+  email: "info@haywooduniversal.com"
+  address: "3379 Peachtree Rd NE Suite 655-S40, Atlanta, GA 30326"
+  instagram: "@notyouraveragepreneur"
+  payment_methods:
+    - "Cash App"
+    - "Zelle"
+    - "Venmo"
+    - "PayPal"
+    - "Credit/Debit Cards"
+
+# Services offered
+services:
+  - name: "Tax Preparation"
+    slug: "tax-preparation"
+    icon: "Calculator"
+    priority: 1
+    
+  - name: "Property Management"
+    slug: "property-management"
+    icon: "Home"
+    priority: 2
+    
+  - name: "Vehicle Rentals"
+    slug: "vehicle-rentals"
+    icon: "Car"
+    priority: 3
+    
+  - name: "Truck Driving Services"
+    slug: "truck-driving"
+    icon: "Truck"
+    priority: 4
+    
+  - name: "Real Estate Education"
+    slug: "real-estate-education"
+    icon: "GraduationCap"
+    priority: 5
+    
+  - name: "Project Management"
+    slug: "project-management"
+    icon: "FolderKanban"
+    priority: 6
+
+# Atlanta-specific cultural keywords
+cultural_keywords:
+  primary:
+    - "Metro Atlanta"
+    - "Atlanta"
+    - "Buckhead"
+    - "Midtown"
+    - "Success"
+    - "Wealth Building"
+    - "Investment"
+    - "Community"
+    - "Trust"
+    - "Excellence"
+    - "Professional"
+  
+  neighborhoods:
+    - "Buckhead"
+    - "Midtown"
+    - "Virginia-Highland"
+    - "Inman Park"
+    - "Old Fourth Ward"
+    - "Decatur"
+    - "East Atlanta"
+    - "West End"
+    - "College Park"
+    - "South Fulton"
+    - "Stone Mountain"
+    - "Marietta"
+    - "Smyrna"
+  
+  # Minimum density (keywords per 500 words)
+  min_density: 2
+  target_density: 4
+
+# Terms to avoid (generic corporate language)
+avoid_terms:
+  - "click here"
+  - "submit"
+  - "lorem ipsum"
+  - "placeholder"
+  - "coming soon"
+
+# Design system colors (from HAYWOOD_UNIVERSAL_DESIGN_SYSTEM.md)
+design_system:
+  colors:
+    primary: "#C9A86A"      # Deep Gold - Prosperity & Success
+    secondary: "#1B365D"    # Rich Navy - Trust & Stability
+    accent: "#B87333"       # Warm Copper - Energy & Approachability
+    success: "#2E7D32"
+    warning: "#F57C00"
+    error: "#D32F2F"
+    neutral_50: "#FAFAF9"
+    neutral_900: "#2C2C2C"
+  
+  typography:
+    heading: "'Montserrat', sans-serif"
+    body: "'Inter', sans-serif"
+    accent: "'Playfair Display', serif"
+  
+  border_radius: "0.5rem"   # 8px for cards
+  shadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+
+# Phase configuration (6 phases)
+phases:
+  phase_1:
+    name: "Foundation & Setup"
+    description: "Next.js 15, Tailwind, Design System, Layout Components"
+    duration_days: 3
+    dependencies: []
+    priority: "P0"
+    components:
+      - "Project Setup (Next.js 15 + TypeScript)"
+      - "Tailwind Configuration"
+      - "CSS Variables / Design Tokens"
+      - "Root Layout"
+      - "Font Loading (Montserrat, Inter, Playfair)"
+  
+  phase_2:
+    name: "Homepage & Core Components"
+    description: "Hero, Services Grid, Trust Bar, Testimonials"
+    duration_days: 4
+    dependencies: ["phase_1"]
+    priority: "P0"
+    components:
+      - "Header"
+      - "Footer"
+      - "Hero"
+      - "TrustBar"
+      - "ServicesGrid"
+      - "WhyChooseUs"
+      - "Testimonials"
+      - "Newsletter"
+      - "InstagramFeed"
+  
+  phase_3:
+    name: "Service Pages"
+    description: "Tax, Property, Vehicle, Truck, Education, Project pages"
+    duration_days: 5
+    dependencies: ["phase_1", "phase_2"]
+    priority: "P1"
+    components:
+      - "Service Page Template"
+      - "Tax Preparation Page"
+      - "Property Management Page"
+      - "Vehicle Rentals Page"
+      - "Truck Driving Page"
+      - "Real Estate Education Page"
+      - "Project Management Page"
+      - "ServiceCTA"
+      - "ServiceFAQ"
+  
+  phase_4:
+    name: "Property & Vehicle Features"
+    description: "Property listings, Vehicle rentals, Booking system"
+    duration_days: 5
+    dependencies: ["phase_1", "phase_2"]
+    priority: "P1"
+    components:
+      - "Property Listings Page"
+      - "Property Detail Page"
+      - "FeaturedProperties"
+      - "Property Search & Filters"
+      - "Vehicle Fleet Display"
+      - "Rental Booking Form"
+      - "Data Files (properties.ts, vehicles.ts)"
+  
+  phase_5:
+    name: "Business Operations"
+    description: "Contact forms, API routes, CRM integration"
+    duration_days: 4
+    dependencies: ["phase_1", "phase_2"]
+    priority: "P0"
+    components:
+      - "Contact Page"
+      - "ContactForm"
+      - "API Route (/api/contact)"
+      - "Form Validation (Zod)"
+      - "Email Integration (Resend)"
+      - "UpcomingEvents"
+  
+  phase_6:
+    name: "Polish & Launch"
+    description: "SEO, Performance, Testing, Deployment"
+    duration_days: 3
+    dependencies: ["phase_1", "phase_2", "phase_3", "phase_4", "phase_5"]
+    priority: "P1"
+    components:
+      - "About Page"
+      - "Events Page"
+      - "Sitemap (sitemap.ts)"
+      - "Robots.txt (robots.ts)"
+      - "Meta Tags & Open Graph"
+      - "Performance Optimization"
+      - "Accessibility Audit"
+      - "Mobile Testing"
+      - "Vercel Deployment"
+
+# Agent configuration
+agents:
+  code_review:
+    enabled: true
+    min_approval_score: 7
+    auto_approve_score: 9
+    checks:
+      - typescript_compilation
+      - eslint_errors
+      - atlanta_keywords
+      - avoid_terms
+      - wcag_aa_compliance
+      - responsive_design
+  
+  gap_detection:
+    enabled: true
+    script: "ugwtf.sh"
+    idempotency_check: true
+  
+  pr_manager:
+    enabled: true
+    auto_merge_approved: false
+    review_timeout_hours: 24
+
+# Accessibility requirements
+accessibility:
+  wcag_level: "AA"
+  min_contrast_ratio: 4.5
+  keyboard_navigation: true
+  screen_reader_support: true
+  aria_labels_required: true
+
+# Performance requirements
+performance:
+  lighthouse_score: 90
+  lcp_target: 2.5
+  fid_target: 100
+  cls_target: 0.1
+  bundle_size_max: 300
+
+# Testing configuration
+testing:
+  e2e_required: true
+  unit_test_coverage_min: 70
+  lighthouse_ci: true
+  accessibility_testing: true
+  mobile_viewports:
+    - "375x667"   # iPhone SE
+    - "768x1024"  # iPad
+    - "1280x720"  # Desktop
+
+# Deployment configuration
+deployment:
+  platform: "Vercel"
+  staging_branch: "develop"
+  production_branch: "main"
+  domain: "haywooduniversal.com"
+  auto_deploy_staging: true
+  auto_deploy_production: false
+  pre_deploy_checks:
+    - typescript_compilation
+    - eslint_clean
+    - tests_passing
+    - lighthouse_score_90

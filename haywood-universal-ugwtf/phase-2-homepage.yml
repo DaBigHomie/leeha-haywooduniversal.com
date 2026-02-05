@@ -1,0 +1,88 @@
+name: "Phase 2: Homepage & Core Components"
+description: "Hero, Services Grid, Trust Bar, Testimonials, Footer"
+title: "[Phase 2] "
+labels: ["phase-2-homepage", "priority:p0"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Phase 2: Homepage & Core Components
+        
+        This phase builds the homepage and reusable components.
+        
+        **Duration**: 4 days
+        **Priority**: P0 (Blocking)
+        **Dependencies**: Phase 1
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component is this issue for?
+      options:
+        - "Header"
+        - "Footer"
+        - "Hero"
+        - "TrustBar"
+        - "ServicesGrid"
+        - "WhyChooseUs"
+        - "Testimonials"
+        - "FeaturedProperties"
+        - "UpcomingEvents"
+        - "InstagramFeed"
+        - "Newsletter"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: design_specs
+    attributes:
+      label: Design Specifications
+      description: Design system requirements
+      value: |
+        **Colors**:
+        - Primary: #C9A86A (Deep Gold)
+        - Secondary: #1B365D (Rich Navy)
+        - Accent: #B87333 (Warm Copper)
+        
+        **Typography**:
+        - Headings: Montserrat (bold)
+        - Body: Inter
+        
+        **Animations**:
+        - Use Framer Motion
+        - Subtle, professional animations
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What are the acceptance criteria?
+      value: |
+        - [ ] Matches design specification
+        - [ ] Responsive (mobile-first)
+        - [ ] Accessible (WCAG AA)
+        - [ ] TypeScript types defined
+        - [ ] No ESLint errors
+        - [ ] Framer Motion animations
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to relevant documentation
+      value: |
+        - `02-components-prompt.md`
+        - `HAYWOOD_UNIVERSAL_DESIGN_SYSTEM.md`

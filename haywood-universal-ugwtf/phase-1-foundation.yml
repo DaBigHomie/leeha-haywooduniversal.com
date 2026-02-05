@@ -1,0 +1,65 @@
+name: "Phase 1: Foundation & Setup"
+description: "Next.js 15, Tailwind, Design System, Layout Components"
+title: "[Phase 1] "
+labels: ["phase-1-foundation", "priority:p0"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Phase 1: Foundation & Setup
+        
+        This phase establishes the technical foundation for the Haywood Universal website.
+        
+        **Duration**: 3 days
+        **Priority**: P0 (Blocking)
+        **Dependencies**: None
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which component is this issue for?
+      options:
+        - "Project Setup (Next.js 15 + TypeScript)"
+        - "Tailwind Configuration"
+        - "CSS Variables / Design Tokens"
+        - "Root Layout"
+        - "Font Loading (Montserrat, Inter, Playfair)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be implemented?
+      placeholder: |
+        Describe the implementation requirements...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What are the acceptance criteria?
+      value: |
+        - [ ] Implementation matches specification
+        - [ ] TypeScript compiles without errors
+        - [ ] No ESLint errors
+        - [ ] Build succeeds
+        - [ ] Follows design system
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to relevant documentation
+      value: |
+        - `01-project-setup-prompt.md`
+        - `HAYWOOD_UNIVERSAL_DESIGN_SYSTEM.md`
+        - `HAYWOOD_UNIVERSAL_COMPLETE_SPEC.md`
