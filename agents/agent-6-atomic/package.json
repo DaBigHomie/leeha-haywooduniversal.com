@@ -1,13 +1,12 @@
 {
-    "name": "agent-5-components",
+    "name": "agent-6-atomic",
     "version": "1.0.0",
     "type": "module",
-    "description": "Component Architecture Specification",
+    "description": "Atomic Component Developer - Build Button, Input, Text, Icon",
     "scripts": {
-        "architect": "npx tsx src/index.ts"
+        "build": "npx tsx src/index.ts"
     },
     "dependencies": {
-        "cheerio": "^1.0.0-rc.12",
         "fs-extra": "^11.2.0"
     },
     "devDependencies": {

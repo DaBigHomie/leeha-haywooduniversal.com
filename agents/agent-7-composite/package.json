@@ -1,13 +1,12 @@
 {
-    "name": "agent-5-components",
+    "name": "agent-7-composite",
     "version": "1.0.0",
     "type": "module",
-    "description": "Component Architecture Specification",
+    "description": "Composite Component Developer - Build molecules and organisms",
     "scripts": {
-        "architect": "npx tsx src/index.ts"
+        "build": "npx tsx src/index.ts"
     },
     "dependencies": {
-        "cheerio": "^1.0.0-rc.12",
         "fs-extra": "^11.2.0"
     },
     "devDependencies": {
