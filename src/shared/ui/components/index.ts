@@ -3,6 +3,10 @@ export { Hero } from './Hero';
 export { Gallery } from './Gallery';
 export { EmailSignup } from './EmailSignup';
 export { Footer } from './Footer';
+export { AtlantaEventsCalendar } from './AtlantaEventsCalendar';
+export { CommunityPartnerships } from './CommunityPartnerships';
+export { ReferralProgram } from './ReferralProgram';
+export { LocalPresence } from './LocalPresence';
 
 // Phase 3: Premium Booking Experience Components
 export { SalonVibeGallery } from './SalonVibeGallery';

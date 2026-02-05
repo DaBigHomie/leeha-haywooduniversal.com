@@ -7,6 +7,7 @@ export interface SiteConfig {
   theme: ThemeConfig;
   content: ContentConfig;
   navigation: NavigationConfig;
+  atlantaLocal?: AtlantaLocalConfig;
   bookingExperience?: BookingExperienceConfig;
   digitalProducts?: DigitalProductsConfig;
   conversionTriggers?: ConversionTriggersConfig;
@@ -83,6 +84,76 @@ export interface NavItem {
   text: string;
   href: string;
   children?: NavItem[];
+}
+
+// Atlanta Local Types
+export interface AtlantaLocalConfig {
+  events?: AtlantaEvent[];
+  partnerships?: CommunityPartnership[];
+  referralTiers?: ReferralTier[];
+  userReferralCode?: string;
+  userReferralCount?: number;
+  localPresence?: LocalPresenceInfo;
+}
+
+export interface AtlantaEvent {
+  id: string;
+  title: string;
+  date: string; // ISO format
+  startTime: string;
+  endTime?: string;
+  venue: {
+    name: string;
+    address: string;
+    neighborhood: string;
+  };
+  category: 'networking' | 'professional' | 'community' | 'entertainment';
+  description: string;
+  attendees?: number;
+  ticketPrice?: number;
+  isFree?: boolean;
+  registrationUrl?: string;
+  imageUrl: string;
+  sponsored?: boolean;
+}
+
+export interface CommunityPartnership {
+  id: string;
+  name: string;
+  logo: string;
+  category: 'church' | 'nonprofit' | 'business' | 'civic';
+  description: string;
+  testimonialQuote?: string;
+  partnerSince?: string;
+  website?: string;
+  location?: string;
+}
+
+export interface ReferralTier {
+  id: 'bronze' | 'silver' | 'gold';
+  name: string;
+  color: string;
+  bgColor: string;
+  referralsNeeded: number;
+  rewards: string[];
+  currentUserCount?: number;
+}
+
+export interface LocalPresenceInfo {
+  offices: Array<{
+    name: string;
+    address: string;
+    neighborhood: string;
+    phone: string;
+    hours: string;
+    mapUrl?: string;
+  }>;
+  courtInfo: Array<{
+    name: string;
+    address: string;
+    jurisdiction: string;
+    description: string;
+  }>;
 }
 
 // Phase 3: Booking Experience Types
