@@ -1,0 +1,9 @@
+@import '../output/design-tokens/globals.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
