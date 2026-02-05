@@ -7,6 +7,71 @@
 
 ---
 
+## ⚠️ CRITICAL: Repository Structure Context
+
+### 🏗️ Two-Project Structure (IMPORTANT!)
+
+This repository contains **TWO SEPARATE PROJECTS**:
+
+**1. Root Directory (Vite Project)** - ❌ **NOT PRODUCTION**
+- **Purpose**: Component development lab for Phase 1-4 agent work
+- **Framework**: React 19 + Vite 7 + TailwindCSS 4
+- **Location**: `/` (root directory)
+- **Files**: 
+  - `vite.config.ts`
+  - `package.json` (Vite dependencies)
+  - `/components/` (18 agent-generated components)
+  - `/agents/` (Agent 1-10 build artifacts)
+- **Status**: ⚠️ **Development/testing only - DO NOT DEPLOY**
+
+**2. Next-app Directory (Next.js Project)** - ✅ **PRODUCTION**
+- **Purpose**: Production-ready application deployed to Vercel
+- **Framework**: React 18 + Next.js 15 + TailwindCSS 3
+- **Location**: `/next-app/` subdirectory
+- **Files**:
+  - `next-app/next.config.js`
+  - `next-app/package.json` (Next.js dependencies)
+  - `next-app/src/app/` (App Router pages)
+  - `next-app/src/components/` (Production components)
+- **Status**: ✅ **ALL NEW PAGES GO HERE**
+
+### 🎯 Deployment Configuration
+
+**Root `vercel.json`** is configured to deploy the Next.js app from `next-app/`:
+```json
+{
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
+  "regions": ["iad1"]
+}
+```
+
+**Vercel automatically detects** `next-app/` as the Next.js project directory.
+
+### 🚨 PR #17 Context
+
+**Open PR**: [#17 - Revert last commit to correct project implementation](https://github.com/DaBigHomie/leeha-haywooduniversal.com/pull/17)
+- **Issue**: Previous commit incorrectly tried to deploy the Vite project instead of Next.js
+- **Fix**: Reverted incorrect configuration, fixed Next.js build errors
+- **Status**: Open, pending review
+- **Changes**: 
+  - Fixed GalleryPage.tsx and ServicesPage.tsx syntax errors (27 files changed)
+  - Updated vercel.json to deploy from next-app/
+  - Added security headers and image optimization to next.config.js
+
+### 📝 Working Directory Rules
+
+**When implementing new pages:**
+- ✅ **ALWAYS work in** `/Users/dame/management-git/leeha-haywooduniversal.com/next-app/`
+- ✅ Create pages in `next-app/src/app/[page-name]/page.tsx`
+- ✅ Create components in `next-app/src/components/`
+- ✅ Add content to `next-app/src/content/data.ts`
+- ✅ Add types to `next-app/src/content/types.ts`
+- ❌ **DO NOT** create pages in root `/components/` or `/pages/`
+- ❌ **DO NOT** modify root `package.json` or `vite.config.ts`
+
+---
+
 ## 📊 Current Inventory
 
 ### ✅ Existing Pages (6 total)
@@ -632,3 +697,49 @@ interface ProcessStepsProps {
 5. **Phase 1 Completion**: Full QA and deployment
 
 **Ready to begin Phase 1 implementation?**
+
+---
+
+## 📋 Pre-Implementation Checklist
+
+### Before Starting Phase 1
+
+- [ ] **Review PR #17** - Ensure revert PR is merged or closed
+- [ ] **Verify working directory** - Confirm we're in `/next-app/` subdirectory
+- [ ] **Check TypeScript errors** - Run `npx tsc --noEmit` in next-app
+- [ ] **Fix pre-existing errors** - GalleryPage.tsx and ServicesPage.tsx (if not fixed by PR #17)
+- [ ] **Install dependencies** - Run `npm install` in next-app if needed
+- [ ] **Test dev server** - Run `npm run dev` to ensure it starts
+- [ ] **Create feature branch** - `git checkout -b feature/phase-1-service-pages`
+
+### Repository Context Reminders
+
+**Always remember:**
+1. 🏗️ **Two projects**: Root (Vite - dev only) vs next-app (Next.js - production)
+2. 📁 **Work in next-app**: All new pages go in `next-app/src/app/`
+3. 🚀 **Deployment**: Vercel deploys from next-app/ automatically
+4. ✅ **PR #17**: Review status before starting new work
+5. 🔍 **Issues #13-15**: Agent build issues (Phase 3) - for reference only
+
+---
+
+## 🎯 Implementation Start Command
+
+When ready to begin Phase 1:
+
+```bash
+cd /Users/dame/management-git/leeha-haywooduniversal.com/next-app
+git checkout -b feature/phase-1-service-pages
+npm install
+npm run dev # Verify it works
+npx tsc --noEmit # Check for errors
+```
+
+Then proceed with creating shared components first:
+1. ServiceCard
+2. PricingTable
+3. FAQAccordion
+4. ProcessSteps
+
+**Status**: Plan complete, awaiting approval to begin implementation.
+

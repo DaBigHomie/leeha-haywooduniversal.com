@@ -1,19 +1,19 @@
 {
-  "name": "agent-10-performance",
-  "version": "1.0.0",
-  "description": "Agent 10: Performance optimization & deployment",
-  "type": "module",
-  "scripts": {
-    "build": "tsx src/index.ts",
-    "dev": "tsx watch src/index.ts"
-  },
-  "dependencies": {
-    "fs-extra": "^11.2.0"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.11.5",
-    "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
-  }
+    "name": "agent-10-performance",
+    "version": "1.0.0",
+    "description": "Agent 10: Performance optimization & deployment",
+    "type": "module",
+    "scripts": {
+        "build": "tsx src/index.ts",
+        "dev": "tsx watch src/index.ts"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^20.11.5",
+        "tsx": "^4.7.0",
+        "typescript": "^5.3.3"
+    }
 }
