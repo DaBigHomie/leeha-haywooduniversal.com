@@ -1,8 +1,9 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "buildCommand": "cd next-app && npm install && npm run build",
+  "outputDirectory": "next-app/.next",
+  "devCommand": "cd next-app && npm run dev",
+  "installCommand": "cd next-app && npm install",
+  "framework": "nextjs",
   "regions": ["iad1"],
   "headers": [
     {
