@@ -7,6 +7,7 @@ export interface SiteConfig {
   theme: ThemeConfig;
   content: ContentConfig;
   navigation: NavigationConfig;
+  bookingExperience?: BookingExperienceConfig;
   digitalProducts?: DigitalProductsConfig;
   conversionTriggers?: ConversionTriggersConfig;
 }
@@ -82,6 +83,52 @@ export interface NavItem {
   text: string;
   href: string;
   children?: NavItem[];
+}
+
+// Phase 3: Booking Experience Types
+export interface BookingExperienceConfig {
+  galleryImages?: GalleryImage[];
+  galleryCategories?: string[];
+  depositAmount?: number;
+  depositPercentage?: number;
+  cancellationWindow?: number;
+  rescheduleWindow?: number;
+  testimonials?: Testimonial[];
+  attorneyBio?: AttorneyBio;
+}
+
+export interface GalleryImage {
+  id: string;
+  url: string;
+  category: string;
+  title: string;
+  description?: string;
+  aspect?: 'square' | 'portrait' | 'landscape';
+}
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  photo: string;
+  title?: string;
+  location?: string;
+  rating: number;
+  date: string;
+  content: string;
+  keywords?: string[];
+  videoUrl?: string;
+  serviceName: string;
+  verified?: boolean;
+}
+
+export interface AttorneyBio {
+  name: string;
+  title: string;
+  photo: string;
+  credentials: string[];
+  approach: string;
+  specialties: string[];
+  experience: string;
 }
 
 export interface ConversionTriggersConfig {
