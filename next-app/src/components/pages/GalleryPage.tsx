@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Layout } from './Layout';
 import { Hero } from '@/components/organisms/Hero/Hero';
@@ -43,36 +45,25 @@ export const GalleryPage: React.FC = () => {
               </button>
             ))}
           </div>
-              Residential
-            </button>
-            <button
-              onClick={() => setFilter('commercial')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
-                filter === 'commercial'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }`}
-            >
-              Commercial
-            </button>
-          </div>
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
+            {filteredImages.map((image) => (
+              <div key={image.id} className="group cursor-pointer">
                 <div className="aspect-video bg-neutral-200 rounded-lg overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                   />
                 </div>
                 <Text variant="h5" className="mt-3">
-                  {project.title}
+                  {image.title}
                 </Text>
                 <Text variant="caption" className="capitalize">
-                  {project.category}
+                  {image.category}
                 </Text>
               </div>
             ))}
