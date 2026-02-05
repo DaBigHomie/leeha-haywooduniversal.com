@@ -3,50 +3,33 @@ import { Layout } from './Layout';
 import { Hero } from '../organisms/Hero/Hero';
 import { ServiceGrid, type Service } from '../organisms/ServiceGrid/ServiceGrid';
 import { Text } from '../atoms/Text/Text';
+import { getPageContent } from '@/content/data';
 
-const services: Service[] = [
-  {
-    id: '1',
-    title: 'Residential Construction',
-    description: 'Complete home building and renovation services',
-    action: {
-      label: 'Learn More',
-      onClick: () => window.location.href = '/services',
-    },
+const content = getPageContent('home');
+
+const services: Service[] = content.services.map((service, idx) => ({
+  id: String(idx + 1),
+  title: service.title,
+  description: service.description,
+  action: {
+    label: 'Learn More',
+    onClick: () => window.location.href = '/services',
   },
-  {
-    id: '2',
-    title: 'Commercial Projects',
-    description: 'Professional commercial construction management',
-    action: {
-      label: 'View Projects',
-      onClick: () => window.location.href = '/gallery',
-    },
-  },
-  {
-    id: '3',
-    title: 'Property Management',
-    description: 'Expert property maintenance and management',
-    action: {
-      label: 'Get Started',
-      onClick: () => window.location.href = '/contact',
-    },
-  },
-];
+}));
 
 export const HomePage: React.FC = () => {
   return (
     <Layout currentPath="/">
       <Hero
-        title="Building Your Vision, Managing Your Success"
-        subtitle="Professional construction and property management services"
+        title={content.title}
+        subtitle={content.subtitle}
         cta={{
-          label: 'Get Started',
-          onClick: () => window.location.href = '/contact',
+          label: content.ctaButtons[0].text,
+          onClick: () => window.location.href = content.ctaButtons[0].href,
         }}
         secondaryCta={{
-          label: 'View Our Work',
-          onClick: () => window.location.href = '/gallery',
+          label: content.ctaButtons[1].text,
+          onClick: () => window.location.href = content.ctaButtons[1].href,
         }}
       />
 

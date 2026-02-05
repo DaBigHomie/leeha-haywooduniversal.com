@@ -3,51 +3,37 @@ import { Layout } from './Layout';
 import { Hero } from '../organisms/Hero/Hero';
 import { ServiceGrid, type Service } from '../organisms/ServiceGrid/ServiceGrid';
 import { Text } from '../atoms/Text/Text';
+import { getPageContent } from '@/content/data';
 
-const services: Service[] = [
-  {
-    id: '1',
-    title: 'Construction Management',
-    description: 'End-to-end project management for residential and commercial construction',
-  },
-  {
-    id: '2',
-    title: 'Property Maintenance',
-    description: 'Regular maintenance and repair services for all property types',
-  },
-  {
-    id: '3',
-    title: 'Renovation & Remodeling',
-    description: 'Transform your space with expert renovation services',
-  },
-  {
-    id: '4',
-    title: 'Room Rentals',
-    description: 'Quality room rentals with flexible terms',
-  },
-  {
-    id: '5',
-    title: 'Project Consultation',
-    description: 'Expert advice and planning for your next project',
-  },
-  {
-    id: '6',
-    title: 'Emergency Services',
-    description: '24/7 emergency response for urgent property issues',
-  },
-];
+const content = getPageContent('services');
 
 export const ServicesPage: React.FC = () => {
   return (
     <Layout currentPath="/services">
       <Hero
-        title="Our Services"
-        subtitle="Comprehensive construction and property management solutions"
+        title={content.hero.title}
+        subtitle={content.hero.subtitle}
+        cta={{
+          label: content.hero.ctaButtons[0].text,
+          onClick: () => window.location.href = content.hero.ctaButtons[0].href,
+        }}
       />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Text variant="h2" align="center" className="mb-12">
+          {content.categories.map((category, idx) => (
+            <div key={idx} className="mb-16">
+              <Text variant="h2" align="center" className="mb-8">
+                {category.title}
+              </Text>
+              <ServiceGrid services={category.services.map((service, sIdx) => ({
+                id: `${idx}-${sIdx}`,
+                title: service.title,
+                description: service.description,
+                price: service.price,
+              }))} />
+            </div>
+          ))}
             What We Offer
           </Text>
           

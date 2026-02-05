@@ -4,6 +4,9 @@ import { Hero } from '../organisms/Hero/Hero';
 import { ContactForm, type ContactFormData } from '../organisms/ContactForm/ContactForm';
 import { Text } from '../atoms/Text/Text';
 import { Icon } from '../atoms/Icon/Icon';
+import { getPageContent } from '@/content/data';
+
+const content = getPageContent('contact');
 
 export const ContactPage: React.FC = () => {
   const handleSubmit = async (data: ContactFormData) => {
@@ -17,8 +20,12 @@ export const ContactPage: React.FC = () => {
   return (
     <Layout currentPath="/contact">
       <Hero
-        title="Get in Touch"
-        subtitle="Have a project in mind? We'd love to hear from you"
+        title={content.hero.title}
+        subtitle={content.hero.subtitle}
+        cta={{
+          label: content.hero.ctaButtons[0].text,
+          onClick: () => window.location.href = content.hero.ctaButtons[0].href,
+        }}
       />
 
       <section className="py-16">
@@ -36,7 +43,7 @@ export const ContactPage: React.FC = () => {
                   <div>
                     <Text variant="h5" className="mb-1">Phone</Text>
                     <Text variant="body" className="text-neutral-600">
-                      (555) 123-4567
+                      {content.contactInfo.phone}
                     </Text>
                   </div>
                 </div>
@@ -46,7 +53,7 @@ export const ContactPage: React.FC = () => {
                   <div>
                     <Text variant="h5" className="mb-1">Email</Text>
                     <Text variant="body" className="text-neutral-600">
-                      info@haywooduniversal.com
+                      {content.contactInfo.email}
                     </Text>
                   </div>
                 </div>
@@ -56,7 +63,7 @@ export const ContactPage: React.FC = () => {
                   <div>
                     <Text variant="h5" className="mb-1">Office</Text>
                     <Text variant="body" className="text-neutral-600">
-                      123 Business St<br />
+                      {content.contactInfo.address}<br />
                       Suite 100<br />
                       City, State 12345
                     </Text>

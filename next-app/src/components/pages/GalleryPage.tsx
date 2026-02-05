@@ -2,52 +2,47 @@ import React, { useState } from 'react';
 import { Layout } from './Layout';
 import { Hero } from '../organisms/Hero/Hero';
 import { Text } from '../atoms/Text/Text';
+import { getPageContent } from '@/content/data';
+import Image from 'next/image';
 
-const projects = [
-  { id: '1', title: 'Residential Renovation', category: 'residential', image: '/images/project-1.jpg' },
-  { id: '2', title: 'Commercial Building', category: 'commercial', image: '/images/project-2.jpg' },
-  { id: '3', title: 'Kitchen Remodel', category: 'residential', image: '/images/project-3.jpg' },
-  { id: '4', title: 'Office Space', category: 'commercial', image: '/images/project-4.jpg' },
-  { id: '5', title: 'Bathroom Upgrade', category: 'residential', image: '/images/project-5.jpg' },
-  { id: '6', title: 'Retail Store', category: 'commercial', image: '/images/project-6.jpg' },
-];
+const content = getPageContent('gallery');
 
 export const GalleryPage: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'residential' | 'commercial'>('all');
+  const [filter, setFilter] = useState<string>('All');
 
-  const filteredProjects = filter === 'all'
-    ? projects
-    : projects.filter(p => p.category === filter);
+  const filteredImages = filter === 'All'
+    ? content.images
+    : content.images.filter(img => img.category === filter.toLowerCase());
 
   return (
     <Layout currentPath="/gallery">
       <Hero
-        title="Our Portfolio"
-        subtitle="Explore our completed projects and see our craftsmanship"
+        title={content.hero.title}
+        subtitle={content.hero.subtitle}
+        cta={{
+          label: content.hero.ctaButtons[0].text,
+          onClick: () => window.location.href = content.hero.ctaButtons[0].href,
+        }}
       />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Filter Buttons */}
           <div className="flex justify-center gap-4 mb-12">
-            <button
-              onClick={() => setFilter('all')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
-                filter === 'all'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }`}
-            >
-              All Projects
-            </button>
-            <button
-              onClick={() => setFilter('residential')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
-                filter === 'residential'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }`}
-            >
+            {content.categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+                  filter === category
+                    ? 'bg-primary-600 text-white'
+                    : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
               Residential
             </button>
             <button

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FormField } from '../molecules/FormField/FormField';
 import { Button } from '../atoms/Button/Button';

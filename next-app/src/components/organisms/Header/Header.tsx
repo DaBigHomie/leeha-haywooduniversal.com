@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { NavLink, type NavLinkProps } from '../molecules/NavLink/NavLink';
 import { Button } from '../atoms/Button/Button';
