@@ -1,0 +1,477 @@
+[
+  {
+    "name": "Button",
+    "type": "atom",
+    "description": "Basic button component with variants",
+    "props": [
+      {
+        "name": "variant",
+        "type": "'primary' | 'secondary' | 'outline'",
+        "required": false,
+        "description": "Visual style variant"
+      },
+      {
+        "name": "size",
+        "type": "'sm' | 'md' | 'lg'",
+        "required": false,
+        "description": "Button size"
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "required": false,
+        "description": "Disabled state"
+      },
+      {
+        "name": "onClick",
+        "type": "() => void",
+        "required": false,
+        "description": "Click handler"
+      },
+      {
+        "name": "children",
+        "type": "React.ReactNode",
+        "required": true,
+        "description": "Button content"
+      }
+    ],
+    "variants": [
+      "primary",
+      "secondary",
+      "outline"
+    ],
+    "usage": [
+      "CTAs",
+      "Form submissions",
+      "Navigation"
+    ]
+  },
+  {
+    "name": "Input",
+    "type": "atom",
+    "description": "Text input field",
+    "props": [
+      {
+        "name": "type",
+        "type": "'text' | 'email' | 'password' | 'tel'",
+        "required": false,
+        "description": "Input type"
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "required": false,
+        "description": "Placeholder text"
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "required": false,
+        "description": "Controlled value"
+      },
+      {
+        "name": "onChange",
+        "type": "(value: string) => void",
+        "required": false,
+        "description": "Change handler"
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "required": false,
+        "description": "Required field"
+      }
+    ],
+    "usage": [
+      "Forms",
+      "Search",
+      "User input"
+    ]
+  },
+  {
+    "name": "Text",
+    "type": "atom",
+    "description": "Typography component",
+    "props": [
+      {
+        "name": "variant",
+        "type": "'h1' | 'h2' | 'h3' | 'body' | 'caption'",
+        "required": false,
+        "description": "Text style"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "required": false,
+        "description": "Text color"
+      },
+      {
+        "name": "align",
+        "type": "'left' | 'center' | 'right'",
+        "required": false,
+        "description": "Text alignment"
+      },
+      {
+        "name": "children",
+        "type": "React.ReactNode",
+        "required": true,
+        "description": "Text content"
+      }
+    ],
+    "variants": [
+      "h1",
+      "h2",
+      "h3",
+      "body",
+      "caption"
+    ],
+    "usage": [
+      "Headings",
+      "Body text",
+      "Labels"
+    ]
+  },
+  {
+    "name": "Icon",
+    "type": "atom",
+    "description": "SVG icon component",
+    "props": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Icon identifier"
+      },
+      {
+        "name": "size",
+        "type": "number",
+        "required": false,
+        "description": "Icon size in pixels"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "required": false,
+        "description": "Icon color"
+      }
+    ],
+    "usage": [
+      "Navigation",
+      "Actions",
+      "Status indicators"
+    ]
+  },
+  {
+    "name": "FormField",
+    "type": "molecule",
+    "description": "Input with label and validation",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true,
+        "description": "Field label"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Validation error message"
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "required": false,
+        "description": "Required field"
+      },
+      {
+        "name": "children",
+        "type": "React.ReactNode",
+        "required": true,
+        "description": "Input element"
+      }
+    ],
+    "dependencies": [
+      "Text",
+      "Input"
+    ],
+    "usage": [
+      "Contact forms",
+      "User registration"
+    ]
+  },
+  {
+    "name": "Card",
+    "type": "molecule",
+    "description": "Content card with image and text",
+    "props": [
+      {
+        "name": "image",
+        "type": "string",
+        "required": false,
+        "description": "Card image URL"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Card title"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "description": "Card description"
+      },
+      {
+        "name": "action",
+        "type": "React.ReactNode",
+        "required": false,
+        "description": "CTA button"
+      }
+    ],
+    "dependencies": [
+      "Text",
+      "Button"
+    ],
+    "usage": [
+      "Service cards",
+      "Project cards",
+      "Team members"
+    ]
+  },
+  {
+    "name": "NavLink",
+    "type": "molecule",
+    "description": "Navigation link with active state",
+    "props": [
+      {
+        "name": "href",
+        "type": "string",
+        "required": true,
+        "description": "Link destination"
+      },
+      {
+        "name": "active",
+        "type": "boolean",
+        "required": false,
+        "description": "Active state"
+      },
+      {
+        "name": "children",
+        "type": "React.ReactNode",
+        "required": true,
+        "description": "Link text"
+      }
+    ],
+    "dependencies": [
+      "Text"
+    ],
+    "usage": [
+      "Main navigation",
+      "Footer links"
+    ]
+  },
+  {
+    "name": "Header",
+    "type": "organism",
+    "description": "Site header with navigation",
+    "props": [
+      {
+        "name": "logo",
+        "type": "string",
+        "required": false,
+        "description": "Logo image URL"
+      },
+      {
+        "name": "navigation",
+        "type": "NavItem[]",
+        "required": true,
+        "description": "Navigation items"
+      },
+      {
+        "name": "actions",
+        "type": "React.ReactNode",
+        "required": false,
+        "description": "Header actions"
+      }
+    ],
+    "dependencies": [
+      "NavLink",
+      "Button"
+    ],
+    "usage": [
+      "Site header"
+    ]
+  },
+  {
+    "name": "Footer",
+    "type": "organism",
+    "description": "Site footer with links and info",
+    "props": [
+      {
+        "name": "links",
+        "type": "NavItem[]",
+        "required": true,
+        "description": "Footer links"
+      },
+      {
+        "name": "social",
+        "type": "SocialLink[]",
+        "required": false,
+        "description": "Social media links"
+      },
+      {
+        "name": "copyright",
+        "type": "string",
+        "required": false,
+        "description": "Copyright text"
+      }
+    ],
+    "dependencies": [
+      "NavLink",
+      "Icon"
+    ],
+    "usage": [
+      "Site footer"
+    ]
+  },
+  {
+    "name": "Hero",
+    "type": "organism",
+    "description": "Hero section with CTA",
+    "props": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Hero title"
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "required": false,
+        "description": "Hero subtitle"
+      },
+      {
+        "name": "image",
+        "type": "string",
+        "required": false,
+        "description": "Background image"
+      },
+      {
+        "name": "cta",
+        "type": "React.ReactNode",
+        "required": false,
+        "description": "Call to action"
+      }
+    ],
+    "dependencies": [
+      "Text",
+      "Button"
+    ],
+    "usage": [
+      "Homepage",
+      "Landing pages"
+    ]
+  },
+  {
+    "name": "ContactForm",
+    "type": "organism",
+    "description": "Multi-field contact form",
+    "props": [
+      {
+        "name": "onSubmit",
+        "type": "(data: ContactData) => void",
+        "required": true,
+        "description": "Form submission handler"
+      },
+      {
+        "name": "loading",
+        "type": "boolean",
+        "required": false,
+        "description": "Loading state"
+      }
+    ],
+    "dependencies": [
+      "FormField",
+      "Button"
+    ],
+    "usage": [
+      "Contact page",
+      "Quote requests"
+    ]
+  },
+  {
+    "name": "ServiceGrid",
+    "type": "organism",
+    "description": "Grid of service cards",
+    "props": [
+      {
+        "name": "services",
+        "type": "Service[]",
+        "required": true,
+        "description": "Services to display"
+      },
+      {
+        "name": "columns",
+        "type": "number",
+        "required": false,
+        "description": "Grid columns"
+      }
+    ],
+    "dependencies": [
+      "Card"
+    ],
+    "usage": [
+      "Services page"
+    ]
+  },
+  {
+    "name": "PageLayout",
+    "type": "template",
+    "description": "Base page template",
+    "props": [
+      {
+        "name": "children",
+        "type": "React.ReactNode",
+        "required": true,
+        "description": "Page content"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "description": "Page title"
+      }
+    ],
+    "dependencies": [
+      "Header",
+      "Footer"
+    ],
+    "usage": [
+      "All pages"
+    ]
+  },
+  {
+    "name": "ServicePage",
+    "type": "template",
+    "description": "Service detail page template",
+    "props": [
+      {
+        "name": "service",
+        "type": "Service",
+        "required": true,
+        "description": "Service data"
+      }
+    ],
+    "dependencies": [
+      "PageLayout",
+      "Hero",
+      "ServiceGrid"
+    ],
+    "usage": [
+      "Individual service pages"
+    ]
+  }
+]

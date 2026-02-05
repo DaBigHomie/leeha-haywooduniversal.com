@@ -1,0 +1,19 @@
+{
+  "name": "agent-5-components",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Component Architecture Specification",
+  "scripts": {
+    "architect": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
