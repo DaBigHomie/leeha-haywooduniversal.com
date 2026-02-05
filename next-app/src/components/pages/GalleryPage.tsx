@@ -43,19 +43,6 @@ export const GalleryPage: React.FC = () => {
               </button>
             ))}
           </div>
-              Residential
-            </button>
-            <button
-              onClick={() => setFilter('commercial')}
-              className={`px-6 py-2 rounded-lg font-medium transition-colors ${
-                filter === 'commercial'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }`}
-            >
-              Commercial
-            </button>
-          </div>
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-3 gap-6">

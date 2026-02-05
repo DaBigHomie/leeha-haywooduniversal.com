@@ -1,4 +1,4 @@
-// File: /Users/dame/management-git/leeha-haywooduniversal.com/next-app/src/app/layout.tsx
+// File: /home/runner/work/leeha-haywooduniversal.com/leeha-haywooduniversal.com/next-app/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

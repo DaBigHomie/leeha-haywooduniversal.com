@@ -36,10 +36,6 @@ export const ServicesPage: React.FC = () => {
               }))} />
             </div>
           ))}
-            What We Offer
-          </Text>
-          
-          <ServiceGrid services={services} columns={3} />
         </div>
       </section>
 
