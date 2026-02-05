@@ -1,593 +1,304 @@
-/**
- * Agent 8: Page Builder
- * Build page templates using composite components
- */
-
 import fs from 'fs-extra';
-import * as path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-interface PageTemplate {
-  name: string;
-  route: string;
-  code: string;
-}
+import path from 'path';
 
 class PageBuilder {
   private outputDir: string;
   private pagesDir: string;
-  private contentDataPath: string;
 
   constructor() {
-    const projectRoot = path.resolve(__dirname, '../../..');
-    this.outputDir = path.join(projectRoot, 'output', 'components');
-    this.pagesDir = path.join(this.outputDir, 'pages');
-    this.contentDataPath = path.join(projectRoot, 'output', 'content-data', 'content-inventory.json');
+    this.outputDir = path.join(process.cwd(), '../../pages');
+    this.pagesDir = this.outputDir;
   }
 
-  async build(): Promise<void> {
-    await fs.ensureDir(this.pagesDir);
-
+  async build() {
     console.log('📄 Building page templates...\n');
 
-    // Load content data
-    let contentData = null;
-    if (await fs.pathExists(this.contentDataPath)) {
-      contentData = await fs.readJson(this.contentDataPath);
-    }
+    // Ensure pages directory exists
+    await fs.ensureDir(this.pagesDir);
 
-    const pages: PageTemplate[] = [
-      this.buildHomePage(contentData),
-      this.buildServicesPage(contentData),
-      this.buildGalleryPage(contentData),
-      this.buildContactPage(contentData),
-      this.buildLayout(),
-    ];
-
-    // Create page files
-    for (const page of pages) {
-      await this.createPage(page);
-    }
+    // Build all pages - content is inline for simplicity
+    await this.createHomePage();
+    await this.createServicesPage();
+    await this.createGalleryPage();
+    await this.createContactPage();
+    await this.createProjectManagementPage();
+    await this.createRoomsForRentPage();
 
     // Create index file
-    await this.createIndexFile(pages);
+    await this.createPagesIndex();
 
-    // Create README
-    await this.createReadme(pages);
-
-    console.log('\n✅ Page templates built!\n');
-    console.log(`📁 Output saved to: ${this.pagesDir}`);
+    console.log('\n✅ Page templates complete!');
+    console.log(`📁 Pages: ${this.pagesDir}`);
   }
 
-  private buildLayout(): PageTemplate {
-    const code = `import React from 'react';
-import { Header, type NavItem } from '../organisms/Header/Header';
-import { Footer, type FooterLink } from '../organisms/Footer/Footer';
+  async createHomePage() {
+    const dir = path.join(this.pagesDir, 'HomePage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { ServiceGrid } from '../../components/organisms/ServiceGrid/ServiceGrid';
 
-export interface LayoutProps {
-  children: React.ReactNode;
-  currentPath?: string;
-}
-
-const navigation: NavItem[] = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'Project Management', href: '/project-management' },
-  { label: 'Contact', href: '/contact' },
-];
-
-const footerLinks: FooterLink[] = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'Privacy Policy', href: '/privacy' },
-];
-
-export const Layout: React.FC<LayoutProps> = ({ children, currentPath = '/' }) => {
-  const navWithActive = navigation.map(item => ({
-    ...item,
-    active: item.href === currentPath,
-  }));
+export const HomePage: React.FC = () => {
+  const services = [
+    {
+      id: 'painting',
+      title: 'Professional Painting',
+      description: 'Transform your space with expert painting services.',
+    },
+    {
+      id: 'remodeling',
+      title: 'Home Remodeling',
+      description: 'Complete renovation services for your dream home.',
+    },
+    {
+      id: 'property',
+      title: 'Property Management',
+      description: 'Comprehensive property management solutions.',
+    },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header
-        navigation={navWithActive}
-        ctaLabel="Get a Quote"
-        ctaHref="/contact"
-      />
-      
-      <main className="flex-grow">
-        {children}
+      <Header currentPath="/" />
+      <main className="flex-1">
+        <Hero
+          title="Building Excellence, One Project at a Time"
+          subtitle="Haywood Universal Services"
+          description="Professional painting, remodeling, and property management services."
+          primaryCta={{
+            text: 'Get a Free Quote',
+            onClick: () => console.log('Navigate to contact'),
+          }}
+        />
+        <ServiceGrid services={services} />
       </main>
-      
-      <Footer
-        links={footerLinks}
-        copyright="© 2026 Haywood Universal. All rights reserved."
-      />
+      <Footer />
     </div>
   );
 };
 `;
 
-    return { name: 'Layout', route: '_layout', code };
+    await fs.writeFile(path.join(dir, 'HomePage.tsx'), content);
+    console.log('  ✅ HomePage created');
   }
 
-  private buildHomePage(contentData: any): PageTemplate {
-    const code = `import React from 'react';
-import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { ServiceGrid, type Service } from '../organisms/ServiceGrid/ServiceGrid';
-import { Text } from '../atoms/Text/Text';
-
-const services: Service[] = [
-  {
-    id: '1',
-    title: 'Residential Construction',
-    description: 'Complete home building and renovation services',
-    action: {
-      label: 'Learn More',
-      onClick: () => window.location.href = '/services',
-    },
-  },
-  {
-    id: '2',
-    title: 'Commercial Projects',
-    description: 'Professional commercial construction management',
-    action: {
-      label: 'View Projects',
-      onClick: () => window.location.href = '/gallery',
-    },
-  },
-  {
-    id: '3',
-    title: 'Property Management',
-    description: 'Expert property maintenance and management',
-    action: {
-      label: 'Get Started',
-      onClick: () => window.location.href = '/contact',
-    },
-  },
-];
-
-export const HomePage: React.FC = () => {
-  return (
-    <Layout currentPath="/">
-      <Hero
-        title="Building Your Vision, Managing Your Success"
-        subtitle="Professional construction and property management services"
-        cta={{
-          label: 'Get Started',
-          onClick: () => window.location.href = '/contact',
-        }}
-        secondaryCta={{
-          label: 'View Our Work',
-          onClick: () => window.location.href = '/gallery',
-        }}
-      />
-
-      <section className="py-16 bg-neutral-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Text variant="h2" align="center" className="mb-4">
-            Our Services
-          </Text>
-          <Text variant="body" align="center" className="mb-12 text-neutral-600">
-            Comprehensive solutions for all your construction and property needs
-          </Text>
-          
-          <ServiceGrid services={services} columns={3} />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Text variant="h2" align="center" className="mb-4">
-            Why Choose Haywood Universal?
-          </Text>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <Text variant="h3" className="mb-2">20+ Years</Text>
-              <Text variant="body" className="text-neutral-600">
-                Experience in construction and property management
-              </Text>
-            </div>
-            <div className="text-center">
-              <Text variant="h3" className="mb-2">500+ Projects</Text>
-              <Text variant="body" className="text-neutral-600">
-                Successfully completed across residential and commercial sectors
-              </Text>
-            </div>
-            <div className="text-center">
-              <Text variant="h3" className="mb-2">100% Satisfaction</Text>
-              <Text variant="body" className="text-neutral-600">
-                Committed to quality and customer satisfaction
-              </Text>
-            </div>
-          </div>
-        </div>
-      </section>
-    </Layout>
-  );
-};
-`;
-
-    return { name: 'HomePage', route: '/', code };
-  }
-
-  private buildServicesPage(contentData: any): PageTemplate {
-    const code = `import React from 'react';
-import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { ServiceGrid, type Service } from '../organisms/ServiceGrid/ServiceGrid';
-import { Text } from '../atoms/Text/Text';
-
-const services: Service[] = [
-  {
-    id: '1',
-    title: 'Construction Management',
-    description: 'End-to-end project management for residential and commercial construction',
-  },
-  {
-    id: '2',
-    title: 'Property Maintenance',
-    description: 'Regular maintenance and repair services for all property types',
-  },
-  {
-    id: '3',
-    title: 'Renovation & Remodeling',
-    description: 'Transform your space with expert renovation services',
-  },
-  {
-    id: '4',
-    title: 'Room Rentals',
-    description: 'Quality room rentals with flexible terms',
-  },
-  {
-    id: '5',
-    title: 'Project Consultation',
-    description: 'Expert advice and planning for your next project',
-  },
-  {
-    id: '6',
-    title: 'Emergency Services',
-    description: '24/7 emergency response for urgent property issues',
-  },
-];
+  async createServicesPage() {
+    const dir = path.join(this.pagesDir, 'ServicesPage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { Card } from '../../components/molecules/Card/Card';
 
 export const ServicesPage: React.FC = () => {
   return (
-    <Layout currentPath="/services">
-      <Hero
-        title="Our Services"
-        subtitle="Comprehensive construction and property management solutions"
-      />
-
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Text variant="h2" align="center" className="mb-12">
-            What We Offer
-          </Text>
-          
-          <ServiceGrid services={services} columns={3} />
-        </div>
-      </section>
-
-      <section className="py-16 bg-primary-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Text variant="h3" className="mb-4">
-            Ready to Get Started?
-          </Text>
-          <Text variant="body" className="mb-8">
-            Contact us today for a free consultation and quote
-          </Text>
-          <a
-            href="/contact"
-            className="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors"
-          >
-            Contact Us
-          </a>
-        </div>
-      </section>
-    </Layout>
+    <div className="min-h-screen flex flex-col">
+      <Header currentPath="/services" />
+      <main className="flex-1">
+        <Hero
+          title="Our Services"
+          description="Comprehensive solutions for all your needs."
+        />
+        <section className="py-16 container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card title="Interior Painting" description="Professional interior painting services." />
+            <Card title="Exterior Painting" description="Weather-resistant exterior finishes." />
+            <Card title="Kitchen Remodeling" description="Complete kitchen transformations." />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 };
 `;
 
-    return { name: 'ServicesPage', route: '/services', code };
+    await fs.writeFile(path.join(dir, 'ServicesPage.tsx'), content);
+    console.log('  ✅ ServicesPage created');
   }
 
-  private buildGalleryPage(contentData: any): PageTemplate {
-    const code = `import React, { useState } from 'react';
-import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { Text } from '../atoms/Text/Text';
-
-const projects = [
-  { id: '1', title: 'Residential Renovation', category: 'residential', image: '/images/project-1.jpg' },
-  { id: '2', title: 'Commercial Building', category: 'commercial', image: '/images/project-2.jpg' },
-  { id: '3', title: 'Kitchen Remodel', category: 'residential', image: '/images/project-3.jpg' },
-  { id: '4', title: 'Office Space', category: 'commercial', image: '/images/project-4.jpg' },
-  { id: '5', title: 'Bathroom Upgrade', category: 'residential', image: '/images/project-5.jpg' },
-  { id: '6', title: 'Retail Store', category: 'commercial', image: '/images/project-6.jpg' },
-];
+  async createGalleryPage() {
+    const dir = path.join(this.pagesDir, 'GalleryPage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React, { useState } from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { Button } from '../../components/atoms/Button/Button';
 
 export const GalleryPage: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'residential' | 'commercial'>('all');
-
-  const filteredProjects = filter === 'all'
-    ? projects
-    : projects.filter(p => p.category === filter);
+  const [filter, setFilter] = useState('all');
 
   return (
-    <Layout currentPath="/gallery">
-      <Hero
-        title="Our Portfolio"
-        subtitle="Explore our completed projects and see our craftsmanship"
-      />
-
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filter Buttons */}
-          <div className="flex justify-center gap-4 mb-12">
-            <button
-              onClick={() => setFilter('all')}
-              className={\`px-6 py-2 rounded-lg font-medium transition-colors \${
-                filter === 'all'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }\`}
-            >
-              All Projects
-            </button>
-            <button
-              onClick={() => setFilter('residential')}
-              className={\`px-6 py-2 rounded-lg font-medium transition-colors \${
-                filter === 'residential'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }\`}
-            >
-              Residential
-            </button>
-            <button
-              onClick={() => setFilter('commercial')}
-              className={\`px-6 py-2 rounded-lg font-medium transition-colors \${
-                filter === 'commercial'
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-              }\`}
-            >
-              Commercial
-            </button>
+    <div className="min-h-screen flex flex-col">
+      <Header currentPath="/gallery" />
+      <main className="flex-1">
+        <Hero title="Our Portfolio" description="Browse our completed projects." />
+        <section className="py-16 container mx-auto px-4">
+          <div className="flex gap-4 justify-center mb-8">
+            <Button variant={filter === 'all' ? 'primary' : 'outline'} onClick={() => setFilter('all')}>
+              All
+            </Button>
+            <Button variant={filter === 'painting' ? 'primary' : 'outline'} onClick={() => setFilter('painting')}>
+              Painting
+            </Button>
           </div>
-
-          {/* Gallery Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
-              <div key={project.id} className="group cursor-pointer">
-                <div className="aspect-video bg-neutral-200 rounded-lg overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  />
-                </div>
-                <Text variant="h5" className="mt-3">
-                  {project.title}
-                </Text>
-                <Text variant="caption" className="capitalize">
-                  {project.category}
-                </Text>
-              </div>
-            ))}
+          <div className="grid grid-cols-3 gap-4">
+            {/* Gallery items would go here */}
           </div>
-        </div>
-      </section>
-    </Layout>
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 };
 `;
 
-    return { name: 'GalleryPage', route: '/gallery', code };
+    await fs.writeFile(path.join(dir, 'GalleryPage.tsx'), content);
+    console.log('  ✅ GalleryPage created');
   }
 
-  private buildContactPage(contentData: any): PageTemplate {
-    const code = `import React from 'react';
-import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { ContactForm, type ContactFormData } from '../organisms/ContactForm/ContactForm';
-import { Text } from '../atoms/Text/Text';
-import { Icon } from '../atoms/Icon/Icon';
+  async createContactPage() {
+    const dir = path.join(this.pagesDir, 'ContactPage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { ContactForm, ContactFormData } from '../../components/organisms/ContactForm/ContactForm';
 
 export const ContactPage: React.FC = () => {
   const handleSubmit = async (data: ContactFormData) => {
-    // In production, this would send to your API
     console.log('Form submitted:', data);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
   };
 
   return (
-    <Layout currentPath="/contact">
-      <Hero
-        title="Get in Touch"
-        subtitle="Have a project in mind? We'd love to hear from you"
-      />
-
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Info */}
-            <div>
-              <Text variant="h3" className="mb-6">
-                Contact Information
-              </Text>
-              
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Icon name="phone" size={24} color="#2563eb" />
-                  <div>
-                    <Text variant="h5" className="mb-1">Phone</Text>
-                    <Text variant="body" className="text-neutral-600">
-                      (555) 123-4567
-                    </Text>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <Icon name="mail" size={24} color="#2563eb" />
-                  <div>
-                    <Text variant="h5" className="mb-1">Email</Text>
-                    <Text variant="body" className="text-neutral-600">
-                      info@haywooduniversal.com
-                    </Text>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <Icon name="home" size={24} color="#2563eb" />
-                  <div>
-                    <Text variant="h5" className="mb-1">Office</Text>
-                    <Text variant="body" className="text-neutral-600">
-                      123 Business St<br />
-                      Suite 100<br />
-                      City, State 12345
-                    </Text>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <Text variant="h5" className="mb-4">Business Hours</Text>
-                <Text variant="body" className="text-neutral-600">
-                  Monday - Friday: 8:00 AM - 6:00 PM<br />
-                  Saturday: 9:00 AM - 3:00 PM<br />
-                  Sunday: Closed
-                </Text>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <Text variant="h3" className="mb-6">
-                Send Us a Message
-              </Text>
-              <ContactForm onSubmit={handleSubmit} />
-            </div>
-          </div>
-        </div>
-      </section>
-    </Layout>
+    <div className="min-h-screen flex flex-col">
+      <Header currentPath="/contact" />
+      <main className="flex-1">
+        <Hero title="Get In Touch" description="Contact us for a free consultation." />
+        <section className="py-16 container mx-auto px-4 max-w-2xl">
+          <ContactForm onSubmit={handleSubmit} />
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 };
 `;
 
-    return { name: 'ContactPage', route: '/contact', code };
+    await fs.writeFile(path.join(dir, 'ContactPage.tsx'), content);
+    console.log('  ✅ ContactPage created');
   }
 
-  private async createPage(page: PageTemplate): Promise<void> {
-    await fs.writeFile(
-      path.join(this.pagesDir, `${page.name}.tsx`),
-      page.code
-    );
+  async createProjectManagementPage() {
+    const dir = path.join(this.pagesDir, 'ProjectManagementPage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { Text } from '../../components/atoms/Text/Text';
 
-    console.log(`✅ Created ${page.name} (${page.route})`);
-  }
-
-  private async createIndexFile(pages: PageTemplate[]): Promise<void> {
-    const exports = pages
-      .map(p => `export * from './${p.name}';`)
-      .join('\n');
-
-    await fs.writeFile(
-      path.join(this.pagesDir, 'index.ts'),
-      exports
-    );
-  }
-
-  private async createReadme(pages: PageTemplate[]): Promise<void> {
-    const readme = `# Page Templates
-
-**Generated**: ${new Date().toISOString()}
-
-## Pages
-
-${pages.map(p => `- **${p.name}**: \`${p.route}\``).join('\n')}
-
-## Usage
-
-\`\`\`tsx
-import { HomePage, ServicesPage, GalleryPage, ContactPage } from './pages';
-
-// Next.js App Router example:
-// app/page.tsx
-export default function Page() {
-  return <HomePage />;
-}
-
-// app/services/page.tsx
-export default function Page() {
-  return <ServicesPage />;
-}
-\`\`\`
-
-## Structure
-
-All pages use the \`Layout\` component which includes:
-- Header with navigation
-- Footer with links
-- Responsive design
-- Consistent branding
-
-## Customization
-
-To customize page content:
-1. Edit the page component directly
-2. Modify service data, project lists, etc.
-3. Adjust styling via TailwindCSS classes
-4. Add new sections using atomic/composite components
-
-## Next.js Integration
-
-\`\`\`bash
-# Create Next.js 15 app
-npx create-next-app@latest my-app --typescript --tailwind --app
-
-# Copy components to your Next.js app
-cp -r output/components/* my-app/src/components/
-
-# Use in app router
-# app/page.tsx
-import { HomePage } from '@/components/pages';
-export default HomePage;
-\`\`\`
+export const ProjectManagementPage: React.FC = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header currentPath="/project-management" />
+      <main className="flex-1">
+        <Hero title="Project Management" description="Professional project management services." />
+        <section className="py-16 container mx-auto px-4">
+          <Text variant="h2" className="mb-8 text-center">Our Process</Text>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <Text variant="h3" className="mb-4">1. Consultation</Text>
+              <Text variant="body">Initial project assessment and planning.</Text>
+            </div>
+            <div className="text-center">
+              <Text variant="h3" className="mb-4">2. Execution</Text>
+              <Text variant="body">Professional implementation of your project.</Text>
+            </div>
+            <div className="text-center">
+              <Text variant="h3" className="mb-4">3. Completion</Text>
+              <Text variant="body">Final walkthrough and quality assurance.</Text>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 `;
 
-    await fs.writeFile(
-      path.join(this.pagesDir, 'README.md'),
-      readme
-    );
+    await fs.writeFile(path.join(dir, 'ProjectManagementPage.tsx'), content);
+    console.log('  ✅ ProjectManagementPage created');
+  }
+
+  async createRoomsForRentPage() {
+    const dir = path.join(this.pagesDir, 'RoomsForRentPage');
+    await fs.ensureDir(dir);
+    
+    const content = `import React from 'react';
+import { Header } from '../../components/organisms/Header/Header';
+import { Footer } from '../../components/organisms/Footer/Footer';
+import { Hero } from '../../components/organisms/Hero/Hero';
+import { Card } from '../../components/molecules/Card/Card';
+
+export const RoomsForRentPage: React.FC = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header currentPath="/rooms-for-rent" />
+      <main className="flex-1">
+        <Hero title="Rooms for Rent" description="Quality rooms in safe neighborhoods." />
+        <section className="py-16 container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card 
+              title="Master Bedroom" 
+              description="Spacious room with private bathroom. $800/month."
+            />
+            <Card 
+              title="Single Room" 
+              description="Comfortable single room. $550/month."
+            />
+            <Card 
+              title="Studio Apartment" 
+              description="Fully furnished studio. $950/month."
+            />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+`;
+
+    await fs.writeFile(path.join(dir, 'RoomsForRentPage.tsx'), content);
+    console.log('  ✅ RoomsForRentPage created');
+  }
+
+  async createPagesIndex() {
+    const content = `export { HomePage } from './HomePage/HomePage';
+export { ServicesPage } from './ServicesPage/ServicesPage';
+export { GalleryPage } from './GalleryPage/GalleryPage';
+export { ContactPage } from './ContactPage/ContactPage';
+export { ProjectManagementPage } from './ProjectManagementPage/ProjectManagementPage';
+export { RoomsForRentPage } from './RoomsForRentPage/RoomsForRentPage';
+`;
+
+    await fs.writeFile(path.join(this.pagesDir, 'index.ts'), content);
+    console.log('  ✅ Pages index created');
   }
 }
 
-// Main execution
-async function main() {
-  const builder = new PageBuilder();
-
-  try {
-    await builder.build();
-  } catch (error) {
-    console.error('❌ Page build failed:', error);
-    process.exit(1);
-  }
-}
-
-export { PageBuilder };
-
-main();
+// Execute
+const builder = new PageBuilder();
+builder.build().catch(console.error);
