@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from '../molecules/NavLink/NavLink';
-import { Text } from '../atoms/Text/Text';
-import { Icon } from '../atoms/Icon/Icon';
+import { NavLink } from '@/components/molecules/NavLink/NavLink';
+import { Text } from '@/components/atoms/Text/Text';
+import { Icon } from '@/components/atoms/Icon/Icon';
 
 export interface FooterLink {
   label: string;

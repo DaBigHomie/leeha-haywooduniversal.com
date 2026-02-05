@@ -1,6 +1,6 @@
 import React from 'react';
-import { Input, type InputProps } from '../atoms/Input/Input';
-import { Text } from '../atoms/Text/Text';
+import { Input, type InputProps } from '@/components/atoms/Input/Input';
+import { Text } from '@/components/atoms/Text/Text';
 
 export interface FormFieldProps extends Omit<InputProps, 'label' | 'error'> {
   label: string;

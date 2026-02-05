@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { FormField } from '../molecules/FormField/FormField';
-import { Button } from '../atoms/Button/Button';
-import { Text } from '../atoms/Text/Text';
+import { FormField } from '@/components/molecules/FormField/FormField';
+import { Button } from '@/components/atoms/Button/Button';
+import { Text } from '@/components/atoms/Text/Text';
 
 export interface ContactFormData {
   name: string;

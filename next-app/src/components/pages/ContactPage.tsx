@@ -1,9 +1,9 @@
 import React from 'react';
 import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { ContactForm, type ContactFormData } from '../organisms/ContactForm/ContactForm';
-import { Text } from '../atoms/Text/Text';
-import { Icon } from '../atoms/Icon/Icon';
+import { Hero } from '@/components/organisms/Hero/Hero';
+import { ContactForm, type ContactFormData } from '@/components/organisms/ContactForm/ContactForm';
+import { Text } from '@/components/atoms/Text/Text';
+import { Icon } from '@/components/atoms/Icon/Icon';
 import { getPageContent } from '@/content/data';
 
 const content = getPageContent('contact');

@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { NavLink, type NavLinkProps } from '../molecules/NavLink/NavLink';
-import { Button } from '../atoms/Button/Button';
-import { Icon } from '../atoms/Icon/Icon';
+import { NavLink, type NavLinkProps } from '@/components/molecules/NavLink/NavLink';
+import { Button } from '@/components/atoms/Button/Button';
+import { Icon } from '@/components/atoms/Icon/Icon';
 
 export interface NavItem {
   label: string;

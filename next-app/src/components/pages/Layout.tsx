@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header, type NavItem } from '../organisms/Header/Header';
-import { Footer, type FooterLink } from '../organisms/Footer/Footer';
+import { Header, type NavItem } from '@/components/organisms/Header/Header';
+import { Footer, type FooterLink } from '@/components/organisms/Footer/Footer';
 
 export interface LayoutProps {
   children: React.ReactNode;

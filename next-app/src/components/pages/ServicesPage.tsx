@@ -1,8 +1,10 @@
+'use client';
+
 import React from 'react';
 import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { ServiceGrid, type Service } from '../organisms/ServiceGrid/ServiceGrid';
-import { Text } from '../atoms/Text/Text';
+import { Hero } from '@/components/organisms/Hero/Hero';
+import { ServiceGrid, type Service } from '@/components/organisms/ServiceGrid/ServiceGrid';
+import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
 
 const content = getPageContent('services');

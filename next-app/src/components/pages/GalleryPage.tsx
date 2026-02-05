@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Layout } from './Layout';
-import { Hero } from '../organisms/Hero/Hero';
-import { Text } from '../atoms/Text/Text';
+import { Hero } from '@/components/organisms/Hero/Hero';
+import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
 import Image from 'next/image';
 

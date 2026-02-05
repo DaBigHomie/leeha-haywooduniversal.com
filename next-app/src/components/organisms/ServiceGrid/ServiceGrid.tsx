@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, type CardProps } from '../molecules/Card/Card';
+import { Card, type CardProps } from '@/components/molecules/Card/Card';
 
 export interface Service {
   id: string;

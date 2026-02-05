@@ -1,4 +1,4 @@
-@import '../output/design-tokens/globals.css';
+@import '../../../output/design-tokens/globals.css';
 
 @tailwind base;
 @tailwind components;

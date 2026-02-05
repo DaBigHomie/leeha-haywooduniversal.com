@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '../atoms/Text/Text';
-import { Button, type ButtonProps } from '../atoms/Button/Button';
+import { Text } from '@/components/atoms/Text/Text';
+import { Button, type ButtonProps } from '@/components/atoms/Button/Button';
 
 export interface CardProps {
   image?: string;

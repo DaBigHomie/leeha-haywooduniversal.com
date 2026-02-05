@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '../atoms/Text/Text';
-import { Button } from '../atoms/Button/Button';
+import { Text } from '@/components/atoms/Text/Text';
+import { Button } from '@/components/atoms/Button/Button';
 
 export interface HeroProps {
   title: string;
