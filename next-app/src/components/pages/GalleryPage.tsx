@@ -5,9 +5,10 @@ import { Layout } from './Layout';
 import { Hero } from '@/components/organisms/Hero/Hero';
 import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
+import type { PageContent } from '@/content/types';
 import Image from 'next/image';
 
-const content = getPageContent('gallery');
+const content = getPageContent('gallery') as PageContent['gallery'];
 
 export const GalleryPage: React.FC = () => {
   const [filter, setFilter] = useState<string>('All');
@@ -48,8 +49,8 @@ export const GalleryPage: React.FC = () => {
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-3 gap-6">
-            {filteredImages.map((image) => (
-              <div key={image.id} className="group cursor-pointer">
+            {filteredImages.map((image, index) => (
+              <div key={`${image.src}-${index}`} className="group cursor-pointer">
                 <div className="aspect-video bg-neutral-200 rounded-lg overflow-hidden">
                   <Image
                     src={image.src}

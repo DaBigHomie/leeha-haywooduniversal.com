@@ -6,8 +6,9 @@ import { Hero } from '@/components/organisms/Hero/Hero';
 import { ServiceGrid, type Service } from '@/components/organisms/ServiceGrid/ServiceGrid';
 import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
+import type { PageContent } from '@/content/types';
 
-const content = getPageContent('services');
+const content = getPageContent('services') as PageContent['services'];
 
 export const ServicesPage: React.FC = () => {
   return (

@@ -162,14 +162,14 @@ const config: Config = {
       ]
 },
       fontWeight: {
-      "thin": 100,
-      "light": 300,
-      "normal": 400,
-      "medium": 500,
-      "semibold": 600,
-      "bold": 700,
-      "extrabold": 800,
-      "black": 900
+      "thin": "100",
+      "light": "300",
+      "normal": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700",
+      "extrabold": "800",
+      "black": "900"
 },
       spacing: {
       "0": "0px",

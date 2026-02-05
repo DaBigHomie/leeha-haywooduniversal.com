@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Layout } from './Layout';
 import { Hero } from '@/components/organisms/Hero/Hero';
@@ -5,8 +7,9 @@ import { ContactForm, type ContactFormData } from '@/components/organisms/Contac
 import { Text } from '@/components/atoms/Text/Text';
 import { Icon } from '@/components/atoms/Icon/Icon';
 import { getPageContent } from '@/content/data';
+import type { PageContent } from '@/content/types';
 
-const content = getPageContent('contact');
+const content = getPageContent('contact') as PageContent['contact'];
 
 export const ContactPage: React.FC = () => {
   const handleSubmit = async (data: ContactFormData) => {
