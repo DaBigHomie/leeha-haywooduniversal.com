@@ -7,7 +7,9 @@ import { ServiceGrid, type Service } from '@/components/organisms/ServiceGrid/Se
 import { Text } from '@/components/atoms/Text/Text';
 import { getPageContent } from '@/content/data';
 
-const content = getPageContent('services');
+const pageData = getPageContent('services');
+const content = 'hero' in pageData ? pageData : { hero: pageData, categories: [] };
+const serviceCategories = 'categories' in content && Array.isArray(content.categories) && content.categories.length > 0 && typeof content.categories[0] === 'object' ? content.categories : [];
 
 export const ServicesPage: React.FC = () => {
   return (
@@ -23,12 +25,12 @@ export const ServicesPage: React.FC = () => {
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {content.categories.map((category, idx) => (
+          {serviceCategories.map((category: any, idx) => (
             <div key={idx} className="mb-16">
               <Text variant="h2" align="center" className="mb-8">
                 {category.title}
               </Text>
-              <ServiceGrid services={category.services.map((service, sIdx) => ({
+              <ServiceGrid services={category.services.map((service: any, sIdx: number) => ({
                 id: `${idx}-${sIdx}`,
                 title: service.title,
                 description: service.description,
@@ -36,10 +38,6 @@ export const ServicesPage: React.FC = () => {
               }))} />
             </div>
           ))}
-            What We Offer
-          </Text>
-          
-          <ServiceGrid services={services} columns={3} />
         </div>
       </section>
 
