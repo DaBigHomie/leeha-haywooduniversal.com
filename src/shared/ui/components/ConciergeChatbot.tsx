@@ -41,7 +41,7 @@ export function ConciergeChatbot() {
 
     // Add user message
     const userMessage: Message = {
-      id: Date.now().toString(),
+      id: `${messages.length + 1}`,
       role: 'user',
       content: text,
       timestamp: new Date()

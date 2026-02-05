@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, User } from 'lucide-react';
 
@@ -56,8 +56,7 @@ const defaultNotifications: Notification[] = [
 
 export function SocialProof({ 
   notifications = defaultNotifications,
-  displayInterval = 5000,
-  maxVisible = 1
+  displayInterval = 5000
 }: SocialProofProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
@@ -79,7 +78,7 @@ export function SocialProof({
   const currentNotification = notifications[currentIndex];
   
   // Calculate display time from the notification's original timestamp
-  const getTimeAgo = (minutesAgo: number) => {
+  const getTimeAgo = useMemo(() => (minutesAgo: number) => {
     // Calculate the original timestamp of the notification
     const notificationTime = startTime - (minutesAgo * 60 * 1000);
     const now = Date.now();
@@ -91,7 +90,7 @@ export function SocialProof({
     }
     const hours = Math.floor(diffMinutes / 60);
     return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
-  };
+  }, [startTime]);
 
   return (
     <div className="fixed bottom-4 left-4 z-50 max-w-sm">

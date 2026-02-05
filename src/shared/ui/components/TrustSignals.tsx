@@ -46,8 +46,7 @@ const defaultLawSignals: TrustSignal[] = [
 ];
 
 export function TrustSignals({ 
-  signals = defaultLawSignals,
-  variant = 'default'
+  signals = defaultLawSignals
 }: TrustSignalsProps) {
   return (
     <div className="py-12 bg-gray-50">

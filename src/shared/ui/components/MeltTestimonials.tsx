@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, Play, Pause, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Testimonial } from '../../types/config';
@@ -25,6 +25,16 @@ export function MeltTestimonials({
 
   const currentTestimonial = testimonials[currentIndex];
 
+  const nextTestimonial = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    setPlayingVideo(null);
+  }, [testimonials.length]);
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setPlayingVideo(null);
+  };
+
   useEffect(() => {
     if (!autoplay || isPaused) return;
 
@@ -33,17 +43,7 @@ export function MeltTestimonials({
     }, autoplayInterval);
 
     return () => clearInterval(interval);
-  }, [autoplay, isPaused, autoplayInterval]);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    setPlayingVideo(null);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    setPlayingVideo(null);
-  };
+  }, [autoplay, isPaused, autoplayInterval, nextTestimonial]);
 
   const highlightKeywords = (text: string, keywords?: string[]) => {
     if (!keywords || keywords.length === 0) return text;

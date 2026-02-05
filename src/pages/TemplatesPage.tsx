@@ -36,3 +36,5 @@ export function TemplatesPage({ config }: TemplatesPageProps) {
     </div>
   );
 }
+
+export default TemplatesPage;

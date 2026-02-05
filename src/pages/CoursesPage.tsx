@@ -40,3 +40,5 @@ export function CoursesPage({ config }: CoursesPageProps) {
     </div>
   );
 }
+
+export default CoursesPage;

@@ -36,3 +36,5 @@ export function LegalGuidesPage({ config }: LegalGuidesPageProps) {
     </div>
   );
 }
+
+export default LegalGuidesPage;

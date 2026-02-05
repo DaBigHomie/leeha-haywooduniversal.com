@@ -244,3 +244,5 @@ export function DigitalProductsPage({ config }: DigitalProductsPageProps) {
     </div>
   );
 }
+
+export default DigitalProductsPage;

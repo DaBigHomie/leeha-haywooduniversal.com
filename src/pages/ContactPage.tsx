@@ -161,3 +161,5 @@ export function ContactPage({ config }: ContactPageProps) {
     </main>
   );
 }
+
+export default ContactPage;

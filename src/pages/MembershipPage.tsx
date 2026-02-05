@@ -34,3 +34,5 @@ export function MembershipPage({ config }: MembershipPageProps) {
     </div>
   );
 }
+
+export default MembershipPage;

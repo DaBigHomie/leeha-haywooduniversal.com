@@ -56,7 +56,6 @@ function App() {
         onVariantChange={handleVariantChange}
       />
       
-<<<<<<< HEAD
       {/* Lazy loaded routes with loading spinner */}
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
@@ -64,25 +63,15 @@ function App() {
           <Route path="/services" element={<ServicesPage config={config} />} />
           <Route path="/gallery" element={<GalleryPage config={config} />} />
           <Route path="/contact" element={<ContactPage config={config} />} />
+          <Route path="/digital-products" element={<DigitalProductsPage config={config} />} />
+          <Route path="/membership" element={<MembershipPage config={config} />} />
+          <Route path="/courses" element={<CoursesPage config={config} />} />
+          <Route path="/legal-guides" element={<LegalGuidesPage config={config} />} />
+          <Route path="/templates" element={<TemplatesPage config={config} />} />
           {/* Fallback route for any other paths */}
           <Route path="*" element={<HomePage config={config} />} />
         </Routes>
       </Suspense>
-=======
-      <Routes>
-        <Route path="/" element={<HomePage config={config} />} />
-        <Route path="/services" element={<ServicesPage config={config} />} />
-        <Route path="/gallery" element={<GalleryPage config={config} />} />
-        <Route path="/contact" element={<ContactPage config={config} />} />
-        <Route path="/digital-products" element={<DigitalProductsPage config={config} />} />
-        <Route path="/membership" element={<MembershipPage config={config} />} />
-        <Route path="/courses" element={<CoursesPage config={config} />} />
-        <Route path="/legal-guides" element={<LegalGuidesPage config={config} />} />
-        <Route path="/templates" element={<TemplatesPage config={config} />} />
-        {/* Fallback route for any other paths */}
-        <Route path="*" element={<HomePage config={config} />} />
-      </Routes>
->>>>>>> origin/main
       
       <Footer 
         businessName={config.content.footer.businessName}
