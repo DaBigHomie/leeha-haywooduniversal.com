@@ -1,3 +1,11 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/services/page": "app/services/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/project-management/page": "app/project-management/page.js",
+  "/rooms-for-rent/page": "app/rooms-for-rent/page.js"
 }

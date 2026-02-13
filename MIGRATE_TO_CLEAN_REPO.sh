@@ -103,7 +103,7 @@ echo -e "${YELLOW}📦 Step 2: Cloning original repository${NC}"
 echo ""
 
 cd /Users/dame/management-git
-git clone "$OLD_REPO_PATH" "$NEW_REPO_NAME"
+git clone "$OLD_REPO_PATH" "$NEW_REPO_NAME" --no-local 
 cd "$NEW_REPO_NAME"
 
 echo -e "${GREEN}✅ Repository cloned${NC}"

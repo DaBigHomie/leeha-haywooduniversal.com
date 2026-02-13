@@ -1,0 +1,25 @@
+{
+  "buildCommand": "cd next-app && npm install && npm run build",
+  "outputDirectory": "next-app/.next",
+  "devCommand": "cd next-app && npm run dev",
+  "installCommand": "cd next-app && npm install",
+  "framework": "nextjs",
+  "regions": [
+    "iad1"
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [],
+  "redirects": [],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
